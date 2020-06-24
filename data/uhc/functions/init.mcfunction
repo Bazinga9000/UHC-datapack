@@ -31,12 +31,15 @@ scoreboard players set num_teams settings 4
 scoreboard players set display_worldborder_distance settings 0
 scoreboard players set min_teams settings 2
 scoreboard players set max_teams settings 64
+scoreboard players set num_players settings 0
 scoreboard players set game_started settings 0
 scoreboard objectives add worldborder dummy
 scoreboard players set worldborder_start_distance worldborder 1200
 scoreboard players set worldborder_time worldborder 900
 scoreboard players set worldborder_end_distance worldborder 25
 scoreboard players set worldborder_start_time worldborder 0
+scoreboard objectives add cfg dummy
+scoreboard players set tcount cfg 0
 setblock -10 244 -10 minecraft:structure_block[mode=load]{name:"uhc:box",posX:0,posY:0,posZ:0,sizeX:11,sizeY:21,sizeZ:11,rotation:"NONE",mirror:"NONE",mode:"LOAD"} replace
 setblock -10 245 -10 redstone_block
 
