@@ -1,7 +1,6 @@
 scoreboard objectives add spawned dummy
 scoreboard objectives add health health {"text":"♥","color":"red"}
 scoreboard objectives setdisplay list health
-setworldspawn 0 247 0
 team add spectator
 team modify spectator prefix {"text":"Spectator ","color":"aqua","italic":"true"}
 function uhc:createteams 
@@ -40,12 +39,5 @@ scoreboard players set worldborder_end_distance worldborder 25
 scoreboard players set worldborder_start_time worldborder 0
 scoreboard objectives add cfg dummy
 scoreboard players set tcount cfg 0
-setblock -10 244 -10 minecraft:structure_block[mode=load]{name:"uhc:box",posX:0,posY:0,posZ:0,sizeX:11,sizeY:21,sizeZ:11,rotation:"NONE",mirror:"NONE",mode:"LOAD"} replace
-setblock -10 245 -10 redstone_block
-
-fill -1 0 -1 1 0 1 diamond_block
-setblock 0 1 0 beacon
-setblock 0 2 0 bedrock
-fill 0 3 0 0 240 0 barrier
 
 
