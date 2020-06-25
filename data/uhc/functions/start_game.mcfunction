@@ -11,6 +11,7 @@ gamerule keepInventory false
 scoreboard players set @a deaths 0
 scoreboard players set max bossbar 72000
 scoreboard players set game_started settings 1
+scoreboard players set time timer 0
 
 #> player stuff
 spreadplayers 0 0 150 550 true @a
