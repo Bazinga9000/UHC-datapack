@@ -34,10 +34,8 @@ clear @a[distance=..7, tag=!debugger] green_dye{config: 1b}
 clear @a[distance=..7, tag=!debugger] blue_dye{config: 1b}
 
 #> do stuff
-# change slot
-execute store result block 45 7 13 Items[{Slot: 4b}].Count byte 1 run scoreboard players get num_teams settings
-
 # do something based off slot
+execute if score tcount cfg matches 1..10 run playsound minecraft:block.note_block.harp master @a ~ ~ ~ 1 2
 execute if score tcount cfg matches 1 run scoreboard players operation num_teams settings -= 5 constants
 execute if score tcount cfg matches 2 run scoreboard players operation num_teams settings -= 1 constants
 execute if score tcount cfg matches 4 run scoreboard players operation num_teams settings += 1 constants
@@ -53,5 +51,6 @@ scoreboard players operation num_teams settings > min_teams settings
 scoreboard players operation num_teams settings < max_teams settings
 
 #> fix gui
+execute store result block 45 7 13 Items[{Slot: 4b}].Count byte 1 run scoreboard players get num_teams settings
 data modify block ~ ~ ~ Items set from block 45 7 13 Items
 scoreboard players set tcount cfg 0
