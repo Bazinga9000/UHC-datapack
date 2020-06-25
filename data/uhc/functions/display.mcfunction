@@ -1,6 +1,6 @@
 tellraw @s ["",{"text":"-----------------------","color":"gold","bold":true}]
 tellraw @s ["",{"text":"    UHC Configurator   ","color":"gold","bold":true}]
-tellraw @s ["",{"text":" "},{"text":"[Start Game]","color":"green","clickEvent":{"action":"run_command","value":"/function uhc:start_game"}},{"text":" ","color":"none"},{"text":"[End Game]","color":"red","clickEvent":{"action":"run_command","value":"/function uhc:end_game"}}]
+tellraw @s ["",{"text":" "},{"text":"[Start Game]","color":"green","clickEvent":{"action":"run_command","value":"/execute in minecraft:overworld run function uhc:start_game"}},{"text":" ","color":"none"},{"text":"[End Game]","color":"red","clickEvent":{"action":"run_command","value":"/function uhc:end_game"}}]
 tellraw @s ""
 tellraw @s ["",{"text":"     "},{"text":"[<<]","color":"aqua","clickEvent":{"action":"run_command","value":"/function uhc:decrement_team"}},{"text":" ","color":"none"},{"score":{"name":"num_teams","objective":"settings"},"color":"dark_green"},{"text":" Teams ","color":"dark_green"},{"text":"[>>]","color":"aqua","clickEvent":{"action":"run_command","value":"/function uhc:increment_team"}}]
 tellraw @p ["",{"text":"        "},{"text":"[Solos]","color":"dark_blue","clickEvent":{"action":"run_command","value":"/function uhc:solos"}}]
