@@ -1,5 +1,6 @@
 execute store result score num_players settings if entity @a[scores={is_spectator=0}]
-
+# force non-debuggers out of overworld
+execute as @a[nbt={Dimension: "minecraft:overworld"}, tag=!debugger] in uhc:lobby run tp @s 0 10 0
 #> config room
 execute positioned 48 18 -3 run function uhc:cfg/tcount
 

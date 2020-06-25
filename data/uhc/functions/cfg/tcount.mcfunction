@@ -21,18 +21,17 @@ execute unless data storage minecraft:cfg.tcount Items[{Slot: 23b, tag: {config:
 execute unless data storage minecraft:cfg.tcount Items[{Slot: 24b, tag: {config: 1b}}] run scoreboard players set tcount cfg 10
 
 #> clear item
-# tag is there so it's easier to dev around the shulker boxes
-clear @a[distance=..7, tag=!dev_no_clear] black_stained_glass_pane{config: 1b}
-clear @a[distance=..7, tag=!dev_no_clear] red_terracotta{config: 1b}
-clear @a[distance=..7, tag=!dev_no_clear] pink_terracotta{config: 1b}
-clear @a[distance=..7, tag=!dev_no_clear] white_concrete{config: 1b}
-clear @a[distance=..7, tag=!dev_no_clear] lime_terracotta{config: 1b}
-clear @a[distance=..7, tag=!dev_no_clear] green_terracotta{config: 1b}
-clear @a[distance=..7, tag=!dev_no_clear] red_dye{config: 1b}
-clear @a[distance=..7, tag=!dev_no_clear] orange_dye{config: 1b}
-clear @a[distance=..7, tag=!dev_no_clear] yellow_dye{config: 1b}
-clear @a[distance=..7, tag=!dev_no_clear] green_dye{config: 1b}
-clear @a[distance=..7, tag=!dev_no_clear] blue_dye{config: 1b}
+clear @a[distance=..7, tag=!debugger] black_stained_glass_pane{config: 1b}
+clear @a[distance=..7, tag=!debugger] red_terracotta{config: 1b}
+clear @a[distance=..7, tag=!debugger] pink_terracotta{config: 1b}
+clear @a[distance=..7, tag=!debugger] white_concrete{config: 1b}
+clear @a[distance=..7, tag=!debugger] lime_terracotta{config: 1b}
+clear @a[distance=..7, tag=!debugger] green_terracotta{config: 1b}
+clear @a[distance=..7, tag=!debugger] red_dye{config: 1b}
+clear @a[distance=..7, tag=!debugger] orange_dye{config: 1b}
+clear @a[distance=..7, tag=!debugger] yellow_dye{config: 1b}
+clear @a[distance=..7, tag=!debugger] green_dye{config: 1b}
+clear @a[distance=..7, tag=!debugger] blue_dye{config: 1b}
 
 #> do stuff
 # change slot
