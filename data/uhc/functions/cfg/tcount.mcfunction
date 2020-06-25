@@ -53,7 +53,6 @@ scoreboard players operation num_teams settings > min_teams settings
 scoreboard players operation num_teams settings < max_teams settings
 
 #> fix gui
-setblock 48 18 1 shulker_box[facing=west]
 data modify block 48 18 1 Items set from block 45 7 13 Items
-
 scoreboard players set tcount cfg 0
+
