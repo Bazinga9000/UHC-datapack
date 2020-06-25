@@ -26,6 +26,8 @@ bossbar set minecraft:bossbar visible false
 bossbar set minecraft:bossbar name {"text":"World Border Begins Shrinking","color":"red"}
 function uhc:constants
 scoreboard objectives add settings dummy
+scoreboard objectives add cfg dummy
+scoreboard players set tcount cfg 0
 scoreboard players set num_teams settings 4
 scoreboard players set display_worldborder_distance settings 0
 scoreboard players set min_teams settings 2
