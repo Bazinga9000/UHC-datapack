@@ -53,8 +53,6 @@ scoreboard players operation num_teams settings > min_teams settings
 scoreboard players operation num_teams settings < max_teams settings
 
 #> fix gui
-execute if score tcount cfg matches 1..10 run tellraw @a[distance=..3] [{"text":"Set number of teams to "},{"score":{"name":"num_teams","objective":"settings"}},{"text":"!"}]
-execute if score tcount cfg matches 6..10 run setblock 48 18 1 air
 setblock 48 18 1 shulker_box[facing=west]
 data modify block 48 18 1 Items set from block 45 7 13 Items
 
