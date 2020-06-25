@@ -8,13 +8,9 @@ gamerule doInsomnia false
 gamerule keepInventory false
 
 #> scoreboard (which probably should actually go into uhc:init and also some of these are already declared in init so :thinkk:)
-scoreboard objectives add deaths deathCount
-scoreboard players add @a deaths 0
-scoreboard objectives add health health
-scoreboard objectives setdisplay list health
+scoreboard players set @a deaths 0
 scoreboard players set max bossbar 72000
 scoreboard players set game_started settings 1
-scoreboard objectives add timer dummy
 
 #> player stuff
 spreadplayers 0 0 150 550 true @a
