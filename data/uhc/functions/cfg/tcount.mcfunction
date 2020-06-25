@@ -1,4 +1,4 @@
-data modify storage cfg.tcount Items set from block 48 18 1 Items
+data modify storage cfg.tcount Items set from block ~ ~ ~ Items
 
 #> check if item was removed
 # -5 teams
@@ -53,5 +53,5 @@ scoreboard players operation num_teams settings > min_teams settings
 scoreboard players operation num_teams settings < max_teams settings
 
 #> fix gui
-data modify block 48 18 1 Items set from block 45 7 13 Items
+data modify block ~ ~ ~ Items set from block 45 7 13 Items
 scoreboard players set tcount cfg 0
