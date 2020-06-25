@@ -1,4 +1,3 @@
-tp @e[type=phantom] 0 -100 0
 gamemode spectator @a[scores={deaths=1..}]
 execute as @a[scores={deaths=0}] run spawnpoint
 scoreboard players add time timer 1
