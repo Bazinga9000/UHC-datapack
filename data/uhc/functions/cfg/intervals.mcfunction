@@ -28,7 +28,7 @@ clear @a[distance=..7, tag=!debugger] netherite_ingot{config: 1b}
 
 #> do stuff
 # do something based off slot
-execute unless score tcount cfg matches 0 run playsound minecraft:block.note_block.harp master @a ~ ~ ~ 1 2
+execute unless score interval cfg matches 0 run playsound minecraft:block.note_block.harp master @a ~ ~ ~ 1 2
 execute if score interval cfg matches 1 run scoreboard players operation stillborder settings += 5 constants
 execute if score interval cfg matches 2 run scoreboard players operation border1 settings += 5 constants
 execute if score interval cfg matches 3 run scoreboard players operation borderstop settings += 5 constants
