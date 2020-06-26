@@ -19,8 +19,6 @@ scoreboard players set max_teams settings 64
 scoreboard players set num_players settings 0
 scoreboard players set game_started settings 0
 
-scoreboard players set tcount cfg 0
-
 scoreboard players set worldborder_start_distance worldborder 1200
 scoreboard players set worldborder_time worldborder 900
 scoreboard players set worldborder_end_distance worldborder 25
