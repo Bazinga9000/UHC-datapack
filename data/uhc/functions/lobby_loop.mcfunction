@@ -1,5 +1,5 @@
-execute store result score num_players settings if entity @a[scores={is_spectator=0}]
-execute store result score num_spectators settings if entity @a[scores={is_spectator=1}]
+execute store result score num_players settings if entity @a[tag=!spectator]
+execute store result score num_spectators settings if entity @a[tag=spectator]
 # force non-debuggers out of overworld
 execute as @a[nbt={Dimension: "minecraft:overworld"}, tag=!debugger] in uhc:lobby run tp @s 0 10 0
 
