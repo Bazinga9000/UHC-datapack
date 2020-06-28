@@ -36,10 +36,10 @@ clear @a[distance=..7, tag=!debugger] blue_dye{config: 1b}
 #> do stuff
 # do something based off slot
 execute unless score tcount cfg matches 0 run playsound minecraft:block.note_block.harp master @a ~ ~ ~ 1 2
-execute if score tcount cfg matches 1 run scoreboard players operation num_teams settings -= 5 constants
-execute if score tcount cfg matches 2 run scoreboard players operation num_teams settings -= 1 constants
-execute if score tcount cfg matches 4 run scoreboard players operation num_teams settings += 1 constants
-execute if score tcount cfg matches 5 run scoreboard players operation num_teams settings += 5 constants
+execute if score tcount cfg matches 1 run scoreboard players remove num_teams settings 5
+execute if score tcount cfg matches 2 run scoreboard players remove num_teams settings 1
+execute if score tcount cfg matches 4 run scoreboard players add num_teams settings 1
+execute if score tcount cfg matches 5 run scoreboard players add num_teams settings 5
 execute if score tcount cfg matches 6..10 run scoreboard players operation num_teams settings = num_players settings
 execute if score tcount cfg matches 7 run scoreboard players operation num_teams settings /= 2 constants
 execute if score tcount cfg matches 8 run scoreboard players operation num_teams settings /= 3 constants

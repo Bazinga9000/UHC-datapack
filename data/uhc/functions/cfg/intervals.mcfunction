@@ -29,16 +29,16 @@ clear @a[distance=..7, tag=!debugger] netherite_ingot{config: 1b}
 #> do stuff
 # do something based off slot
 execute unless score interval cfg matches 0 run playsound minecraft:block.note_block.harp master @a ~ ~ ~ 1 2
-execute if score interval cfg matches 1 run scoreboard players operation stillborder settings += 5 constants
-execute if score interval cfg matches 2 run scoreboard players operation border1 settings += 5 constants
-execute if score interval cfg matches 3 run scoreboard players operation borderstop settings += 5 constants
-execute if score interval cfg matches 4 run scoreboard players operation border2 settings += 5 constants
-execute if score interval cfg matches 5 run scoreboard players operation tilldm settings += 5 constants
-execute if score interval cfg matches 8 run scoreboard players operation stillborder settings -= 5 constants
-execute if score interval cfg matches 9 run scoreboard players operation border1 settings -= 5 constants
-execute if score interval cfg matches 10 run scoreboard players operation borderstop settings -= 5 constants
-execute if score interval cfg matches 11 run scoreboard players operation border2 settings -= 5 constants
-execute if score interval cfg matches 12 run scoreboard players operation tilldm settings -= 5 constants
+execute if score interval cfg matches 1 run scoreboard players add stillborder settings 5
+execute if score interval cfg matches 2 run scoreboard players add border1 settings 5
+execute if score interval cfg matches 3 run scoreboard players add borderstop settings 5
+execute if score interval cfg matches 4 run scoreboard players add border2 settings 5
+execute if score interval cfg matches 5 run scoreboard players add tilldm settings 5
+execute if score interval cfg matches 8 run scoreboard players remove stillborder settings 5
+execute if score interval cfg matches 9 run scoreboard players remove border1 settings 5
+execute if score interval cfg matches 10 run scoreboard players remove borderstop settings 5
+execute if score interval cfg matches 11 run scoreboard players remove border2 settings 5
+execute if score interval cfg matches 12 run scoreboard players remove tilldm settings 5
 
 # execute if score interval cfg matches 6 run scoreboard players set stillborder settings 
 # execute if score interval cfg matches 6 run scoreboard players set border1 settings 
