@@ -1,3 +1,4 @@
+team modify spectator prefix ""
 team modify team1 prefix ""
 team modify team2 prefix ""
 team modify team3 prefix ""

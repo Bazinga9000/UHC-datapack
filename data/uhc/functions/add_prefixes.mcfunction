@@ -1,64 +1,65 @@
-team modify team1 prefix {"text":"Team 1 ","color":"#c04040","bold":"true"}
-team modify team2 prefix {"text":"Team 2 ","color":"#4040c0","bold":"true"}
-team modify team3 prefix {"text":"Team 3 ","color":"#40c040","bold":"true"}
-team modify team4 prefix {"text":"Team 4 ","color":"#c0c040","bold":"true"}
-team modify team5 prefix {"text":"Team 5 ","color":"#c06b40","bold":"true"}
-team modify team6 prefix {"text":"Team 6 ","color":"#6b40c0","bold":"true"}
-team modify team7 prefix {"text":"Team 7 ","color":"#40c0c0","bold":"true"}
-team modify team8 prefix {"text":"Team 8 ","color":"#6bc040","bold":"true"}
-team modify team9 prefix {"text":"Team 9 ","color":"#c09640","bold":"true"}
-team modify team10 prefix {"text":"Team 10 ","color":"#9640c0","bold":"true"}
-team modify team11 prefix {"text":"Team 11 ","color":"#4096c0","bold":"true"}
-team modify team12 prefix {"text":"Team 12 ","color":"#40c096","bold":"true"}
-team modify team13 prefix {"text":"Team 13 ","color":"#96c040","bold":"true"}
-team modify team14 prefix {"text":"Team 14 ","color":"#c040c0","bold":"true"}
-team modify team15 prefix {"text":"Team 15 ","color":"#406bc0","bold":"true"}
-team modify team16 prefix {"text":"Team 16 ","color":"#40c06b","bold":"true"}
-team modify team17 prefix {"text":"Team 17 ","color":"#c04096","bold":"true"}
-team modify team18 prefix {"text":"Team 18 ","color":"#c06bc0","bold":"true"}
-team modify team19 prefix {"text":"Team 19 ","color":"#6bc06b","bold":"true"}
-team modify team20 prefix {"text":"Team 20 ","color":"#c0966b","bold":"true"}
-team modify team21 prefix {"text":"Team 21 ","color":"#c0406b","bold":"true"}
-team modify team22 prefix {"text":"Team 22 ","color":"#c06b96","bold":"true"}
-team modify team23 prefix {"text":"Team 23 ","color":"#6b96c0","bold":"true"}
-team modify team24 prefix {"text":"Team 24 ","color":"#96c06b","bold":"true"}
-team modify team25 prefix {"text":"Team 25 ","color":"#c06b6b","bold":"true"}
-team modify team26 prefix {"text":"Team 26 ","color":"#964040","bold":"true"}
-team modify team27 prefix {"text":"Team 27 ","color":"#6b6bc0","bold":"true"}
-team modify team28 prefix {"text":"Team 28 ","color":"#6bc0c0","bold":"true"}
-team modify team29 prefix {"text":"Team 29 ","color":"#c0c06b","bold":"true"}
-team modify team30 prefix {"text":"Team 30 ","color":"#966b40","bold":"true"}
-team modify team31 prefix {"text":"Team 31 ","color":"#966bc0","bold":"true"}
-team modify team32 prefix {"text":"Team 32 ","color":"#6bc096","bold":"true"}
-team modify team33 prefix {"text":"Team 33 ","color":"#969640","bold":"true"}
-team modify team34 prefix {"text":"Team 34 ","color":"#406b40","bold":"true"}
-team modify team35 prefix {"text":"Team 35 ","color":"#404096","bold":"true"}
-team modify team36 prefix {"text":"Team 36 ","color":"#40966b","bold":"true"}
-team modify team37 prefix {"text":"Team 37 ","color":"#6b9640","bold":"true"}
-team modify team38 prefix {"text":"Team 38 ","color":"#406b6b","bold":"true"}
-team modify team39 prefix {"text":"Team 39 ","color":"#96406b","bold":"true"}
-team modify team40 prefix {"text":"Team 40 ","color":"#406b96","bold":"true"}
-team modify team41 prefix {"text":"Team 41 ","color":"#409640","bold":"true"}
-team modify team42 prefix {"text":"Team 42 ","color":"#40406b","bold":"true"}
-team modify team43 prefix {"text":"Team 43 ","color":"#6b4040","bold":"true"}
-team modify team44 prefix {"text":"Team 44 ","color":"#964096","bold":"true"}
-team modify team45 prefix {"text":"Team 45 ","color":"#409696","bold":"true"}
-team modify team46 prefix {"text":"Team 46 ","color":"#6b406b","bold":"true"}
-team modify team47 prefix {"text":"Team 47 ","color":"#6b6b40","bold":"true"}
-team modify team48 prefix {"text":"Team 48 ","color":"#6b4096","bold":"true"}
-team modify team49 prefix {"text":"Team 49 ","color":"#c09696","bold":"true"}
-team modify team50 prefix {"text":"Team 50 ","color":"#404040","bold":"true"}
-team modify team51 prefix {"text":"Team 51 ","color":"#966b6b","bold":"true"}
-team modify team52 prefix {"text":"Team 52 ","color":"#96c0c0","bold":"true"}
-team modify team53 prefix {"text":"Team 53 ","color":"#c0c096","bold":"true"}
-team modify team54 prefix {"text":"Team 54 ","color":"#6b6b6b","bold":"true"}
-team modify team55 prefix {"text":"Team 55 ","color":"#6b9696","bold":"true"}
-team modify team56 prefix {"text":"Team 56 ","color":"#c096c0","bold":"true"}
-team modify team57 prefix {"text":"Team 57 ","color":"#96c096","bold":"true"}
-team modify team58 prefix {"text":"Team 58 ","color":"#969696","bold":"true"}
-team modify team59 prefix {"text":"Team 59 ","color":"#6b6b96","bold":"true"}
-team modify team60 prefix {"text":"Team 60 ","color":"#6b966b","bold":"true"}
-team modify team61 prefix {"text":"Team 61 ","color":"#9696c0","bold":"true"}
-team modify team62 prefix {"text":"Team 62 ","color":"#c0c0c0","bold":"true"}
-team modify team63 prefix {"text":"Team 63 ","color":"#966b96","bold":"true"}
-team modify team64 prefix {"text":"Team 64 ","color":"#96966b","bold":"true"}
+team modify spectator prefix {"text":"[S] ","color":"#00ffff"}
+team modify team1 prefix {"text":"[1] ","color":"#c04040","bold":"true"}
+team modify team2 prefix {"text":"[2] ","color":"#4040c0","bold":"true"}
+team modify team3 prefix {"text":"[3] ","color":"#40c040","bold":"true"}
+team modify team4 prefix {"text":"[4] ","color":"#c0c040","bold":"true"}
+team modify team5 prefix {"text":"[5] ","color":"#c06b40","bold":"true"}
+team modify team6 prefix {"text":"[6] ","color":"#6b40c0","bold":"true"}
+team modify team7 prefix {"text":"[7] ","color":"#40c0c0","bold":"true"}
+team modify team8 prefix {"text":"[8] ","color":"#6bc040","bold":"true"}
+team modify team9 prefix {"text":"[9] ","color":"#c09640","bold":"true"}
+team modify team10 prefix {"text":"[1]0 ","color":"#9640c0","bold":"true"}
+team modify team11 prefix {"text":"[1]1 ","color":"#4096c0","bold":"true"}
+team modify team12 prefix {"text":"[1]2 ","color":"#40c096","bold":"true"}
+team modify team13 prefix {"text":"[1]3 ","color":"#96c040","bold":"true"}
+team modify team14 prefix {"text":"[1]4 ","color":"#c040c0","bold":"true"}
+team modify team15 prefix {"text":"[1]5 ","color":"#406bc0","bold":"true"}
+team modify team16 prefix {"text":"[1]6 ","color":"#40c06b","bold":"true"}
+team modify team17 prefix {"text":"[1]7 ","color":"#c04096","bold":"true"}
+team modify team18 prefix {"text":"[1]8 ","color":"#c06bc0","bold":"true"}
+team modify team19 prefix {"text":"[1]9 ","color":"#6bc06b","bold":"true"}
+team modify team20 prefix {"text":"[2]0 ","color":"#c0966b","bold":"true"}
+team modify team21 prefix {"text":"[2]1 ","color":"#c0406b","bold":"true"}
+team modify team22 prefix {"text":"[2]2 ","color":"#c06b96","bold":"true"}
+team modify team23 prefix {"text":"[2]3 ","color":"#6b96c0","bold":"true"}
+team modify team24 prefix {"text":"[2]4 ","color":"#96c06b","bold":"true"}
+team modify team25 prefix {"text":"[2]5 ","color":"#c06b6b","bold":"true"}
+team modify team26 prefix {"text":"[2]6 ","color":"#964040","bold":"true"}
+team modify team27 prefix {"text":"[2]7 ","color":"#6b6bc0","bold":"true"}
+team modify team28 prefix {"text":"[2]8 ","color":"#6bc0c0","bold":"true"}
+team modify team29 prefix {"text":"[2]9 ","color":"#c0c06b","bold":"true"}
+team modify team30 prefix {"text":"[3]0 ","color":"#966b40","bold":"true"}
+team modify team31 prefix {"text":"[3]1 ","color":"#966bc0","bold":"true"}
+team modify team32 prefix {"text":"[3]2 ","color":"#6bc096","bold":"true"}
+team modify team33 prefix {"text":"[3]3 ","color":"#969640","bold":"true"}
+team modify team34 prefix {"text":"[3]4 ","color":"#406b40","bold":"true"}
+team modify team35 prefix {"text":"[3]5 ","color":"#404096","bold":"true"}
+team modify team36 prefix {"text":"[3]6 ","color":"#40966b","bold":"true"}
+team modify team37 prefix {"text":"[3]7 ","color":"#6b9640","bold":"true"}
+team modify team38 prefix {"text":"[3]8 ","color":"#406b6b","bold":"true"}
+team modify team39 prefix {"text":"[3]9 ","color":"#96406b","bold":"true"}
+team modify team40 prefix {"text":"[4]0 ","color":"#406b96","bold":"true"}
+team modify team41 prefix {"text":"[4]1 ","color":"#409640","bold":"true"}
+team modify team42 prefix {"text":"[4]2 ","color":"#40406b","bold":"true"}
+team modify team43 prefix {"text":"[4]3 ","color":"#6b4040","bold":"true"}
+team modify team44 prefix {"text":"[4]4 ","color":"#964096","bold":"true"}
+team modify team45 prefix {"text":"[4]5 ","color":"#409696","bold":"true"}
+team modify team46 prefix {"text":"[4]6 ","color":"#6b406b","bold":"true"}
+team modify team47 prefix {"text":"[4]7 ","color":"#6b6b40","bold":"true"}
+team modify team48 prefix {"text":"[4]8 ","color":"#6b4096","bold":"true"}
+team modify team49 prefix {"text":"[4]9 ","color":"#c09696","bold":"true"}
+team modify team50 prefix {"text":"[5]0 ","color":"#404040","bold":"true"}
+team modify team51 prefix {"text":"[5]1 ","color":"#966b6b","bold":"true"}
+team modify team52 prefix {"text":"[5]2 ","color":"#96c0c0","bold":"true"}
+team modify team53 prefix {"text":"[5]3 ","color":"#c0c096","bold":"true"}
+team modify team54 prefix {"text":"[5]4 ","color":"#6b6b6b","bold":"true"}
+team modify team55 prefix {"text":"[5]5 ","color":"#6b9696","bold":"true"}
+team modify team56 prefix {"text":"[5]6 ","color":"#c096c0","bold":"true"}
+team modify team57 prefix {"text":"[5]7 ","color":"#96c096","bold":"true"}
+team modify team58 prefix {"text":"[5]8 ","color":"#969696","bold":"true"}
+team modify team59 prefix {"text":"[5]9 ","color":"#6b6b96","bold":"true"}
+team modify team60 prefix {"text":"[6]0 ","color":"#6b966b","bold":"true"}
+team modify team61 prefix {"text":"[6]1 ","color":"#9696c0","bold":"true"}
+team modify team62 prefix {"text":"[6]2 ","color":"#c0c0c0","bold":"true"}
+team modify team63 prefix {"text":"[6]3 ","color":"#966b96","bold":"true"}
+team modify team64 prefix {"text":"[6]4 ","color":"#96966b","bold":"true"}
