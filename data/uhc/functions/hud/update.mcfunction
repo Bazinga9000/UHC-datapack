@@ -137,7 +137,7 @@ execute if score rightlen uhc.hud matches 2 if score ry uhc.hud matches 7 run da
 # -1 = does not display
 #  0 = displays blue
 #  1 = displays red
-execute if wbred uhc.hud matches -1 run data modify storage uhc.hud wb set value ''
+execute if score wbred uhc.hud matches -1 run data modify storage uhc.hud wb set value ''
 execute if score wblen uhc.hud matches 1 if score wbred uhc.hud matches 0 run data modify storage uhc.hud wb set value '[{"text":"\\uf822\\ue000","color":"#338dff","font":"uhc:hud_wb"},{"text":"\\uf822±","color":"white"},{"score":{"name":"wb","objective":"uhc.hud"},"color":"white"},{"text":"\\uf809\\uf807\\uf801"}]'
 execute if score wblen uhc.hud matches 2 if score wbred uhc.hud matches 0 run data modify storage uhc.hud wb set value '[{"text":"\\uf822\\ue000","color":"#338dff","font":"uhc:hud_wb"},{"text":"\\uf822±","color":"white"},{"score":{"name":"wb","objective":"uhc.hud"},"color":"white"},{"text":"\\uf809\\uf807\\uf806\\uf802"}]'
 execute if score wblen uhc.hud matches 3 if score wbred uhc.hud matches 0 run data modify storage uhc.hud wb set value '[{"text":"\\uf822\\ue000","color":"#338dff","font":"uhc:hud_wb"},{"text":"\\uf822±","color":"white"},{"score":{"name":"wb","objective":"uhc.hud"},"color":"white"},{"text":"\\uf809\\uf808\\uf803\\uf802\\uf802"}]'
