@@ -51,7 +51,7 @@ scoreboard players operation ry uhc.hud /= 450 constants
 # check how many bars are on the right
 scoreboard players set rightlen uhc.hud 1
 scoreboard players set tmp uhc.hud 0
-execute if data entity @s RootVehicle positioned ~ ~-.5 ~ store result score tmp uhc.hud run attribute @e[limit=1,sort=nearest,type=!player] minecraft:generic.max_health get
+execute if data entity @s RootVehicle at @s positioned ~ ~-.5 ~ store result score tmp uhc.hud run attribute @e[limit=1,sort=nearest,type=!player] minecraft:generic.max_health get
 execute unless score tmp uhc.hud matches ..20 run scoreboard players add rightlen uhc.hud 1
 
 #> store text
