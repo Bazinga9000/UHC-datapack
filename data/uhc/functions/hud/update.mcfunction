@@ -23,6 +23,7 @@ scoreboard players operation log uhc.hud = z uhc.hud
 function uhc:hud/num_len
 scoreboard players operation zlen uhc.hud = log uhc.hud
 
+scoreboard players set xyzlen uhc.hud 0
 scoreboard players operation xyzlen uhc.hud += xlen uhc.hud
 scoreboard players operation xyzlen uhc.hud += ylen uhc.hud
 scoreboard players operation xyzlen uhc.hud += zlen uhc.hud
