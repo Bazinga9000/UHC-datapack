@@ -3,7 +3,7 @@ execute store result score num_spectators settings if entity @a[tag=spectator]
 # force non-debuggers out of overworld
 execute as @a[nbt={Dimension: "minecraft:game"}, tag=!debugger] in minecraft:overworld run tp @s 0 10 0
 
-function uhc:parkour/tick.mcfunction
+function uhc:parkour/tick
 
 #> config room
 execute positioned 48 18 -3 run function uhc:cfg/tcount
