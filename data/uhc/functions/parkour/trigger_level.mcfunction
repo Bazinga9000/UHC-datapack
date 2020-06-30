@@ -3,7 +3,7 @@ execute unless score @s level matches 1..37 run scoreboard players reset @s leve
 execute if score @s level > score @s pcheckpoint run scoreboard players reset @s level
 
 tag @s add level
-execute as @e[type=armor_stand,scores={acheckpoint=1..}] if score @s acheckpoint matches @a[limit=1,tag=level] level run tp @a[limit=1,tag=level] @s
+execute as @e[type=armor_stand,scores={acheckpoint=1..}] if score @s acheckpoint = @a[limit=1,tag=level] level run tp @a[limit=1,tag=level] @s
 tag @s remove level
 scoreboard players reset @s level
 
