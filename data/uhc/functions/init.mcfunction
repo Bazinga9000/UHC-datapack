@@ -40,8 +40,8 @@ team modify spectator prefix {"text":"Spectator ","color":"aqua","italic":"true"
 function uhc:createteams 
 gamerule spawnRadius 0
 
-execute in uhc:lobby run setworldspawn 0 10 0
-execute as @a in uhc:lobby run spawnpoint @s 0 10 0
+execute in minecraft:overworld run setworldspawn 0 10 0
+execute as @a in minecraft:overworld run spawnpoint @s 0 10 0
 worldborder center 0.5 0.5
 bossbar add bossbar {"text":"World Border Begins Shrinking","color":"red"}
 bossbar set minecraft:bossbar color red
