@@ -7,4 +7,4 @@ execute as @e[type=armor_stand,scores={acheckpoint=1..}] if score @s acheckpoint
 tag @s remove level
 scoreboard players reset @s level
 
-execute if entity @a[tag=in_parkour,scores={level=1..}] as @r[tag=in_parkour,scores={level=1..}] run function:trigger_level.mcfunction
+execute if entity @a[tag=in_parkour,scores={level=1..}] as @r[tag=in_parkour,scores={level=1..}] run function uhc:parkour/trigger_level.mcfunction
