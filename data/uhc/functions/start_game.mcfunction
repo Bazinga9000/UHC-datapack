@@ -4,7 +4,6 @@ execute in minecraft:game_nether run function uhc:gamerules/game
 
 #> scoreboard init
 scoreboard players set @a deaths 0
-scoreboard players set max bossbar 72000
 scoreboard players set game_started settings 1
 scoreboard players set time timer 0
 
@@ -34,3 +33,5 @@ difficulty hard
 # allow everyone to see the boss bar
 bossbar set minecraft:bossbar visible false
 bossbar set minecraft:bossbar visible true
+scoreboard players operation max bossbar = border1 constants
+scoreboard players operation range bossbar = stillborder uhc.cfg

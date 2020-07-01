@@ -1,8 +1,8 @@
 tellraw @a [{"nbt":"box_name","storage":"uhc","interpret":"true"},{"text":"The World Border has resumed once more! It will shrink for ten minutes.","italic":true,"color":"red"}]
 worldborder set 5 600
 execute in minecraft:the_nether run worldborder set 5 600
-execute store result score max bossbar run scoreboard players get dmwarn constants
-execute store result score min bossbar run scoreboard players get border2 constants
+scoreboard players operation max bossbar = dmwarn constants
+scoreboard players operation range bossbar = border2 uhc.cfg
 bossbar set minecraft:bossbar name {"text":"Border Stops Shrinking... Again","color":"blue"}
 bossbar set minecraft:bossbar color blue
 
