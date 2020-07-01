@@ -32,7 +32,8 @@ function uhc:teams/create
 
 execute in minecraft:overworld run setworldspawn 0 10 0
 execute as @a in minecraft:overworld run spawnpoint @s 0 10 0
-worldborder center 0.5 0.5
+execute in minecraft:game worldborder center 0.5 0.5
+execute in minecraft:game_nether worldborder center 0.5 0.5
 bossbar add bossbar {"text":"World Border Begins Shrinking","color":"red"}
 bossbar set minecraft:bossbar color red
 execute store result score max bossbar run scoreboard players get border1 constants
