@@ -62,4 +62,4 @@ execute if score num_teams settings matches 61.. run team join team61 @r[team=]
 execute if score num_teams settings matches 62.. run team join team62 @r[team=]
 execute if score num_teams settings matches 63.. run team join team63 @r[team=]
 execute if score num_teams settings matches 64.. run team join team64 @r[team=]
-execute if entity @a[team=] run function uhc:team_randomizer
+execute if entity @a[team=] run function uhc:teams/randomize

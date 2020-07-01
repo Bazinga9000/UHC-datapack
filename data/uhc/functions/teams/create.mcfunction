@@ -127,4 +127,4 @@ team modify team61 friendlyFire false
 team modify team62 friendlyFire false
 team modify team63 friendlyFire false
 team modify team64 friendlyFire false
-function uhc:add_prefixes
+function uhc:teams/add_prefixes

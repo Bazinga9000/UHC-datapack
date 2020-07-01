@@ -1,8 +1,8 @@
 execute as @a run team leave @s
 execute as @a[tag=spectator] run team join spectator
-function uhc:team_randomizer
+function uhc:teams/randomize
 
-function uhc:remove_prefixes
+function uhc:teams/remove_prefixes
 execute if entity @a[team=spectator] run tellraw @a [{"text":"Spectators","color":"aqua"},{"text":": ","color":"gray"},{"selector":"@a[team=spectator]","color":"white"}]
 execute if entity @a[team=team1] run tellraw @a [{"text":"Team 1","color":"#c04040"},{"text":": ","color":"gray"},{"selector":"@a[team=team1]","color":"white"}]
 execute if entity @a[team=team2] run tellraw @a [{"text":"Team 2","color":"#4040c0"},{"text":": ","color":"gray"},{"selector":"@a[team=team2]","color":"white"}]
@@ -68,4 +68,4 @@ execute if entity @a[team=team61] run tellraw @a [{"text":"Team 61","color":"#96
 execute if entity @a[team=team62] run tellraw @a [{"text":"Team 62","color":"#c0c0c0"},{"text":": ","color":"gray"},{"selector":"@a[team=team62]","color":"white"}]
 execute if entity @a[team=team63] run tellraw @a [{"text":"Team 63","color":"#966b96"},{"text":": ","color":"gray"},{"selector":"@a[team=team63]","color":"white"}]
 execute if entity @a[team=team64] run tellraw @a [{"text":"Team 64","color":"#96966b"},{"text":": ","color":"gray"},{"selector":"@a[team=team64]","color":"white"}]
-function uhc:add_prefixes
+function uhc:teams/add_prefixes

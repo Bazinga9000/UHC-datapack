@@ -32,7 +32,7 @@ scoreboard players set dmwarn constants 108000
 scoreboard players set deathmatch constants 114000
 function uhc:constants
 
-function uhc:createteams 
+function uhc:teams/create 
 
 execute in minecraft:overworld run setworldspawn 0 10 0
 execute as @a in minecraft:overworld run spawnpoint @s 0 10 0
