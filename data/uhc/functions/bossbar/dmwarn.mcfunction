@@ -4,4 +4,4 @@ scoreboard players operation range bossbar = tilldm uhc.cfg
 bossbar set minecraft:bossbar name {"text":"The Battle at the Top of the World","color":"white"}
 bossbar set minecraft:bossbar color white
 
-scoreboard players set wbclr uhc.cfg 0
+scoreboard players set wbclr uhc.hud 0

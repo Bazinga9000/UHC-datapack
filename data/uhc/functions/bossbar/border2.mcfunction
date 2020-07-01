@@ -10,4 +10,4 @@ scoreboard players set worldborder_start_distance worldborder 25
 scoreboard players set worldborder_time worldborder 12000
 scoreboard players set worldborder_end_distance worldborder 3
 scoreboard players operation worldborder_start_time worldborder = time timer
-scoreboard players set wbclr uhc.cfg 1
+scoreboard players set wbclr uhc.hud 1

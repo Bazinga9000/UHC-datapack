@@ -10,7 +10,7 @@ effect give @a minecraft:jump_boost 10 128
 effect give @a minecraft:blindness 10 10
 scoreboard players set max bossbar 2147483647
 scoreboard players set range bossbar 2147483647
-scoreboard players set wbclr uhc.cfg -1
+scoreboard players set wbclr uhc.hud -1
 bossbar set minecraft:bossbar name {"text":"Heat Death of the Universe","color":"dark_purple"}
 bossbar set minecraft:bossbar color purple
 time set midnight

@@ -14,7 +14,6 @@ scoreboard objectives add saturation dummy
 scoreboard players set num_teams settings 4
 scoreboard players set min_teams settings 2
 scoreboard players set max_teams settings 64
-scoreboard players set num_players settings 0
 scoreboard players set game_started settings 0
 
 # deprecated scoreboards
