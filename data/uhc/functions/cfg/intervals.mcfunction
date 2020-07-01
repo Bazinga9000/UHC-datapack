@@ -29,52 +29,52 @@ clear @a[distance=..7, tag=!debugger] netherite_ingot{config: 1b}
 #> do stuff
 # do something based off slot
 execute unless score interval uhc.cfg.opt matches 0 run playsound minecraft:block.note_block.harp master @a ~ ~ ~ 1 2
-execute if score interval uhc.cfg.opt matches 1 run scoreboard players add stillborder settings 5
-execute if score interval uhc.cfg.opt matches 2 run scoreboard players add border1 settings 5
-execute if score interval uhc.cfg.opt matches 3 run scoreboard players add borderstop settings 5
-execute if score interval uhc.cfg.opt matches 4 run scoreboard players add border2 settings 5
-execute if score interval uhc.cfg.opt matches 5 run scoreboard players add tilldm settings 5
-execute if score interval uhc.cfg.opt matches 8 run scoreboard players remove stillborder settings 5
-execute if score interval uhc.cfg.opt matches 9 run scoreboard players remove border1 settings 5
-execute if score interval uhc.cfg.opt matches 10 run scoreboard players remove borderstop settings 5
-execute if score interval uhc.cfg.opt matches 11 run scoreboard players remove border2 settings 5
-execute if score interval uhc.cfg.opt matches 12 run scoreboard players remove tilldm settings 5
+execute if score interval uhc.cfg.opt matches 1 run scoreboard players add stillborder uhc.cfg 5
+execute if score interval uhc.cfg.opt matches 2 run scoreboard players add border1 uhc.cfg 5
+execute if score interval uhc.cfg.opt matches 3 run scoreboard players add borderstop uhc.cfg 5
+execute if score interval uhc.cfg.opt matches 4 run scoreboard players add border2 uhc.cfg 5
+execute if score interval uhc.cfg.opt matches 5 run scoreboard players add tilldm uhc.cfg 5
+execute if score interval uhc.cfg.opt matches 8 run scoreboard players remove stillborder uhc.cfg 5
+execute if score interval uhc.cfg.opt matches 9 run scoreboard players remove border1 uhc.cfg 5
+execute if score interval uhc.cfg.opt matches 10 run scoreboard players remove borderstop uhc.cfg 5
+execute if score interval uhc.cfg.opt matches 11 run scoreboard players remove border2 uhc.cfg 5
+execute if score interval uhc.cfg.opt matches 12 run scoreboard players remove tilldm uhc.cfg 5
 
-# execute if score interval uhc.cfg.opt matches 6 run scoreboard players set stillborder settings 
-# execute if score interval uhc.cfg.opt matches 6 run scoreboard players set border1 settings 
-# execute if score interval uhc.cfg.opt matches 6 run scoreboard players set borderstop settings 
-# execute if score interval uhc.cfg.opt matches 6 run scoreboard players set border2 settings 
-# execute if score interval uhc.cfg.opt matches 6 run scoreboard players set tilldm settings 
+# execute if score interval uhc.cfg.opt matches 6 run scoreboard players set stillborder uhc.cfg 
+# execute if score interval uhc.cfg.opt matches 6 run scoreboard players set border1 uhc.cfg 
+# execute if score interval uhc.cfg.opt matches 6 run scoreboard players set borderstop uhc.cfg 
+# execute if score interval uhc.cfg.opt matches 6 run scoreboard players set border2 uhc.cfg 
+# execute if score interval uhc.cfg.opt matches 6 run scoreboard players set tilldm uhc.cfg 
 execute if score interval uhc.cfg.opt matches 6 run tellraw @a[distance=..7, tag=!debugger] "Speedy preset not configured."
-execute if score interval uhc.cfg.opt matches 7 run scoreboard players set stillborder settings 60
-execute if score interval uhc.cfg.opt matches 7 run scoreboard players set border1 settings 15
-execute if score interval uhc.cfg.opt matches 7 run scoreboard players set borderstop settings 5
-execute if score interval uhc.cfg.opt matches 7 run scoreboard players set border2 settings 10
-execute if score interval uhc.cfg.opt matches 7 run scoreboard players set tilldm settings 5
+execute if score interval uhc.cfg.opt matches 7 run scoreboard players set stillborder uhc.cfg 60
+execute if score interval uhc.cfg.opt matches 7 run scoreboard players set border1 uhc.cfg 15
+execute if score interval uhc.cfg.opt matches 7 run scoreboard players set borderstop uhc.cfg 5
+execute if score interval uhc.cfg.opt matches 7 run scoreboard players set border2 uhc.cfg 10
+execute if score interval uhc.cfg.opt matches 7 run scoreboard players set tilldm uhc.cfg 5
 
 # clamp
-scoreboard players operation stillborder settings > 0 constants
-scoreboard players operation stillborder settings < 60 constants
-scoreboard players operation border1 settings > 0 constants
-scoreboard players operation border1 settings < 60 constants
-scoreboard players operation borderstop settings > 0 constants
-scoreboard players operation borderstop settings < 60 constants
-scoreboard players operation border2 settings > 0 constants
-scoreboard players operation border2 settings < 60 constants
-scoreboard players operation tilldm settings > 0 constants
-scoreboard players operation tilldm settings < 60 constants
+scoreboard players operation stillborder uhc.cfg > 0 constants
+scoreboard players operation stillborder uhc.cfg < 60 constants
+scoreboard players operation border1 uhc.cfg > 0 constants
+scoreboard players operation border1 uhc.cfg < 60 constants
+scoreboard players operation borderstop uhc.cfg > 0 constants
+scoreboard players operation borderstop uhc.cfg < 60 constants
+scoreboard players operation border2 uhc.cfg > 0 constants
+scoreboard players operation border2 uhc.cfg < 60 constants
+scoreboard players operation tilldm uhc.cfg > 0 constants
+scoreboard players operation tilldm uhc.cfg < 60 constants
 
 # create cumulative tick scores in constants
-scoreboard players operation interval.cumu uhc.cfg.opt = stillborder settings
+scoreboard players operation interval.cumu uhc.cfg.opt = stillborder uhc.cfg
 scoreboard players operation border1 constants = interval.cumu uhc.cfg.opt
-scoreboard players operation interval.cumu uhc.cfg.opt += border1 settings
+scoreboard players operation interval.cumu uhc.cfg.opt += border1 uhc.cfg
 scoreboard players operation borderstop constants = interval.cumu uhc.cfg.opt
-scoreboard players operation interval.cumu uhc.cfg.opt += borderstop settings
+scoreboard players operation interval.cumu uhc.cfg.opt += borderstop uhc.cfg
 scoreboard players operation border2 constants = interval.cumu uhc.cfg.opt
-scoreboard players operation interval.cumu uhc.cfg.opt += border2 settings
+scoreboard players operation interval.cumu uhc.cfg.opt += border2 uhc.cfg
 scoreboard players operation dmwarn constants = interval.cumu uhc.cfg.opt
-scoreboard players operation interval.cumu uhc.cfg.opt += tilldm settings
-scoreboard players operation deathmatch constants = interval.cumu cfg
+scoreboard players operation interval.cumu uhc.cfg.opt += tilldm uhc.cfg
+scoreboard players operation deathmatch constants = interval.cumu uhc.cfg.opt
 
 scoreboard players operation border1 constants *= 1200 constants
 scoreboard players operation borderstop constants *= 1200 constants
@@ -90,10 +90,10 @@ scoreboard players operation warn2 constants -= 18000 constants
 scoreboard players operation warn3 constants -= 6000 constants
 #> fix gui
 data modify block ~ ~ ~ Items set from block 45 7 11 Items
-execute store result block ~ ~ ~ Items[{Slot: 9b}].Count byte 1 run scoreboard players get stillborder settings
-execute store result block ~ ~ ~ Items[{Slot: 10b}].Count byte 1 run scoreboard players get border1 settings
-execute store result block ~ ~ ~ Items[{Slot: 11b}].Count byte 1 run scoreboard players get borderstop settings
-execute store result block ~ ~ ~ Items[{Slot: 12b}].Count byte 1 run scoreboard players get border2 settings
-execute store result block ~ ~ ~ Items[{Slot: 13b}].Count byte 1 run scoreboard players get tilldm settings
+execute store result block ~ ~ ~ Items[{Slot: 9b}].Count byte 1 run scoreboard players get stillborder uhc.cfg
+execute store result block ~ ~ ~ Items[{Slot: 10b}].Count byte 1 run scoreboard players get border1 uhc.cfg
+execute store result block ~ ~ ~ Items[{Slot: 11b}].Count byte 1 run scoreboard players get borderstop uhc.cfg
+execute store result block ~ ~ ~ Items[{Slot: 12b}].Count byte 1 run scoreboard players get border2 uhc.cfg
+execute store result block ~ ~ ~ Items[{Slot: 13b}].Count byte 1 run scoreboard players get tilldm uhc.cfg
 scoreboard players set interval uhc.cfg.opt 0
 scoreboard players set interval.cumu uhc.cfg.opt 0

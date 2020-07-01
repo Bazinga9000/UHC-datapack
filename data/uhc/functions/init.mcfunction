@@ -6,6 +6,7 @@ scoreboard objectives setdisplay belowName health
 scoreboard objectives add constants dummy
 scoreboard objectives add bossbar dummy
 scoreboard objectives add settings dummy
+scoreboard objectives add uhc.cfg dummy Config
 scoreboard objectives add uhc.cfg.opt dummy
 scoreboard objectives add worldborder dummy
 scoreboard objectives add deaths deathCount
