@@ -1,6 +1,6 @@
 tellraw @a [{"nbt":"box_name","storage":"uhc","interpret":"true"},{"text":"The worldborder is now stopped. It will resume in five minutes.","italic":true,"color":"aqua"}]
-execute store result score max bossbar run scoreboard players get border2 constants
-execute store result score min bossbar run scoreboard players get borderstop constants
+scoreboard players operation max bossbar = border2 constants
+scoreboard players operation range bossbar = borderstop uhc.cfg
 bossbar set minecraft:bossbar name {"text":"World Border Begins Shrinking... Again.","color":"red"}
 bossbar set minecraft:bossbar color red
 time set day

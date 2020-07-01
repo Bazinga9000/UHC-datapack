@@ -17,7 +17,7 @@ scoreboard players set max_teams settings 64
 scoreboard players set game_started settings 0
 
 # deprecated scoreboards
-# cfg, spawned, worldborder, settings(eventually)
+# cfg, spawned, worldborder, settings(eventually), constants(eventually)
 #> constants init
 scoreboard players set warn1 constants 36000
 scoreboard players set warn2 constants 54000
