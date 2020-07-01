@@ -29,7 +29,7 @@ execute in minecraft:game run worldborder set 1200
 execute in minecraft:game_nether run worldborder set 1200
 time set day
 weather clear 9999
-# purge entities
+# purge aggro mobs
 difficulty peaceful
 difficulty hard
 # allow everyone to see the boss bar
