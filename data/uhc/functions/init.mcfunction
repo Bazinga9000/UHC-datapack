@@ -2,13 +2,22 @@
 scoreboard objectives add uhc.health health {"text":"♥","color":"red"}
 scoreboard objectives setdisplay list uhc.health
 scoreboard objectives setdisplay belowName uhc.health
-scoreboard objectives add constants dummy
-scoreboard objectives add uhc.bossbar dummy
-scoreboard objectives add settings dummy
-scoreboard objectives add uhc.cfg dummy Config
-scoreboard objectives add uhc.cfg.opt dummy
+
 scoreboard objectives add uhc.deaths deathCount
+scoreboard objectives add constants dummy
+scoreboard objectives add settings dummy
+
+# stores bossbar variables: range, max, progress, time
+scoreboard objectives add uhc.bossbar dummy
+# used for config for the game, functions should NOT change uhc.cfg in game
+scoreboard objectives add uhc.cfg dummy
+# used for marking the option a configurator picks in the cfg box
+scoreboard objectives add uhc.cfg.opt dummy
+# used for internal vars that don't fit other scoreboards
+scoreboard objectives add uhc.internal dummy
+# records users' saturations in the lobby to force their saturation to 5
 scoreboard objectives add uhc.saturation dummy
+
 
 scoreboard players set num_teams uhc.cfg 4
 scoreboard players set min_teams uhc.cfg 2
