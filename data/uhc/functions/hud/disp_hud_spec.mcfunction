@@ -22,13 +22,13 @@ execute if score xyzlen uhc.hud matches 20 run data modify storage minecraft:uhc
 execute if score xyzlen uhc.hud matches 21 run data modify storage minecraft:uhc.hud displist append value '[{"score":{"name":"x","objective":"uhc.hud"},"font":"uhc:hud1"},{"text":" "},{"score":{"name":"y","objective":"uhc.hud"}},{"text":" "},{"score":{"name":"z","objective":"uhc.hud"}},{"text":"\\uf809\\uf807\\uf807\\uf807\\uf807\\uf807\\uf807\\uf807\\uf807\\uf807\\uf807\\uf807\\uf807\\uf807\\uf807\\uf807\\uf807\\uf807\\uf803"}]'
 #dir disp
 execute if score ry uhc.hud matches 0 run data modify storage minecraft:uhc.hud displist append value '[{"text":"-X ","font":"uhc:hud0","color":"red"},{"text":"+Z\\uf809\\uf821","color":"#6f6fff"}]'
-execute if score ry uhc.hud matches 1 run data modify storage minecraft:uhc.hud displist append value '[{"text":"\\uf824\\uf824\\uf822","font":"uhc:hud0"},{"text":"-X\\uf807\\uf806","color":"red"}]'
+execute if score ry uhc.hud matches 1 run data modify storage minecraft:uhc.hud displist append value '[{"text":"\\uf824\\uf824\\uf822","font":"uhc:hud0"},{"text":"-X\\uf807\\uf807","color":"red"}]'
 execute if score ry uhc.hud matches 2 run data modify storage minecraft:uhc.hud displist append value '[{"text":"-X ","font":"uhc:hud0","color":"red"},{"text":"-Z\\uf809\\uf821","color":"#6f6fff"}]'
-execute if score ry uhc.hud matches 3 run data modify storage minecraft:uhc.hud displist append value '[{"text":"\\uf824\\uf824\\uf822","font":"uhc:hud0"},{"text":"-Z\\uf807\\uf806","color":"#6f6fff"}]'
+execute if score ry uhc.hud matches 3 run data modify storage minecraft:uhc.hud displist append value '[{"text":"\\uf824\\uf824\\uf822","font":"uhc:hud0"},{"text":"-Z\\uf807\\uf807","color":"#6f6fff"}]'
 execute if score ry uhc.hud matches 4 run data modify storage minecraft:uhc.hud displist append value '[{"text":"+X ","font":"uhc:hud0","color":"red"},{"text":"-Z\\uf809\\uf821","color":"#6f6fff"}]'
-execute if score ry uhc.hud matches 5 run data modify storage minecraft:uhc.hud displist append value '[{"text":"\\uf824\\uf824\\uf822","font":"uhc:hud0"},{"text":"+X\\uf807\\uf806","color":"red"}]'
+execute if score ry uhc.hud matches 5 run data modify storage minecraft:uhc.hud displist append value '[{"text":"\\uf824\\uf824\\uf822","font":"uhc:hud0"},{"text":"+X\\uf807\\uf807","color":"red"}]'
 execute if score ry uhc.hud matches 6 run data modify storage minecraft:uhc.hud displist append value '[{"text":"+X ","font":"uhc:hud0","color":"red"},{"text":"+Z\\uf809\\uf821","color":"#6f6fff"}]'
-execute if score ry uhc.hud matches 7 run data modify storage minecraft:uhc.hud displist append value '[{"text":"\\uf824\\uf824\\uf822","font":"uhc:hud0"},{"text":"+Z\\uf807\\uf806","color":"#6f6fff"}]'
+execute if score ry uhc.hud matches 7 run data modify storage minecraft:uhc.hud displist append value '[{"text":"\\uf824\\uf824\\uf822","font":"uhc:hud0"},{"text":"+Z\\uf807\\uf807","color":"#6f6fff"}]'
 #worldborder disp
 # -1 = does not display
 #  0 = displays blue
