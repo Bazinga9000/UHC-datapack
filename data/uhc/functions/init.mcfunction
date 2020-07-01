@@ -1,14 +1,13 @@
 #> scoreboard inits
-scoreboard objectives add health health {"text":"♥","color":"red"}
-scoreboard objectives setdisplay list health
-scoreboard objectives setdisplay belowName health
+scoreboard objectives add uhc.health health {"text":"♥","color":"red"}
+scoreboard objectives setdisplay list uhc.health
+scoreboard objectives setdisplay belowName uhc.health
 scoreboard objectives add constants dummy
 scoreboard objectives add uhc.bossbar dummy
 scoreboard objectives add settings dummy
 scoreboard objectives add uhc.cfg dummy Config
 scoreboard objectives add uhc.cfg.opt dummy
-scoreboard objectives add deaths deathCount
-scoreboard objectives add timer dummy
+scoreboard objectives add uhc.deaths deathCount
 scoreboard objectives add uhc.saturation dummy
 
 scoreboard players set num_teams settings 4
@@ -17,7 +16,7 @@ scoreboard players set max_teams settings 64
 scoreboard players set game_started settings 0
 
 # deprecated scoreboards
-# cfg, spawned, worldborder, bossbar, saturation, settings(eventually), constants(eventually)
+# cfg, spawned, worldborder, bossbar, saturation, health, deaths, timer, settings(eventually), constants(eventually)
 #> constants init
 scoreboard players set warn1 constants 36000
 scoreboard players set warn2 constants 54000
