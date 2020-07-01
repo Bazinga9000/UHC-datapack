@@ -24,7 +24,9 @@ advancement revoke @a everything
 
 gamemode spectator @a[team=spectator]
 gamemode survival @a[gamemode=!spectator]
-tellraw @a ["",{"text":"<"},{"text":"|||||","bold":true,"italic":true,"obfuscated":true,"color":"gold"},{"text":"The Box","bold":true,"italic":true,"color":"gold"},{"text":"|||||","bold":true,"italic":true,"obfuscated":true,"color":"gold"},{"text":"> "},{"text":"Let the games begin! Our players have been shuffled across the world!","bold":true,"italic":true,"underlined":true,"color":"green"}]
+
+data modify storage uhc box_name '[{\"text\":\"<\"},{\"text\":\"|||||\",\"bold\":true,\"italic\":true,\"obfuscated\":true,\"color\":\"gold\"},{\"text\":\"The Box\",\"bold\":true,\"italic\":true,\"color\":\"gold\"},{\"text\":\"|||||\",\"bold\":true,\"italic\":true,\"obfuscated\":true,\"color\":\"gold\"},{\"text\":\"> \"}]'
+tellraw @a [{"nbt":"box_name","storage":"uhc","interpret":"true"},{"text":"Let the games begin! Our players have been shuffled across the world!","bold":true,"italic":true,"underlined":true,"color":"green"}]
 
 #> world stuff
 worldborder warning distance 25
