@@ -3,7 +3,7 @@ scoreboard objectives add health health {"text":"♥","color":"red"}
 scoreboard objectives setdisplay list health
 scoreboard objectives setdisplay belowName health
 scoreboard objectives add constants dummy
-scoreboard objectives add bossbar dummy
+scoreboard objectives add uhc.bossbar dummy
 scoreboard objectives add settings dummy
 scoreboard objectives add uhc.cfg dummy Config
 scoreboard objectives add uhc.cfg.opt dummy
@@ -36,7 +36,7 @@ execute in minecraft:game run worldborder center 0.5 0.5
 execute in minecraft:game_nether run worldborder center 0.5 0.5
 bossbar add bossbar {"text":"World Border Begins Shrinking","color":"red"}
 bossbar set minecraft:bossbar color red
-execute store result score max bossbar run scoreboard players get border1 constants
+execute store result score max uhc.bossbar run scoreboard players get border1 constants
 bossbar set minecraft:bossbar players @a
 bossbar set minecraft:bossbar visible false
 bossbar set minecraft:bossbar name {"text":"World Border Begins Shrinking","color":"red"}
