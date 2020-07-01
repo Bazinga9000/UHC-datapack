@@ -12,7 +12,6 @@ scoreboard objectives add timer dummy
 scoreboard objectives add saturation dummy
 
 scoreboard players set num_teams settings 4
-scoreboard players set display_worldborder_distance settings 0
 scoreboard players set min_teams settings 2
 scoreboard players set max_teams settings 64
 scoreboard players set num_players settings 0
@@ -30,7 +29,6 @@ scoreboard players set border2 constants 96000
 scoreboard players set dmwarn constants 108000
 scoreboard players set deathmatch constants 114000
 function uhc:init_constants
-
 function uhc:teams/create 
 
 execute in minecraft:overworld run setworldspawn 0 10 0
