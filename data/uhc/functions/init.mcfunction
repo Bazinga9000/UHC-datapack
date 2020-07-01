@@ -35,8 +35,6 @@ scoreboard players set dmwarn constants 108000
 scoreboard players set deathmatch constants 114000
 function uhc:constants
 
-team add spectator
-team modify spectator prefix {"text":"Spectator ","color":"aqua","italic":"true"}
 function uhc:createteams 
 gamerule spawnRadius 0
 

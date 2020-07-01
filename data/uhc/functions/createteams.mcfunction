@@ -1,3 +1,4 @@
+team add spectator
 team add team1
 team add team2
 team add team3
