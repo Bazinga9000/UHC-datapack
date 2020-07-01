@@ -5,7 +5,6 @@ scoreboard objectives setdisplay belowName uhc.health
 
 scoreboard objectives add uhc.deaths deathCount
 scoreboard objectives add constants dummy
-scoreboard objectives add settings dummy
 
 # stores bossbar variables: range, max, progress, time
 scoreboard objectives add uhc.bossbar dummy
@@ -22,10 +21,10 @@ scoreboard objectives add uhc.saturation dummy
 scoreboard players set num_teams uhc.cfg 4
 scoreboard players set min_teams uhc.cfg 2
 scoreboard players set max_teams uhc.cfg 64
-scoreboard players set game_started settings 0
+scoreboard players set game_started uhc.internal 0
 
 # deprecated scoreboards
-# cfg, spawned, worldborder, bossbar, saturation, health, deaths, timer, settings(eventually), constants(eventually)
+# cfg, spawned, worldborder, bossbar, saturation, health, deaths, timer, settings, constants(eventually)
 #> constants init
 scoreboard players set warn1 constants 36000
 scoreboard players set warn2 constants 54000
