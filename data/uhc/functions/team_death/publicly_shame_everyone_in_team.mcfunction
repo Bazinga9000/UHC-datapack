@@ -1,6 +1,6 @@
 data modify storage uhc deathmsg set value [{"text":" have all been eliminated!","color":"white"}]
 # pop first of uhc dead_teams and read
-execute store current_dt uhc.internal run data get storage uhc dead_teams[0]
+execute store result score current_dt uhc.internal run data get storage uhc dead_teams[0]
 data remove storage uhc dead_teams[0]
 
 execute if score current_dt uhc.internal matches 1 run data modify storage uhc deathmsg prepend from storage uhc team_names[1]
@@ -72,4 +72,5 @@ tellraw @a [{"nbt":"deathmsg[0]","storage":"uhc","interpret":"true"},{"nbt":"dea
 # check if list is empty
 data modify storage uhc empty_check set value []
 execute store success score no_dts uhc.internal run data modify storage uhc empty_check set from storage uhc dead_teams
+execute unless data storage uhc dead_teams run scoreboard players set no_dts 1
 execute if score no_dts uhc.internal matches 0 run function uhc:team_death/publicly_shame_everyone_in_team
