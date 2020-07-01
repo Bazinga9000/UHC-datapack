@@ -6,9 +6,9 @@ execute if score time timer = warn2 constants run tellraw @a [{"nbt":"box_name",
 execute if score time timer = warn3 constants run tellraw @a [{"nbt":"box_name","storage":"uhc","interpret":"true"},{"text":"The World Border will begin shrinking in five minutes!","bold":true,"italic":true,"color":"dark_red"}]
 execute as @a run function uhc:hud/update
 
-execute if score time timer = border1 constants run function uhc:border1
-execute if score time timer = borderstop constants run function uhc:borderstop
-execute if score time timer = border2 constants run function uhc:border2
-execute if score time timer = dmwarn constants run function uhc:dmwarn
-execute if score time timer = deathmatch constants run function uhc:deathmatch
-function uhc:bossbar
+execute if score time timer = border1 constants run function uhc:bossbar/border1
+execute if score time timer = borderstop constants run function uhc:bossbar/borderstop
+execute if score time timer = border2 constants run function uhc:bossbar/border2
+execute if score time timer = dmwarn constants run function uhc:bossbar/dmwarn
+execute if score time timer = deathmatch constants run function uhc:bossbar/deathmatch
+function uhc:bossbar/update
