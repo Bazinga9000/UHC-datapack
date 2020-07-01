@@ -16,6 +16,8 @@ scoreboard objectives add uhc.cfg.opt dummy
 scoreboard objectives add uhc.internal dummy
 # records users' saturations in the lobby to force their saturation to 5
 scoreboard objectives add uhc.saturation dummy
+# records amount of alive players in a team, to figure out if all players are dead
+scoreboard objectives add uhc.team_alive dummy
 
 
 scoreboard players set num_teams uhc.cfg 4

@@ -1,2 +1,2 @@
-# have just for the convenience
 team leave @a
+scoreboard players reset * uhc.team_alive
