@@ -38,7 +38,6 @@ scoreboard players set deathmatch constants 114000
 function uhc:constants
 
 function uhc:createteams 
-gamerule spawnRadius 0
 
 execute in minecraft:overworld run setworldspawn 0 10 0
 execute as @a in minecraft:overworld run spawnpoint @s 0 10 0
@@ -49,3 +48,8 @@ execute store result score max bossbar run scoreboard players get border1 consta
 bossbar set minecraft:bossbar players @a
 bossbar set minecraft:bossbar visible false
 bossbar set minecraft:bossbar name {"text":"World Border Begins Shrinking","color":"red"}
+
+#> gamerule inits
+execute in minecraft:overworld run function uhc:gamerules/lobby
+execute in minecraft:game run function uhc:gamerules/game
+execute in minecraft:game_nether run function uhc:gamerules/game

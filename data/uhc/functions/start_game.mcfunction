@@ -1,11 +1,6 @@
-#> gamerules
-gamerule naturalRegeneration false
-gamerule doDaylightCycle true
-# execute in the_nether run gamerule naturalRegeneration false
-# execute in the_end run gamerule naturalRegeneration false
-gamerule announceAdvancements true
-gamerule doInsomnia false
-gamerule keepInventory false
+#> gamerule init
+execute in minecraft:game run function uhc:gamerules/game
+execute in minecraft:game_nether run function uhc:gamerules/game
 
 #> scoreboard init
 scoreboard players set @a deaths 0
