@@ -7,7 +7,7 @@ gamerule announceAdvancements true
 gamerule doInsomnia false
 gamerule keepInventory false
 
-#> scoreboard (which probably should actually go into uhc:init and also some of these are already declared in init so :thinkk:)
+#> scoreboard init
 scoreboard players set @a deaths 0
 scoreboard players set max bossbar 72000
 scoreboard players set game_started settings 1
@@ -31,9 +31,11 @@ tellraw @a [{"nbt":"box_name","storage":"uhc","interpret":"true"},{"text":"Let t
 #> world stuff
 worldborder warning distance 25
 worldborder set 1200
-difficulty peaceful
-difficulty hard
 time set day
 weather clear 9999
+# purge entities
+difficulty peaceful
+difficulty hard
+# allow everyone to see the boss bar
 bossbar set minecraft:bossbar visible false
 bossbar set minecraft:bossbar visible true

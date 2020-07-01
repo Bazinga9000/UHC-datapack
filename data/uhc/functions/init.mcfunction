@@ -6,7 +6,7 @@ scoreboard objectives setdisplay belowName health
 scoreboard objectives add constants dummy
 scoreboard objectives add bossbar dummy
 scoreboard objectives add settings dummy
-scoreboard objectives add cfg dummy
+scoreboard objectives add uhc.cfg.opt dummy
 scoreboard objectives add worldborder dummy
 scoreboard objectives add deaths deathCount
 scoreboard objectives add timer dummy
@@ -24,6 +24,8 @@ scoreboard players set worldborder_time worldborder 900
 scoreboard players set worldborder_end_distance worldborder 25
 scoreboard players set worldborder_start_time worldborder 0
 
+# deprecated scoreboards
+# cfg
 #> constants init
 scoreboard players set warn1 constants 36000
 scoreboard players set warn2 constants 54000
