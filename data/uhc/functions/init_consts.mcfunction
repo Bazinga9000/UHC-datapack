@@ -64,7 +64,9 @@ scoreboard players set 61 constants 61
 scoreboard players set 62 constants 62
 scoreboard players set 63 constants 63
 scoreboard players set 64 constants 64
+scoreboard players set 450 constants 450
 scoreboard players set 1200 constants 1200
+scoreboard players set 3600 constants 3600
 scoreboard players set 6000 constants 6000
 scoreboard players set 18000 constants 18000
 scoreboard players set 36000 constants 36000
