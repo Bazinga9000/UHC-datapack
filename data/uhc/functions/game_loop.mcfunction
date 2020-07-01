@@ -1,4 +1,10 @@
-gamemode spectator @a[scores={deaths=1..}]
+# dead users or users spawning in lobby should be put in spectator (if not debugger)
+tag @a[nbt={Dimension: "minecraft:overworld"}, tag=!debugger] add give_spec
+gamemode spectator @a[tag=give_spec]
+execute as @a[tag=give_spec] run tp @s @r[gamemode=survival]
+tag @a remove give_spec
+gamemode spectator @a[scores={deaths=1..}, tag=!debugger]
+
 execute as @a[scores={deaths=0}] run spawnpoint
 scoreboard players add time timer 1
 execute if score time timer = warn1 constants run tellraw @a [{"nbt":"box_name","storage":"uhc","interpret":"true"},{"text":"The World Border will begin shrinking in thirty minutes!","bold":true,"italic":true,"color":"yellow"}]

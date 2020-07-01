@@ -1,5 +1,4 @@
 #> scoreboard inits
-scoreboard objectives add spawned dummy
 scoreboard objectives add health health {"text":"♥","color":"red"}
 scoreboard objectives setdisplay list health
 scoreboard objectives setdisplay belowName health
