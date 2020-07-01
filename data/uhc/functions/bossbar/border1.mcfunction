@@ -6,7 +6,6 @@ scoreboard players operation range bossbar = border1 uhc.cfg
 bossbar set minecraft:bossbar name {"text":"Border Stops Shrinking","color":"blue"}
 bossbar set minecraft:bossbar color blue
 
-
 scoreboard players set worldborder_start_distance worldborder 1200
 scoreboard players set worldborder_time worldborder 18000
 scoreboard players set worldborder_end_distance worldborder 25
