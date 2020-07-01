@@ -30,7 +30,7 @@ scoreboard players set borderstop constants 90000
 scoreboard players set border2 constants 96000
 scoreboard players set dmwarn constants 108000
 scoreboard players set deathmatch constants 114000
-function uhc:constants
+function uhc:init_constants
 
 function uhc:teams/create 
 
