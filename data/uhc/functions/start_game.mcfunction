@@ -25,7 +25,8 @@ tellraw @a [{"nbt":"box_name","storage":"uhc","interpret":"true"},{"text":"Let t
 
 #> world stuff
 worldborder warning distance 25
-worldborder set 1200
+execute in minecraft:game run worldborder set 1200
+execute in minecraft:game_nether run worldborder set 1200
 time set day
 weather clear 9999
 # purge entities
