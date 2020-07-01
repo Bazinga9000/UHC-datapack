@@ -8,7 +8,7 @@ scoreboard objectives add constants dummy
 
 # stores bossbar variables: range, max, progress, time
 scoreboard objectives add uhc.bossbar dummy
-# used for config for the game, functions should NOT change uhc.cfg in game
+# used for config for the game, should be controllable within the cfg box and functions should NOT change uhc.cfg in game
 scoreboard objectives add uhc.cfg dummy
 # used for marking the option a configurator picks in the cfg box
 scoreboard objectives add uhc.cfg.opt dummy
