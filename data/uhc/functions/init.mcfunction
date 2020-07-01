@@ -9,7 +9,7 @@ scoreboard objectives add uhc.cfg dummy Config
 scoreboard objectives add uhc.cfg.opt dummy
 scoreboard objectives add deaths deathCount
 scoreboard objectives add timer dummy
-scoreboard objectives add saturation dummy
+scoreboard objectives add uhc.saturation dummy
 
 scoreboard players set num_teams settings 4
 scoreboard players set min_teams settings 2
@@ -17,7 +17,7 @@ scoreboard players set max_teams settings 64
 scoreboard players set game_started settings 0
 
 # deprecated scoreboards
-# cfg, spawned, worldborder, settings(eventually), constants(eventually)
+# cfg, spawned, worldborder, bossbar, saturation, settings(eventually), constants(eventually)
 #> constants init
 scoreboard players set warn1 constants 36000
 scoreboard players set warn2 constants 54000
