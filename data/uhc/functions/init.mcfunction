@@ -24,7 +24,7 @@ scoreboard players set max_teams uhc.cfg 64
 scoreboard players set game_started uhc.internal 0
 
 # deprecated scoreboards
-# cfg, spawned, worldborder, bossbar, saturation, health, deaths, timer, settings, constants(eventually)
+# cfg, spawned, worldborder, bossbar, saturation, health, deaths, timer, settings
 #> constants init
 scoreboard players set warn1 uhc.internal 36000
 scoreboard players set warn2 uhc.internal 54000
