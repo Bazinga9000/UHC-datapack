@@ -8,7 +8,6 @@ scoreboard objectives add bossbar dummy
 scoreboard objectives add settings dummy
 scoreboard objectives add uhc.cfg dummy Config
 scoreboard objectives add uhc.cfg.opt dummy
-scoreboard objectives add worldborder dummy
 scoreboard objectives add deaths deathCount
 scoreboard objectives add timer dummy
 scoreboard objectives add saturation dummy
@@ -19,11 +18,6 @@ scoreboard players set min_teams settings 2
 scoreboard players set max_teams settings 64
 scoreboard players set num_players settings 0
 scoreboard players set game_started settings 0
-
-scoreboard players set worldborder_start_distance worldborder 1200
-scoreboard players set worldborder_time worldborder 900
-scoreboard players set worldborder_end_distance worldborder 25
-scoreboard players set worldborder_start_time worldborder 0
 
 # deprecated scoreboards
 # cfg
