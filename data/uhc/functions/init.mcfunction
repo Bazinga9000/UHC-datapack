@@ -26,14 +26,14 @@ scoreboard players set game_started uhc.internal 0
 # deprecated scoreboards
 # cfg, spawned, worldborder, bossbar, saturation, health, deaths, timer, settings, constants(eventually)
 #> constants init
-scoreboard players set warn1 constants 36000
-scoreboard players set warn2 constants 54000
-scoreboard players set warn3 constants 66000
-scoreboard players set border1 constants 72000
-scoreboard players set borderstop constants 90000
-scoreboard players set border2 constants 96000
-scoreboard players set dmwarn constants 108000
-scoreboard players set deathmatch constants 114000
+scoreboard players set warn1 uhc.internal 36000
+scoreboard players set warn2 uhc.internal 54000
+scoreboard players set warn3 uhc.internal 66000
+scoreboard players set border1 uhc.internal 72000
+scoreboard players set borderstop uhc.internal 90000
+scoreboard players set border2 uhc.internal 96000
+scoreboard players set dmwarn uhc.internal 108000
+scoreboard players set deathmatch uhc.internal 114000
 function uhc:init_constants
 function uhc:teams/create 
 
@@ -43,7 +43,7 @@ execute in minecraft:game run worldborder center 0.5 0.5
 execute in minecraft:game_nether run worldborder center 0.5 0.5
 bossbar add bossbar {"text":"World Border Begins Shrinking","color":"red"}
 bossbar set minecraft:bossbar color red
-execute store result score max uhc.bossbar run scoreboard players get border1 constants
+execute store result score max uhc.bossbar run scoreboard players get border1 uhc.internal
 bossbar set minecraft:bossbar players @a
 bossbar set minecraft:bossbar visible false
 bossbar set minecraft:bossbar name {"text":"World Border Begins Shrinking","color":"red"}

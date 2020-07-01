@@ -66,28 +66,28 @@ scoreboard players operation tilldm uhc.cfg < 60 constants
 
 # create cumulative tick scores in constants
 scoreboard players operation interval.cumu uhc.cfg.opt = stillborder uhc.cfg
-scoreboard players operation border1 constants = interval.cumu uhc.cfg.opt
+scoreboard players operation border1 uhc.internal = interval.cumu uhc.cfg.opt
 scoreboard players operation interval.cumu uhc.cfg.opt += border1 uhc.cfg
-scoreboard players operation borderstop constants = interval.cumu uhc.cfg.opt
+scoreboard players operation borderstop uhc.internal = interval.cumu uhc.cfg.opt
 scoreboard players operation interval.cumu uhc.cfg.opt += borderstop uhc.cfg
-scoreboard players operation border2 constants = interval.cumu uhc.cfg.opt
+scoreboard players operation border2 uhc.internal = interval.cumu uhc.cfg.opt
 scoreboard players operation interval.cumu uhc.cfg.opt += border2 uhc.cfg
-scoreboard players operation dmwarn constants = interval.cumu uhc.cfg.opt
+scoreboard players operation dmwarn uhc.internal = interval.cumu uhc.cfg.opt
 scoreboard players operation interval.cumu uhc.cfg.opt += tilldm uhc.cfg
-scoreboard players operation deathmatch constants = interval.cumu uhc.cfg.opt
+scoreboard players operation deathmatch uhc.internal = interval.cumu uhc.cfg.opt
 
-scoreboard players operation border1 constants *= 1200 constants
-scoreboard players operation borderstop constants *= 1200 constants
-scoreboard players operation border2 constants *= 1200 constants
-scoreboard players operation dmwarn constants *= 1200 constants
-scoreboard players operation deathmatch constants *= 1200 constants
+scoreboard players operation border1 uhc.internal *= 1200 constants
+scoreboard players operation borderstop uhc.internal *= 1200 constants
+scoreboard players operation border2 uhc.internal *= 1200 constants
+scoreboard players operation dmwarn uhc.internal *= 1200 constants
+scoreboard players operation deathmatch uhc.internal *= 1200 constants
 
-scoreboard players operation warn1 constants = border1 constants
-scoreboard players operation warn2 constants = border1 constants
-scoreboard players operation warn3 constants = border1 constants
-scoreboard players operation warn1 constants -= 36000 constants
-scoreboard players operation warn2 constants -= 18000 constants
-scoreboard players operation warn3 constants -= 6000 constants
+scoreboard players operation warn1 uhc.internal = border1 uhc.internal
+scoreboard players operation warn2 uhc.internal = border1 uhc.internal
+scoreboard players operation warn3 uhc.internal = border1 uhc.internal
+scoreboard players operation warn1 uhc.internal -= 36000 constants
+scoreboard players operation warn2 uhc.internal -= 18000 constants
+scoreboard players operation warn3 uhc.internal -= 6000 constants
 #> fix gui
 data modify block ~ ~ ~ Items set from block 45 7 11 Items
 execute store result block ~ ~ ~ Items[{Slot: 9b}].Count byte 1 run scoreboard players get stillborder uhc.cfg
