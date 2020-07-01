@@ -67,5 +67,5 @@ execute if score tmp uhc.hud matches 21.. run scoreboard players set rightlen uh
 
 #> store text
 data modify storage uhc.hud displist set value []
-execute unless @s[gamemode=spectator] run function uhc:hud/disp_hud
-execute if @s[gamemode=spectator] run function uhc:hud/disp_hud_spec
+execute unless entity @s[gamemode=spectator] run function uhc:hud/disp_hud
+execute if entity @s[gamemode=spectator] run function uhc:hud/disp_hud_spec
