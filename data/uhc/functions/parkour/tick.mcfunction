@@ -5,4 +5,4 @@ scoreboard players enable @a[tag=in_parkour] level
 scoreboard players enable @a[tag=in_parkour] reset
 scoreboard players enable @a[tag=in_parkour] last
 
-execute as @a[tag=in_parkour] at @s if entity @e[distance=..1.5,type=armor_stand,scores={acheckpoint=1..}] run function uhc:parkour/at_checkpoint
+execute as @a[tag=in_parkour,gamemode=!creative,gamemode=!spectator] at @s if entity @e[distance=..1.5,type=armor_stand,scores={acheckpoint=1..}] run function uhc:parkour/at_checkpoint
