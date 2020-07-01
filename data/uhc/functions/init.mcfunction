@@ -10,9 +10,9 @@ scoreboard objectives add uhc.cfg.opt dummy
 scoreboard objectives add uhc.deaths deathCount
 scoreboard objectives add uhc.saturation dummy
 
-scoreboard players set num_teams settings 4
-scoreboard players set min_teams settings 2
-scoreboard players set max_teams settings 64
+scoreboard players set num_teams uhc.cfg 4
+scoreboard players set min_teams uhc.cfg 2
+scoreboard players set max_teams uhc.cfg 64
 scoreboard players set game_started settings 0
 
 # deprecated scoreboards
