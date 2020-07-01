@@ -2,7 +2,7 @@ tellraw @a [{"nbt":"box_name","storage":"uhc","interpret":"true"},{"text":"Ten m
 worldborder set 20
 fill -10 254 10 10 254 -10 barrier
 tp @a 0 255 0
-spreadplayers 0 0 5 9 true @a
+execute in minecraft:game run spreadplayers 0 0 5 9 true @a
 execute as @a at @s run tp @s ~ ~ ~ facing 0 255 0
 effect give @a minecraft:resistance 10 10
 effect give @a minecraft:slowness 10 10
