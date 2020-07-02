@@ -7,6 +7,7 @@ function uhc:parkour/tick
 
 #> config room
 execute positioned 48 18 -3 run function uhc:cfg/tcount
+execute positioned 48 18 -5 run function uhc:cfg/esoteric
 execute positioned 48 18 -7 run function uhc:cfg/intervals
 
 #>  The "Make InfiniCake Useless"ifier

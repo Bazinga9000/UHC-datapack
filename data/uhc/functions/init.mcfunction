@@ -54,3 +54,8 @@ bossbar set minecraft:bossbar name {"text":"World Border Begins Shrinking","colo
 execute in minecraft:overworld run function uhc:gamerules/lobby
 execute in minecraft:game run function uhc:gamerules/game
 execute in minecraft:game_nether run function uhc:gamerules/game
+
+#> storage inits
+data modify storage uhc cfg.esoteric.cfg set value [0b, 0b, 0b, 0b, 0b, 0b, 0b, 0b, 0b, 0b, 0b, 0b, 0b, 0b, 0b, 0b, 0b, 0b, 0b, 0b, 0b, 0b, 0b, 0b, 0b, 0b, 0b]
+data modify storage uhc cfg.esoteric.inactive set value {Enchantments:[],display:{Lore:['[{"text":"Mode: ","color":"white"},{"text":"INACTIVE","color":"red"}]']}}
+data modify storage uhc cfg.esoteric.active set value {Enchantments:[{}],display:{Lore:['[{"text":"Mode: ","color":"white"},{"text":"ACTIVE","color":"green"}]']}}
