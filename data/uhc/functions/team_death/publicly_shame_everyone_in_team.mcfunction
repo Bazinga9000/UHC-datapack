@@ -69,6 +69,72 @@ execute if score current_dt uhc.internal matches 63 run data modify storage uhc 
 execute if score current_dt uhc.internal matches 64 run data modify storage uhc deathmsg prepend from storage uhc team_names[64]
 
 tellraw @a [{"nbt":"deathmsg[0]","storage":"uhc","interpret":"true"},{"nbt":"deathmsg[1]","storage":"uhc","interpret":"true"}]
+
+#set their score to -1
+execute if score current_dt uhc.internal matches 1 run scoreboard players set 1 uhc.team_alive -1
+execute if score current_dt uhc.internal matches 2 run scoreboard players set 2 uhc.team_alive -1
+execute if score current_dt uhc.internal matches 3 run scoreboard players set 3 uhc.team_alive -1
+execute if score current_dt uhc.internal matches 4 run scoreboard players set 4 uhc.team_alive -1
+execute if score current_dt uhc.internal matches 5 run scoreboard players set 5 uhc.team_alive -1
+execute if score current_dt uhc.internal matches 6 run scoreboard players set 6 uhc.team_alive -1
+execute if score current_dt uhc.internal matches 7 run scoreboard players set 7 uhc.team_alive -1
+execute if score current_dt uhc.internal matches 8 run scoreboard players set 8 uhc.team_alive -1
+execute if score current_dt uhc.internal matches 9 run scoreboard players set 9 uhc.team_alive -1
+execute if score current_dt uhc.internal matches 10 run scoreboard players set 10 uhc.team_alive -1
+execute if score current_dt uhc.internal matches 11 run scoreboard players set 11 uhc.team_alive -1
+execute if score current_dt uhc.internal matches 12 run scoreboard players set 12 uhc.team_alive -1
+execute if score current_dt uhc.internal matches 13 run scoreboard players set 13 uhc.team_alive -1
+execute if score current_dt uhc.internal matches 14 run scoreboard players set 14 uhc.team_alive -1
+execute if score current_dt uhc.internal matches 15 run scoreboard players set 15 uhc.team_alive -1
+execute if score current_dt uhc.internal matches 16 run scoreboard players set 16 uhc.team_alive -1
+execute if score current_dt uhc.internal matches 17 run scoreboard players set 17 uhc.team_alive -1
+execute if score current_dt uhc.internal matches 18 run scoreboard players set 18 uhc.team_alive -1
+execute if score current_dt uhc.internal matches 19 run scoreboard players set 19 uhc.team_alive -1
+execute if score current_dt uhc.internal matches 20 run scoreboard players set 20 uhc.team_alive -1
+execute if score current_dt uhc.internal matches 21 run scoreboard players set 21 uhc.team_alive -1
+execute if score current_dt uhc.internal matches 22 run scoreboard players set 22 uhc.team_alive -1
+execute if score current_dt uhc.internal matches 23 run scoreboard players set 23 uhc.team_alive -1
+execute if score current_dt uhc.internal matches 24 run scoreboard players set 24 uhc.team_alive -1
+execute if score current_dt uhc.internal matches 25 run scoreboard players set 25 uhc.team_alive -1
+execute if score current_dt uhc.internal matches 26 run scoreboard players set 26 uhc.team_alive -1
+execute if score current_dt uhc.internal matches 27 run scoreboard players set 27 uhc.team_alive -1
+execute if score current_dt uhc.internal matches 28 run scoreboard players set 28 uhc.team_alive -1
+execute if score current_dt uhc.internal matches 29 run scoreboard players set 29 uhc.team_alive -1
+execute if score current_dt uhc.internal matches 30 run scoreboard players set 30 uhc.team_alive -1
+execute if score current_dt uhc.internal matches 31 run scoreboard players set 31 uhc.team_alive -1
+execute if score current_dt uhc.internal matches 32 run scoreboard players set 32 uhc.team_alive -1
+execute if score current_dt uhc.internal matches 33 run scoreboard players set 33 uhc.team_alive -1
+execute if score current_dt uhc.internal matches 34 run scoreboard players set 34 uhc.team_alive -1
+execute if score current_dt uhc.internal matches 35 run scoreboard players set 35 uhc.team_alive -1
+execute if score current_dt uhc.internal matches 36 run scoreboard players set 36 uhc.team_alive -1
+execute if score current_dt uhc.internal matches 37 run scoreboard players set 37 uhc.team_alive -1
+execute if score current_dt uhc.internal matches 38 run scoreboard players set 38 uhc.team_alive -1
+execute if score current_dt uhc.internal matches 39 run scoreboard players set 39 uhc.team_alive -1
+execute if score current_dt uhc.internal matches 40 run scoreboard players set 40 uhc.team_alive -1
+execute if score current_dt uhc.internal matches 41 run scoreboard players set 41 uhc.team_alive -1
+execute if score current_dt uhc.internal matches 42 run scoreboard players set 42 uhc.team_alive -1
+execute if score current_dt uhc.internal matches 43 run scoreboard players set 43 uhc.team_alive -1
+execute if score current_dt uhc.internal matches 44 run scoreboard players set 44 uhc.team_alive -1
+execute if score current_dt uhc.internal matches 45 run scoreboard players set 45 uhc.team_alive -1
+execute if score current_dt uhc.internal matches 46 run scoreboard players set 46 uhc.team_alive -1
+execute if score current_dt uhc.internal matches 47 run scoreboard players set 47 uhc.team_alive -1
+execute if score current_dt uhc.internal matches 48 run scoreboard players set 48 uhc.team_alive -1
+execute if score current_dt uhc.internal matches 49 run scoreboard players set 49 uhc.team_alive -1
+execute if score current_dt uhc.internal matches 50 run scoreboard players set 50 uhc.team_alive -1
+execute if score current_dt uhc.internal matches 51 run scoreboard players set 51 uhc.team_alive -1
+execute if score current_dt uhc.internal matches 52 run scoreboard players set 52 uhc.team_alive -1
+execute if score current_dt uhc.internal matches 53 run scoreboard players set 53 uhc.team_alive -1
+execute if score current_dt uhc.internal matches 54 run scoreboard players set 54 uhc.team_alive -1
+execute if score current_dt uhc.internal matches 55 run scoreboard players set 55 uhc.team_alive -1
+execute if score current_dt uhc.internal matches 56 run scoreboard players set 56 uhc.team_alive -1
+execute if score current_dt uhc.internal matches 57 run scoreboard players set 57 uhc.team_alive -1
+execute if score current_dt uhc.internal matches 58 run scoreboard players set 58 uhc.team_alive -1
+execute if score current_dt uhc.internal matches 59 run scoreboard players set 59 uhc.team_alive -1
+execute if score current_dt uhc.internal matches 60 run scoreboard players set 60 uhc.team_alive -1
+execute if score current_dt uhc.internal matches 61 run scoreboard players set 61 uhc.team_alive -1
+execute if score current_dt uhc.internal matches 62 run scoreboard players set 62 uhc.team_alive -1
+execute if score current_dt uhc.internal matches 63 run scoreboard players set 63 uhc.team_alive -1
+execute if score current_dt uhc.internal matches 64 run scoreboard players set 64 uhc.team_alive -1
 # check if list is empty
 data modify storage uhc empty_check set value []
 execute store success score no_dts uhc.internal run data modify storage uhc empty_check set from storage uhc dead_teams
