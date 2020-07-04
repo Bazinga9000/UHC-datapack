@@ -5,7 +5,7 @@ execute as @a[tag=give_spec] run tp @s @r[gamemode=survival]
 tag @a remove give_spec
 gamemode spectator @a[scores={uhc.deaths=1..}, tag=!debugger]
 
-execute as @a[scores={uhc.deaths=0}] run spawnpoint
+execute as @a[scores={uhc.deaths=0}] at @s run spawnpoint
 execute as @a run function uhc:hud/update
 function uhc:team_death/count_alive
 function uhc:team_death/check_deaths
