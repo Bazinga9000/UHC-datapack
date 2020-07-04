@@ -38,7 +38,7 @@ difficulty hard
 # allow everyone to see bossbar
 bossbar set minecraft:bossbar visible false
 bossbar set minecraft:bossbar visible true
-scoreboard players set dm uhc.bossbar 0
+scoreboard players set stage uhc.bossbar 0
 bossbar set minecraft:bossbar color red
 data modify storage uhc bossbar_name set from storage bossbar_events.stillborder
 scoreboard players operation max uhc.bossbar = border1 uhc.internal

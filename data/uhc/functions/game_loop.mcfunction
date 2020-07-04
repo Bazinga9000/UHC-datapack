@@ -16,9 +16,9 @@ scoreboard players add time uhc.bossbar 1
 execute if score time uhc.bossbar = warn1 uhc.internal run tellraw @a [{"nbt":"box_name","storage":"uhc","interpret":"true"},{"text":"The World Border will begin shrinking in thirty minutes!","bold":true,"italic":true,"color":"yellow"}]
 execute if score time uhc.bossbar = warn2 uhc.internal run tellraw @a [{"nbt":"box_name","storage":"uhc","interpret":"true"},{"text":"The World Border will begin shrinking in fifteen minutes!","bold":true,"italic":true,"color":"red"}]
 execute if score time uhc.bossbar = warn3 uhc.internal run tellraw @a [{"nbt":"box_name","storage":"uhc","interpret":"true"},{"text":"The World Border will begin shrinking in five minutes!","bold":true,"italic":true,"color":"dark_red"}]
-execute if score time uhc.bossbar = border1 uhc.internal run function uhc:event/border1
-execute if score time uhc.bossbar = borderstop uhc.internal run function uhc:event/borderstop
-execute if score time uhc.bossbar = border2 uhc.internal run function uhc:event/border2
-execute if score time uhc.bossbar = dmwarn uhc.internal run function uhc:event/dmwarn
-execute if score time uhc.bossbar = deathmatch uhc.internal run function uhc:event/deathmatch
+execute if score stage uhc.bossbar matches ..0 if score time uhc.bossbar >= border1 uhc.internal run function uhc:event/border1
+execute if score stage uhc.bossbar matches ..1 if score time uhc.bossbar >= borderstop uhc.internal run function uhc:event/borderstop
+execute if score stage uhc.bossbar matches ..2 if score time uhc.bossbar >= border2 uhc.internal run function uhc:event/border2
+execute if score stage uhc.bossbar matches ..3 if score time uhc.bossbar >= dmwarn uhc.internal run function uhc:event/dmwarn
+execute if score stage uhc.bossbar matches ..4 if score time uhc.bossbar >= deathmatch uhc.internal run function uhc:event/deathmatch
 function uhc:bossbar
