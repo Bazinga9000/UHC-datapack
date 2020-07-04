@@ -6,7 +6,7 @@ execute in minecraft:game_nether run function uhc:gamerules/game
 scoreboard players set @a uhc.deaths 0
 scoreboard players set game_started uhc.internal 1
 scoreboard players set time uhc.bossbar 0
-scoreboard players set wbclr uhc.hud -1
+scoreboard players set wbclr uhc.hud 0
 
 #> player stuff
 execute in minecraft:game run tp @a 0 255 0
