@@ -3,7 +3,8 @@ tag @a[nbt={Dimension: "minecraft:overworld"}, tag=!debugger] add give_spec
 gamemode spectator @a[tag=give_spec]
 execute as @a[tag=give_spec] run tp @s @r[gamemode=survival]
 tag @a remove give_spec
-gamemode spectator @a[scores={uhc.deaths=1..}, tag=!debugger]
+gamemode spectator @a[scores={uhc.deaths=1..}, gamemode=!spectator, gamemode=!creative, tag=!debugger]
+gamemode spectator @a[team=spectator, gamemode=!spectator, gamemode=!creative, tag=!debugger]
 
 execute as @a[scores={uhc.deaths=0}] at @s run spawnpoint
 execute as @a[gamemode=spectator] run effect give @s night_vision 10 0 true
