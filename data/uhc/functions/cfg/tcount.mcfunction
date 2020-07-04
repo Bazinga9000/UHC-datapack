@@ -52,5 +52,5 @@ scoreboard players operation num_teams uhc.cfg < max_teams uhc.cfg
 
 #> fix gui
 data modify block ~ ~ ~ Items set from block 45 7 13 Items
-execute store result block ~ ~ ~ Items[{Slot: 4b}].Count byte 1 run scoreboard players get num_teams uhc.internal
+execute store result block ~ ~ ~ Items[{Slot: 4b}].Count byte 1 run scoreboard players get num_teams uhc.cfg
 scoreboard players set tcount uhc.cfg.opt 0
