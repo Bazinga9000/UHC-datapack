@@ -2,6 +2,7 @@ execute store result score num_players uhc.internal if entity @a[tag=!spectator]
 execute store result score num_spectators uhc.internal if entity @a[tag=spectator]
 # force non-debuggers out of overworld
 execute as @a[nbt={Dimension: "minecraft:game"}, tag=!debugger] in minecraft:overworld run tp @s 0 10 0
+execute as @a[nbt={Dimension: "minecraft:game_nether"}, tag=!debugger] in minecraft:overworld run tp @s 0 10 0
 
 function uhc:parkour/tick
 
