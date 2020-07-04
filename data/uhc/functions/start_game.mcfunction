@@ -1,3 +1,3 @@
-execute if @a[team=team1] run function uhc:event/game_begins
-execute unless @a[team=team1] run tellraw @a[gamemode=creative] {"text":"Teams have not been assigned.","color":"red"}
-execute unless @a[team=team1] run tellraw @a[gamemode=creative] [{"text":"Press ","color":"red"},{"text":"[here] ","color":"blue","clickEvent":{"action":"run_command","value":"function uhc:teams/assign"}},{"text":"to assign teams."}]
+execute if entity @a[team=team1] run function uhc:event/game_begins
+execute unless entity @a[team=team1] run tellraw @a[gamemode=creative] {"text":"Teams have not been assigned.","color":"red"}
+execute unless entity @a[team=team1] run tellraw @a[gamemode=creative] [{"text":"Press ","color":"red"},{"text":"[here] ","color":"blue","clickEvent":{"action":"run_command","value":"function uhc:teams/assign"}},{"text":"to assign teams."}]
