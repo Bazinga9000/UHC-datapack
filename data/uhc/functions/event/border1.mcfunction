@@ -1,6 +1,6 @@
 function uhc:event/tellraw/border1
-execute in minecraft:game run worldborder set 25 900
-execute in minecraft:game_nether run worldborder set 25 900
+execute in minecraft:game run function uhc:event/wb_set/border1
+execute in minecraft:game_nether run function uhc:event/wb_set/border1
 scoreboard players set wbclr uhc.hud 1
 
 scoreboard players operation max uhc.bossbar = borderstop uhc.internal

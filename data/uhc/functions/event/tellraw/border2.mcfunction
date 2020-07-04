@@ -1,4 +1,4 @@
-execute if score border2 uhc.cfg matches 0 run tellraw @a [{"nbt":"box_name","storage":"uhc","interpret":"true"},{"text":"The World Border has shrank to a diameter of 10.","italic":true,"color":"red"}]
+execute if score border2 uhc.cfg matches 0 run tellraw @a [{"nbt":"box_name","storage":"uhc","interpret":"true"},{"text":"The World Border has shrank to a diameter of 5.","italic":true,"color":"red"}]
 execute if score border2 uhc.cfg matches 5 run tellraw @a [{"nbt":"box_name","storage":"uhc","interpret":"true"},{"text":"The World Border has resumed once more! It will shrink for five minutes.","italic":true,"color":"red"}]
 execute if score border2 uhc.cfg matches 10 run tellraw @a [{"nbt":"box_name","storage":"uhc","interpret":"true"},{"text":"The World Border has resumed once more! It will shrink for ten minutes.","italic":true,"color":"red"}]
 execute if score border2 uhc.cfg matches 15 run tellraw @a [{"nbt":"box_name","storage":"uhc","interpret":"true"},{"text":"The World Border has resumed once more! It will shrink for fifteen minutes.","italic":true,"color":"red"}]

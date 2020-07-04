@@ -1,0 +1,13 @@
+execute if score border2 uhc.cfg matches 0 run worldborder set 5 0
+execute if score border2 uhc.cfg matches 5 run worldborder set 5 300
+execute if score border2 uhc.cfg matches 10 run worldborder set 5 600
+execute if score border2 uhc.cfg matches 15 run worldborder set 5 900
+execute if score border2 uhc.cfg matches 20 run worldborder set 5 1200
+execute if score border2 uhc.cfg matches 25 run worldborder set 5 1500
+execute if score border2 uhc.cfg matches 30 run worldborder set 5 1800
+execute if score border2 uhc.cfg matches 35 run worldborder set 5 2100
+execute if score border2 uhc.cfg matches 40 run worldborder set 5 2400
+execute if score border2 uhc.cfg matches 45 run worldborder set 5 2700
+execute if score border2 uhc.cfg matches 50 run worldborder set 5 3000
+execute if score border2 uhc.cfg matches 55 run worldborder set 5 3300
+execute if score border2 uhc.cfg matches 60 run worldborder set 5 3600
