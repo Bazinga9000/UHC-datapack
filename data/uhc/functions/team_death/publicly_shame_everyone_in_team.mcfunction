@@ -1,4 +1,4 @@
-data modify storage uhc deathmsg set value ['{"text":" have all been eliminated!","color":"white"}']
+data modify storage uhc deathmsg set value ['{"text":" has been completely eliminated!","color":"white"}']
 # pop first of uhc dead_teams and read
 execute store result score current_dt uhc.internal run data get storage uhc dead_teams[0]
 data remove storage uhc dead_teams[0]
