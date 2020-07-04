@@ -19,7 +19,7 @@ xp set @a 0 points
 advancement revoke @a everything
 
 gamemode spectator @a[team=spectator]
-gamemode survival @a[gamemode=!spectator]
+gamemode survival @a[team=!spectator]
 
 data modify storage uhc box_name set value '[{"text":"<"},{"text":"|||||","bold":true,"italic":true,"obfuscated":true,"color":"gold"},{"text":"The Box","bold":true,"italic":true,"color":"gold"},{"text":"|||||","bold":true,"italic":true,"obfuscated":true,"color":"gold"},{"text":"> "}]'
 tellraw @a [{"nbt":"box_name","storage":"uhc","interpret":"true"},{"text":"Let the games begin! Our players have been shuffled across the world!","bold":true,"italic":true,"underlined":true,"color":"green"}]
