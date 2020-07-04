@@ -96,10 +96,15 @@ scoreboard players operation warn2 uhc.internal -= 18000 constants
 scoreboard players operation warn3 uhc.internal -= 6000 constants
 #> fix gui
 data modify block ~ ~ ~ Items set from block 45 7 11 Items
-execute store result block ~ ~ ~ Items[{Slot: 9b}].Count byte 1 run scoreboard players get stillborder uhc.cfg
-execute store result block ~ ~ ~ Items[{Slot: 10b}].Count byte 1 run scoreboard players get border1 uhc.cfg
-execute store result block ~ ~ ~ Items[{Slot: 11b}].Count byte 1 run scoreboard players get borderstop uhc.cfg
-execute store result block ~ ~ ~ Items[{Slot: 12b}].Count byte 1 run scoreboard players get border2 uhc.cfg
-execute store result block ~ ~ ~ Items[{Slot: 13b}].Count byte 1 run scoreboard players get tilldm uhc.cfg
+execute unless score stillborder uhc.cfg matches 0 store result block ~ ~ ~ Items[{Slot: 9b}].Count byte 1 run scoreboard players get stillborder uhc.cfg
+execute unless score border1 uhc.cfg matches 0 store result block ~ ~ ~ Items[{Slot: 10b}].Count byte 1 run scoreboard players get border1 uhc.cfg
+execute unless score borderstop uhc.cfg matches 0 store result block ~ ~ ~ Items[{Slot: 11b}].Count byte 1 run scoreboard players get borderstop uhc.cfg
+execute unless score border2 uhc.cfg matches 0 store result block ~ ~ ~ Items[{Slot: 12b}].Count byte 1 run scoreboard players get border2 uhc.cfg
+execute unless score tilldm uhc.cfg matches 0 store result block ~ ~ ~ Items[{Slot: 13b}].Count byte 1 run scoreboard players get tilldm uhc.cfg
+execute if score stillborder uhc.cfg matches 0 run data modify block ~ ~ ~ Items[{Slot:9b}].id set value "minecraft:black_concrete"
+execute if score border1 uhc.cfg matches 0 run data modify block ~ ~ ~ Items[{Slot:10b}].id set value "minecraft:black_concrete"
+execute if score borderstop uhc.cfg matches 0 run data modify block ~ ~ ~ Items[{Slot:11b}].id set value "minecraft:black_concrete"
+execute if score border2 uhc.cfg matches 0 run data modify block ~ ~ ~ Items[{Slot:12b}].id set value "minecraft:black_concrete"
+execute if score tilldm uhc.cfg matches 0 run data modify block ~ ~ ~ Items[{Slot:13b}].id set value "minecraft:black_concrete"
 scoreboard players set interval uhc.cfg.opt 0
 scoreboard players set interval.cumu uhc.cfg.opt 0
