@@ -9,6 +9,7 @@ scoreboard players set time uhc.bossbar 0
 scoreboard players set wbclr uhc.hud -1
 
 #> player stuff
+execute in minecraft:game run tp @a 0 255 0
 execute in minecraft:game run spreadplayers 0 0 150 550 true @a
 effect give @a instant_health 1 20
 effect give @a minecraft:regeneration 45 255 true

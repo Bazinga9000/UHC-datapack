@@ -1,4 +1,3 @@
-
 execute unless entity @a[team=team1] run scoreboard players set 1 uhc.team_alive -1
 execute unless entity @a[team=team2] run scoreboard players set 2 uhc.team_alive -1
 execute unless entity @a[team=team3] run scoreboard players set 3 uhc.team_alive -1
