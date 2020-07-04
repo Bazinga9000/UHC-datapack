@@ -4,7 +4,7 @@ gamerule disableRaids false
 gamerule doDaylightCycle true
 gamerule doFireTick true
 gamerule doInsomnia true
-#gamerule doImmediateRespawn‌ true?
+gamerule doImmediateRespawn‌ true
 #gamerule doLimitedCrafting false
 #gamerule doMobLoot true
 gamerule doMobSpawning true
