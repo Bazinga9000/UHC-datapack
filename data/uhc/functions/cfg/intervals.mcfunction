@@ -22,6 +22,7 @@ execute unless data storage minecraft:uhc cfg.interval.Items[{Slot: 22b, tag: {c
 clear @a[distance=..7, tag=!debugger] black_stained_glass_pane{config: 1b}
 clear @a[distance=..7, tag=!debugger] red_terracotta{config: 1b}
 clear @a[distance=..7, tag=!debugger] white_concrete{config: 1b}
+clear @a[distance=..7, tag=!debugger] black_concrete{config: 1b}
 clear @a[distance=..7, tag=!debugger] green_terracotta{config: 1b}
 clear @a[distance=..7, tag=!debugger] feather{config: 1b}
 clear @a[distance=..7, tag=!debugger] netherite_ingot{config: 1b}
