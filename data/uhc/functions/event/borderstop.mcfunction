@@ -7,4 +7,4 @@ time set day
 execute in minecraft:game run gamerule doDaylightCycle false
 execute in minecraft:game_nether run gamerule doDaylightCycle false
 scoreboard players set wbclr uhc.hud 0
-tp @e[type=!player,type=!horse,type=!wolf,type=!cat,type=!donkey,type=!llama,type=!wither] 0 -100 0
+tp @e[type=!player,type=!horse,type=!wolf,type=!cat,type=!donkey,type=!llama,type=!wither,type=!armor_stand] 0 -100 0
