@@ -2,7 +2,7 @@ tellraw @a [{"nbt":"box_name","storage":"uhc","interpret":"true"},{"text":"The W
 execute in minecraft:game run worldborder set 5 600
 execute in minecraft:game_nether run worldborder set 5 600
 scoreboard players operation max uhc.bossbar = dmwarn uhc.internal
-scoreboard players operation range uhc.bossbar = border2 uhc.cfg
+scoreboard players operation range uhc.bossbar = border2t uhc.internal
 bossbar set minecraft:bossbar name {"text":"Border Stops Shrinking... Again","color":"blue"}
 bossbar set minecraft:bossbar color blue
 

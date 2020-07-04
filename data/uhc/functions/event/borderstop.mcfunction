@@ -1,6 +1,6 @@
 tellraw @a [{"nbt":"box_name","storage":"uhc","interpret":"true"},{"text":"The worldborder is now stopped. It will resume in five minutes.","italic":true,"color":"aqua"}]
 scoreboard players operation max uhc.bossbar = border2 uhc.internal
-scoreboard players operation range uhc.bossbar = borderstop uhc.cfg
+scoreboard players operation range uhc.bossbar = borderstopt uhc.internal
 bossbar set minecraft:bossbar name {"text":"World Border Begins Shrinking... Again.","color":"red"}
 bossbar set minecraft:bossbar color red
 time set day

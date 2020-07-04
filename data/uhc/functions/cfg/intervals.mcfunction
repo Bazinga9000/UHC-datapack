@@ -64,23 +64,28 @@ scoreboard players operation border2 uhc.cfg < 60 constants
 scoreboard players operation tilldm uhc.cfg > 0 constants
 scoreboard players operation tilldm uhc.cfg < 60 constants
 
+# measure in ticks
+scoreboard players operation stillbordert uhc.internal = stillborder uhc.cfg
+scoreboard players operation border1t uhc.internal = border1 uhc.cfg
+scoreboard players operation borderstopt uhc.internal = borderstop uhc.cfg
+scoreboard players operation border2t uhc.internal = border2 uhc.cfg
+scoreboard players operation tilldmt uhc.internal = tilldm uhc.cfg
+scoreboard players operation stillbordert uhc.internal *= 1200 constants
+scoreboard players operation border1t uhc.internal *= 1200 constants
+scoreboard players operation borderstopt uhc.internal *= 1200 constants
+scoreboard players operation border2t uhc.internal *= 1200 constants
+scoreboard players operation tilldmt uhc.internal *= 1200 constants
 # create cumulative tick scores in constants
-scoreboard players operation interval.cumu uhc.cfg.opt = stillborder uhc.cfg
+scoreboard players operation interval.cumu uhc.cfg.opt = stillbordert uhc.internal
 scoreboard players operation border1 uhc.internal = interval.cumu uhc.cfg.opt
-scoreboard players operation interval.cumu uhc.cfg.opt += border1 uhc.cfg
+scoreboard players operation interval.cumu uhc.cfg.opt += border1t uhc.internal
 scoreboard players operation borderstop uhc.internal = interval.cumu uhc.cfg.opt
-scoreboard players operation interval.cumu uhc.cfg.opt += borderstop uhc.cfg
+scoreboard players operation interval.cumu uhc.cfg.opt += borderstopt uhc.internal
 scoreboard players operation border2 uhc.internal = interval.cumu uhc.cfg.opt
-scoreboard players operation interval.cumu uhc.cfg.opt += border2 uhc.cfg
+scoreboard players operation interval.cumu uhc.cfg.opt += border2t uhc.internal
 scoreboard players operation dmwarn uhc.internal = interval.cumu uhc.cfg.opt
-scoreboard players operation interval.cumu uhc.cfg.opt += tilldm uhc.cfg
+scoreboard players operation interval.cumu uhc.cfg.opt += tilldmt uhc.internal
 scoreboard players operation deathmatch uhc.internal = interval.cumu uhc.cfg.opt
-
-scoreboard players operation border1 uhc.internal *= 1200 constants
-scoreboard players operation borderstop uhc.internal *= 1200 constants
-scoreboard players operation border2 uhc.internal *= 1200 constants
-scoreboard players operation dmwarn uhc.internal *= 1200 constants
-scoreboard players operation deathmatch uhc.internal *= 1200 constants
 
 scoreboard players operation warn1 uhc.internal = border1 uhc.internal
 scoreboard players operation warn2 uhc.internal = border1 uhc.internal

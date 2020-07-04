@@ -37,4 +37,4 @@ difficulty hard
 bossbar set minecraft:bossbar visible false
 bossbar set minecraft:bossbar visible true
 scoreboard players operation max uhc.bossbar = border1 uhc.internal
-scoreboard players operation range uhc.bossbar = stillborder uhc.cfg
+scoreboard players operation range uhc.bossbar = stillbordert uhc.internal
