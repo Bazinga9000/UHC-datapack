@@ -1,4 +1,4 @@
-tellraw @a [{"nbt":"box_name","storage":"uhc","interpret":"true"},{"text":"The World Border has begun to shrink! It will stop in fifteen minutes.","bold":true,"italic":true,"underlined":true,"color":"red"}]
+function uhc:event/tellraw/border1
 execute in minecraft:game run worldborder set 25 900
 execute in minecraft:game_nether run worldborder set 25 900
 scoreboard players set wbclr uhc.hud 1

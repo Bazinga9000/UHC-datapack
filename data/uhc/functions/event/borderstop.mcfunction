@@ -1,4 +1,4 @@
-tellraw @a [{"nbt":"box_name","storage":"uhc","interpret":"true"},{"text":"The worldborder is now stopped. It will resume in five minutes.","italic":true,"color":"aqua"}]
+function uhc:event/tellraw/borderstop
 scoreboard players set wbclr uhc.hud 0
 
 scoreboard players operation max uhc.bossbar = border2 uhc.internal

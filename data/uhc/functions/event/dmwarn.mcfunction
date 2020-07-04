@@ -1,4 +1,4 @@
-tellraw @a [{"nbt":"box_name","storage":"uhc","interpret":"true"},{"text":"The worldborder has stopped. If the game does not end within ten minutes, I shall end it myself.","italic":true,"color":"dark_aqua"}]
+function uhc:event/tellraw/dmwarn
 scoreboard players set wbclr uhc.hud 0
 
 scoreboard players operation max uhc.bossbar = deathmatch uhc.internal

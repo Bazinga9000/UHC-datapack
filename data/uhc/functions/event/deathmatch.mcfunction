@@ -1,4 +1,4 @@
-tellraw @a [{"nbt":"box_name","storage":"uhc","interpret":"true"},{"text":"Ten minutes have passed. It is time. Let the Battle At The Top Of The World commence!","bold":true,"italic":true,"underlined":true,"color":"blue"}]
+tellraw @a [{"nbt":"box_name","storage":"uhc","interpret":"true"},{"text":"It is time. Let the Battle At The Top Of The World commence!","bold":true,"italic":true,"underlined":true,"color":"blue"}]
 worldborder set 20
 fill -10 254 10 10 254 -10 barrier
 tp @a 0 255 0
