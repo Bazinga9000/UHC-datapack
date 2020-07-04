@@ -8,9 +8,11 @@ effect give @a minecraft:resistance 10 10
 effect give @a minecraft:slowness 10 10
 effect give @a minecraft:jump_boost 10 128
 effect give @a minecraft:blindness 10 10
+scoreboard players set wbclr uhc.hud -1
+time set midnight
+
 scoreboard players set max uhc.bossbar 2147483647
 scoreboard players set range uhc.bossbar 0
-scoreboard players set wbclr uhc.hud -1
-bossbar set minecraft:bossbar name {"text":"Heat Death of the Universe","color":"dark_purple"}
+data modify storage uhc bossbar_name[0] set from storage bossbar_events.dm
 bossbar set minecraft:bossbar color purple
-time set midnight
+scoreboard players set dm uhc.bossbar 1

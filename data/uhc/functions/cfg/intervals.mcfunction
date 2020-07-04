@@ -75,6 +75,7 @@ scoreboard players operation border1t uhc.internal *= 1200 constants
 scoreboard players operation borderstopt uhc.internal *= 1200 constants
 scoreboard players operation border2t uhc.internal *= 1200 constants
 scoreboard players operation tilldmt uhc.internal *= 1200 constants
+
 # create cumulative tick scores in constants
 scoreboard players operation interval.cumu uhc.cfg.opt = stillbordert uhc.internal
 scoreboard players operation border1 uhc.internal = interval.cumu uhc.cfg.opt
