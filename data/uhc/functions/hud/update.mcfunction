@@ -2,7 +2,7 @@
 # only works for 4 digits or less
 
 #> get wb radius + number of digits of wb radius
-execute store result score wb uhc.hud run worldborder get
+execute in minecraft:game store result score wb uhc.hud run worldborder get
 scoreboard players operation wb uhc.hud /= 2 constants
 scoreboard players operation log uhc.hud = wb uhc.hud
 function uhc:hud/num_len
