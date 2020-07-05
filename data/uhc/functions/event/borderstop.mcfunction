@@ -3,7 +3,7 @@ scoreboard players set wbclr uhc.hud 0
 
 scoreboard players operation max uhc.bossbar = border2 uhc.internal
 scoreboard players operation range uhc.bossbar = borderstopt uhc.internal
-data modify storage uhc bossbar_name set from storage bossbar_events.borderstop
+data modify storage uhc bossbar_name set from storage uhc bossbar_events.borderstop
 bossbar set minecraft:bossbar color red
 scoreboard players set stage uhc.bossbar 2
 

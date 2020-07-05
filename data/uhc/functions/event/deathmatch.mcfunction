@@ -13,6 +13,6 @@ time set midnight
 
 scoreboard players set max uhc.bossbar 2147483647
 scoreboard players set range uhc.bossbar 0
-data modify storage uhc bossbar_name set from storage bossbar_events.dm
+data modify storage uhc bossbar_name set from storage uhc bossbar_events.dm
 bossbar set minecraft:bossbar color purple
 scoreboard players set stage uhc.bossbar 5
