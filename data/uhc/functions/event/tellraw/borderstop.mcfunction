@@ -11,4 +11,4 @@ execute if score borderstop uhc.cfg matches 50 run tellraw @a [{"nbt":"box_name"
 execute if score borderstop uhc.cfg matches 55 run tellraw @a [{"nbt":"box_name","storage":"uhc","interpret":"true"},{"text":"The worldborder is now stopped. It will resume in fifty-five minutes.","italic":true,"color":"aqua"}]
 execute if score borderstop uhc.cfg matches 60 run tellraw @a [{"nbt":"box_name","storage":"uhc","interpret":"true"},{"text":"The worldborder is now stopped. It will resume in sixty minutes.","italic":true,"color":"aqua"}]
 
-execute unless score border2 uhc.cfg matches 0 if score border2 uhc.cfg matches 0 if score dmwarn uhc.cfg matches 0 run tellraw @a [{"nbt":"box_name","storage":"uhc","interpret":"true"},{"text":"If the game does not end when the border begins shrinking, I shall end it myself.","italic":true,"color":"aqua"}]
+execute unless score borderstop uhc.cfg matches 0 if score border2 uhc.cfg matches 0 if score tilldm uhc.cfg matches 0 run tellraw @a [{"nbt":"box_name","storage":"uhc","interpret":"true"},{"text":"If the game does not end when the border begins shrinking, I shall end it myself.","italic":true,"color":"aqua"}]
