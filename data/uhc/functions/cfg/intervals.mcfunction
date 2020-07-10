@@ -1,22 +1,22 @@
-data modify storage uhc cfg.interval.Items set from block ~ ~ ~ Items
+data modify storage uhc.cfg interval.Items set from block ~ ~ ~ Items
 
 #> check if item was removed
 # +5 mins
-execute unless data storage minecraft:uhc cfg.interval.Items[{Slot: 0b, tag: {config: 1b}}] run scoreboard players set interval uhc.cfg.opt 1
-execute unless data storage minecraft:uhc cfg.interval.Items[{Slot: 1b, tag: {config: 1b}}] run scoreboard players set interval uhc.cfg.opt 2
-execute unless data storage minecraft:uhc cfg.interval.Items[{Slot: 2b, tag: {config: 1b}}] run scoreboard players set interval uhc.cfg.opt 3
-execute unless data storage minecraft:uhc cfg.interval.Items[{Slot: 3b, tag: {config: 1b}}] run scoreboard players set interval uhc.cfg.opt 4
-execute unless data storage minecraft:uhc cfg.interval.Items[{Slot: 4b, tag: {config: 1b}}] run scoreboard players set interval uhc.cfg.opt 5
+execute unless data storage minecraft:uhc.cfg interval.Items[{Slot: 0b, tag: {config: 1b}}] run scoreboard players set interval uhc.cfg.opt 1
+execute unless data storage minecraft:uhc.cfg interval.Items[{Slot: 1b, tag: {config: 1b}}] run scoreboard players set interval uhc.cfg.opt 2
+execute unless data storage minecraft:uhc.cfg interval.Items[{Slot: 2b, tag: {config: 1b}}] run scoreboard players set interval uhc.cfg.opt 3
+execute unless data storage minecraft:uhc.cfg interval.Items[{Slot: 3b, tag: {config: 1b}}] run scoreboard players set interval uhc.cfg.opt 4
+execute unless data storage minecraft:uhc.cfg interval.Items[{Slot: 4b, tag: {config: 1b}}] run scoreboard players set interval uhc.cfg.opt 5
 # speedy preset
-execute unless data storage minecraft:uhc cfg.interval.Items[{Slot: 15b, tag: {config: 1b}}] run scoreboard players set interval uhc.cfg.opt 6
+execute unless data storage minecraft:uhc.cfg interval.Items[{Slot: 15b, tag: {config: 1b}}] run scoreboard players set interval uhc.cfg.opt 6
 # default preset
-execute unless data storage minecraft:uhc cfg.interval.Items[{Slot: 16b, tag: {config: 1b}}] run scoreboard players set interval uhc.cfg.opt 7
+execute unless data storage minecraft:uhc.cfg interval.Items[{Slot: 16b, tag: {config: 1b}}] run scoreboard players set interval uhc.cfg.opt 7
 # -5 mins
-execute unless data storage minecraft:uhc cfg.interval.Items[{Slot: 18b, tag: {config: 1b}}] run scoreboard players set interval uhc.cfg.opt 8
-execute unless data storage minecraft:uhc cfg.interval.Items[{Slot: 19b, tag: {config: 1b}}] run scoreboard players set interval uhc.cfg.opt 9
-execute unless data storage minecraft:uhc cfg.interval.Items[{Slot: 20b, tag: {config: 1b}}] run scoreboard players set interval uhc.cfg.opt 10
-execute unless data storage minecraft:uhc cfg.interval.Items[{Slot: 21b, tag: {config: 1b}}] run scoreboard players set interval uhc.cfg.opt 11
-execute unless data storage minecraft:uhc cfg.interval.Items[{Slot: 22b, tag: {config: 1b}}] run scoreboard players set interval uhc.cfg.opt 12
+execute unless data storage minecraft:uhc.cfg interval.Items[{Slot: 18b, tag: {config: 1b}}] run scoreboard players set interval uhc.cfg.opt 8
+execute unless data storage minecraft:uhc.cfg interval.Items[{Slot: 19b, tag: {config: 1b}}] run scoreboard players set interval uhc.cfg.opt 9
+execute unless data storage minecraft:uhc.cfg interval.Items[{Slot: 20b, tag: {config: 1b}}] run scoreboard players set interval uhc.cfg.opt 10
+execute unless data storage minecraft:uhc.cfg interval.Items[{Slot: 21b, tag: {config: 1b}}] run scoreboard players set interval uhc.cfg.opt 11
+execute unless data storage minecraft:uhc.cfg interval.Items[{Slot: 22b, tag: {config: 1b}}] run scoreboard players set interval uhc.cfg.opt 12
 
 #> clear item
 clear @a[distance=..7, tag=!debugger] black_stained_glass_pane{config: 1b}
