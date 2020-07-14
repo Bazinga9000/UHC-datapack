@@ -66,5 +66,5 @@ execute if score 64 uhc.team_alive matches 0 run data modify storage uhc dead_te
 
 # check if list is empty
 data modify storage uhc empty_check set value []
-execute store success score no_dts uhc.internal run data modify storage uhc empty_check set from storage uhc dead_teams
-execute if score no_dts uhc.internal matches 1 run function uhc:team_death/publicly_shame_everyone_in_team
+execute store success score list_not_empty uhc.internal run data modify storage uhc empty_check set from storage uhc dead_teams
+execute if score list_not_empty uhc.internal matches 1 run function uhc:team_death/publicly_shame_everyone_in_team

@@ -137,6 +137,6 @@ execute if score current_dt uhc.internal matches 63 run scoreboard players set 6
 execute if score current_dt uhc.internal matches 64 run scoreboard players set 64 uhc.team_alive -1
 # check if list is empty
 data modify storage uhc empty_check set value []
-execute store success score no_dts uhc.internal run data modify storage uhc empty_check set from storage uhc dead_teams
-execute unless data storage uhc dead_teams run scoreboard players set no_dts 0
-execute if score no_dts uhc.internal matches 1 run function uhc:team_death/publicly_shame_everyone_in_team
+execute store success score list_not_empty uhc.internal run data modify storage uhc empty_check set from storage uhc dead_teams
+execute unless data storage uhc dead_teams run scoreboard players set list_not_empty 0
+execute if score list_not_empty uhc.internal matches 1 run function uhc:team_death/publicly_shame_everyone_in_team
