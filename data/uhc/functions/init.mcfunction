@@ -39,8 +39,8 @@ scoreboard players set deathmatch uhc.internal 114000
 function uhc:init_constants
 function uhc:teams/create 
 
-execute in minecraft:overworld run setworldspawn 0 10 0
-execute as @a in minecraft:overworld run spawnpoint @s 0 10 0
+execute in minecraft:lobby run setworldspawn 0 10 0
+execute as @a in minecraft:lobby run spawnpoint @s 0 10 0
 execute in minecraft:game run worldborder center 0.5 0.5
 execute in minecraft:game_nether run worldborder center 0.5 0.5
 bossbar add bossbar {"text":"World Border Begins Shrinking","color":"red"}
@@ -49,7 +49,7 @@ bossbar set minecraft:bossbar players @a
 bossbar set minecraft:bossbar visible false
 
 #> gamerule inits
-execute in minecraft:overworld run function uhc:gamerules/lobby
+execute in minecraft:lobby run function uhc:gamerules/lobby
 execute in minecraft:game run function uhc:gamerules/game
 execute in minecraft:game_nether run function uhc:gamerules/game
 

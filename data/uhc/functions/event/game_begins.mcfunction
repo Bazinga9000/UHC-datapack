@@ -10,6 +10,8 @@ scoreboard players set wbclr uhc.hud 0
 
 #> player stuff
 execute in minecraft:game run tp @a 0 255 0
+#REQUIRES PLUGIN
+cmd mvunload lobby
 execute in minecraft:game run spreadplayers 0 0 150 550 true @a
 effect give @a instant_health 1 20
 effect give @a minecraft:regeneration 45 255 true

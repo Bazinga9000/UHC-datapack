@@ -1,5 +1,5 @@
 # dead users or users spawning in lobby should be put in spectator (if not debugger)
-tag @a[nbt={Dimension: "minecraft:overworld"}, tag=!debugger] add give_spec
+tag @a[nbt={Dimension: "minecraft:lobby"}, tag=!debugger] add give_spec
 gamemode spectator @a[tag=give_spec]
 execute as @a[tag=give_spec] run tp @s @r[gamemode=survival]
 tag @a remove give_spec
