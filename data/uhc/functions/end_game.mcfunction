@@ -1,4 +1,4 @@
-advancement revoke @a everything
-function uhc:teams/clear
-scoreboard players set game_started uhc.internal 0
-bossbar set minecraft:bossbar visible false
+execute if score game_started matches 1 run function uhc:run_end_game
+
+#> Error notification
+execute unless score game_started matches 1 run tellraw @a[gamemode=creative] {"text": "Game has not started!", "color":"red"}
