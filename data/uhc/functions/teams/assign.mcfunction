@@ -5,4 +5,6 @@ function uhc:teams/clear
 execute as @a[tag=spectator] run team join spectator
 function uhc:teams/randomize
 function uhc:teams/announce
-function uhc:teams/mark_unused
+
+# mark unused teams
+for i in 1..64 run execute unless entity @a[team=team$i] run scoreboard players set $i uhc.team_alive -1
