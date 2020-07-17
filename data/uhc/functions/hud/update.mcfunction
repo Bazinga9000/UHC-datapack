@@ -58,12 +58,12 @@ scoreboard players operation ry uhc.hud /= 450 constants
 # in surv/adv: there is the hunger bar which the hud should be placed above (uhc:hud0)
 # if they're on a horse, then the hunger bar is gone, but you now need to check if the horse's health is 1 or 2 rows (uhc:hud1, uhc:hud2)
 # in creative, the hunger bar is always gone (uhc:hud-1), but a horse's health is not gone.
-scoreboard players set rightlen uhc.hud 1
+scoreboard players set rightlen uhc.hud 0
 execute if entity @s[gamemode=creative] run scoreboard players set rightlen uhc.hud -1
 scoreboard players set tmp uhc.hud -1
 execute if data entity @s RootVehicle at @s positioned ~ ~-.5 ~ store result score tmp uhc.hud run attribute @e[limit=1,sort=nearest,type=!player] minecraft:generic.max_health get
-execute if score tmp uhc.hud matches 0..20 run scoreboard players set rightlen uhc.hud 1
-execute if score tmp uhc.hud matches 21.. run scoreboard players set rightlen uhc.hud 2
+execute if score tmp uhc.hud matches 0..20 run scoreboard players set rightlen uhc.hud 0
+execute if score tmp uhc.hud matches 21.. run scoreboard players set rightlen uhc.hud 1
 
 #> store text
 data modify storage uhc.hud displist set value []
