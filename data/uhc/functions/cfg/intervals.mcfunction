@@ -65,6 +65,13 @@ scoreboard players operation border2 uhc.cfg < 60 constants
 scoreboard players operation tilldm uhc.cfg > 0 constants
 scoreboard players operation tilldm uhc.cfg < 60 constants
 execute if score stillborder uhc.cfg matches 0 if score border1 uhc.cfg matches 0 if score borderstop uhc.cfg matches 0 if score border2 uhc.cfg matches 0 if score tilldm uhc.cfg matches 0 run scoreboard players set stillborder uhc.cfg 5
+
+#measure in seconds (for border1 and 2)
+scoreboard players operation border1s uhc.internal = border1 uhc.cfg
+scoreboard players operation border2s uhc.internal = border2 uhc.cfg
+scoreboard players operation border1s uhc.internal *= 60 constants
+scoreboard players operation border2s uhc.internal *= 60 constants
+
 # measure in ticks
 scoreboard players operation stillbordert uhc.internal = stillborder uhc.cfg
 scoreboard players operation border1t uhc.internal = border1 uhc.cfg

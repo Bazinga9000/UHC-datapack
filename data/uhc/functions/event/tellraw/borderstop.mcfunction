@@ -1,3 +1,2 @@
-for i in 5..60 step 5 run execute if score borderstop uhc.cfg matches $i run tellraw @a [{"nbt":"box_name","storage":"uhc","interpret":"true"},{"text":"The worldborder is now stopped. It will resume in ","italic":true,"color":"aqua"},{"nbt":"num_words[$i]","storage":"uhc"},{"text":" minutes."}]
-
-execute unless score borderstop uhc.cfg matches 0 if score border2 uhc.cfg matches 0 if score tilldm uhc.cfg matches 0 run tellraw @a [{"nbt":"box_name","storage":"uhc","interpret":"true"},{"text":"If the game does not end when the border begins shrinking, I shall end it myself.","italic":true,"color":"aqua"}]
+let i = borderstop uhc.cfg run tellraw @a [{"nbt":"box_name","storage":"uhc","interpret":"true"},{"text":"The worldborder is now stopped. It will resume in ","italic":true,"color":"aqua"},{"nbt":"num_words[$i]","storage":"uhc"},{"text":" minutes."}]
+execute if score border2 uhc.cfg matches 0 if score tilldm uhc.cfg matches 0 run tellraw @a [{"nbt":"box_name","storage":"uhc","interpret":"true"},{"text":"If the game does not end when the border begins shrinking, I shall end it myself.","italic":true,"color":"aqua"}]

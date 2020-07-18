@@ -1,4 +1,4 @@
-function uhc:event/tellraw/borderstop
+execute unless score borderstop uhc.cfg matches 0 function uhc:event/tellraw/borderstop
 scoreboard players set wbclr uhc.hud 0
 
 scoreboard players operation max uhc.bossbar = border2 uhc.internal

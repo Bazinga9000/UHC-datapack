@@ -1,4 +1,4 @@
-function uhc:event/tellraw/dmwarn
+execute unless score tilldm uhc.cfg matches 0 function uhc:event/tellraw/dmwarn
 scoreboard players set wbclr uhc.hud 0
 
 scoreboard players operation max uhc.bossbar = deathmatch uhc.internal
