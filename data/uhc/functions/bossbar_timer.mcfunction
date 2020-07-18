@@ -9,12 +9,8 @@ scoreboard players operation progressh uhc.bossbar = progressm uhc.bossbar
 scoreboard players operation progressh uhc.bossbar /= 60 constants
 scoreboard players operation progressm uhc.bossbar %= 60 constants
 
-scoreboard players operation log uhc.internal = progressm uhc.bossbar
-function uhc:num_len
-scoreboard players operation mlen uhc.bossbar = log uhc.internal
-scoreboard players operation log uhc.internal = progresss uhc.bossbar
-function uhc:num_len
-scoreboard players operation slen uhc.bossbar = log uhc.internal
+execute store mlen uhc.bossbar run runfn uhc:num_len with log uhc.internal as progressm uhc.bossbar
+execute store slen uhc.bossbar run runfn uhc:num_len with log uhc.internal as progresss uhc.bossbar
 
 data modify storage uhc bossbar_timer append value '[{"text":" ","font":"default"},{"text":"\\ue000","font":"uhc:hud_icon"},{"text":" ","font":"default"}]'
 execute if score progressh uhc.bossbar matches 1..9 run data modify storage uhc bossbar_timer append value '[{"text":"0"},{"score":{"name":"progressh","objective":"uhc.bossbar"}},{"text":":"}]'
