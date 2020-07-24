@@ -10,6 +10,7 @@ function uhc:parkour/tick
 execute positioned 48 18 -3 run function uhc:cfg/tcount
 execute positioned 48 18 -5 run function uhc:cfg/esoteric
 execute positioned 48 18 -7 run function uhc:cfg/intervals
+function uhc:cfg/cfg_board
 
 #>  The "Make InfiniCake Useless"ifier
 execute as @a store result score @s uhc.saturation run data get entity @s foodSaturationLevel
