@@ -9,4 +9,4 @@ execute as @a[tag=in_parkour,gamemode=!creative,gamemode=!spectator] at @s if en
 
 scoreboard players add celtime uhc.internal 1
 scoreboard players operation celtime uhc.internal %= 64 constants
-execute as @e[tag=celeste] run function uhc:parkour/celeste/tick
+function uhc:parkour/celeste/tick
