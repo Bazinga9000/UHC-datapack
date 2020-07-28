@@ -1,7 +1,7 @@
 execute store success score dim_game_exist uhc.internal in game run help me
 execute store success score dim_gamen_exist uhc.internal in game_nether run help me
 
-execute if score game_started uhc.internal matches 0 if score dim_game_exist uhc.internal matches 1 if score dim_gamen_exist uhc.internal matches 1 if entity @a[team=team1] run function uhc:event/game_begins
+execute if score game_started uhc.internal matches 0 if score dim_game_exist uhc.internal matches 1 if score dim_gamen_exist uhc.internal matches 1 if entity @a[team=team1] run function uhc:event/game_start
 
 #> Error notification
 execute unless entity @a[team=team1] run tellraw @a[gamemode=creative] {"text":"Teams have not been assigned.","color":"red"}
