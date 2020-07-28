@@ -17,6 +17,7 @@ effect give @a minecraft:resistance 60 255 false
 clear @a
 xp set @a 0 points
 advancement revoke @a everything
+tellraw @a[gamemode=creative] [{"text":"Press ","color":"red"},{"text":"[here] ","color":"blue","clickEvent":{"action":"run_command","value":"/mvunload lobby"}},{"text":"to unload the lobby. This will alleviate lag in-game."}]
 
 gamemode spectator @a[team=spectator]
 gamemode survival @a[team=!spectator]
@@ -44,4 +45,3 @@ data modify storage uhc bossbar_name set from storage uhc bossbar_events.stillbo
 scoreboard players operation max uhc.bossbar = border1 uhc.internal
 scoreboard players operation range uhc.bossbar = stillbordert uhc.internal
 
-tellraw @a[gamemode=creative] [{"text":"Press ","color":"red"},{"text":"[here] ","color":"blue","clickEvent":{"action":"run_command","value":"/mvunload lobby"}},{"text":"to unload the lobby. This will alleviate lag in-game."}]
