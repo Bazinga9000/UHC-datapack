@@ -1,3 +1,4 @@
+execute as @e[tag=celeste] run playsound minecraft:block.note_block.banjo master @a ~ ~ ~ 1 0.7071
 execute as @e[tag=celeste] if score celtime uhc.internal matches 0 run playsound minecraft:block.note_block.banjo master @a ~ ~ ~ 1 0.7071
 execute as @e[tag=celeste] if score celtime uhc.internal matches 0 run playsound minecraft:block.note_block.banjo master @a ~ ~ ~ 1 1.2599
 execute as @e[tag=celeste] if score celtime uhc.internal matches 0 run playsound minecraft:block.note_block.didgeridoo master @a ~ ~ ~ 1 0.7071
