@@ -89,7 +89,7 @@ scoreboard players operation max_health uhc.esoteric %= 4 constants
 scoreboard players operation mv_speed uhc.esoteric %= 4 constants
 
 # reset to default
-execute if score esoteric uhc.cfg.opt matches 27 function uhc:cfg/default/esoteric
+execute if score esoteric uhc.cfg.opt matches 27 run function uhc:cfg/default/esoteric
 
 #> update gui
 # fix coords here
