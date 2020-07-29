@@ -91,6 +91,10 @@ scoreboard players operation mv_speed uhc.esoteric %= 5 constants
 # reset to default
 execute if score esoteric uhc.cfg.opt matches 27 run function uhc:cfg/default/esoteric
 
+#> deal with incompatibilities
+execute if score esoteric uhc.cfg.opt matches 10 run scoreboard players set always_night uhc.esoteric 0
+execute if score esoteric uhc.cfg.opt matches 11 run scoreboard players set always_day uhc.esoteric 0
+
 #> update gui
 # fix coords here
 data modify block ~ ~ ~ Items set from block 45 7 9 Items
@@ -145,5 +149,17 @@ execute if score nether_spawn uhc.esoteric matches 1 run data modify block ~ ~ ~
 execute if score always_day uhc.esoteric matches 1 run data modify block ~ ~ ~ Items[{Slot: 9b}].tag.Enchantments set value [{}]
 execute if score always_night uhc.esoteric matches 1 run data modify block ~ ~ ~ Items[{Slot: 10b}].tag.Enchantments set value [{}]
 execute if score combat_type uhc.esoteric matches 1 run data modify block ~ ~ ~ Items[{Slot: 12b}].tag.Enchantments set value [{}]
+
+# enum 
+scoreboard if score max_health uhc.esoteric matches 0 data modify block ~ ~ ~ Items[{Slot:4b}] set from block 45 8 9 Items[{Slot:0b}]
+scoreboard if score max_health uhc.esoteric matches 1 data modify block ~ ~ ~ Items[{Slot:4b}] set from block 45 8 9 Items[{Slot:1b}]
+scoreboard if score max_health uhc.esoteric matches 2 data modify block ~ ~ ~ Items[{Slot:4b}] set from block 45 8 9 Items[{Slot:2b}]
+scoreboard if score max_health uhc.esoteric matches 3 data modify block ~ ~ ~ Items[{Slot:4b}] set from block 45 8 9 Items[{Slot:3b}]
+
+scoreboard if score mv_speed uhc.esoteric matches 0 data modify block ~ ~ ~ Items[{Slot:11b}] set from block 45 8 9 Items[{Slot:9b}]
+scoreboard if score mv_speed uhc.esoteric matches 1 data modify block ~ ~ ~ Items[{Slot:11b}] set from block 45 8 9 Items[{Slot:10b}]
+scoreboard if score mv_speed uhc.esoteric matches 2 data modify block ~ ~ ~ Items[{Slot:11b}] set from block 45 8 9 Items[{Slot:11b}]
+scoreboard if score mv_speed uhc.esoteric matches 3 data modify block ~ ~ ~ Items[{Slot:11b}] set from block 45 8 9 Items[{Slot:12b}]
+scoreboard if score mv_speed uhc.esoteric matches 4 data modify block ~ ~ ~ Items[{Slot:11b}] set from block 45 8 9 Items[{Slot:13b}]
 #
 scoreboard players set esoteric uhc.cfg.opt 0
