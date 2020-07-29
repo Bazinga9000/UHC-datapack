@@ -98,17 +98,17 @@ data modify block ~ ~ ~ Items set from block 45 7 9 Items
 # bit flippers
 # make item enchanted if active, unenchanted if inactive
 # also mark if they're active
-execute if score gone_fishing uhc.esoteric matches 0 run data modify block ~ ~ ~ Items[{Slot: 0b}].Lore[0] set from storage uhc cfg.esoteric.inactive
-execute if score boss uhc.esoteric matches 0 run data modify block ~ ~ ~ Items[{Slot: 1b}].Lore[0] set from storage uhc cfg.esoteric.inactive
-execute if score always_elytra uhc.esoteric matches 0 run data modify block ~ ~ ~ Items[{Slot: 2b}].Lore[0] set from storage uhc cfg.esoteric.inactive
-execute if score sardines uhc.esoteric matches 0 run data modify block ~ ~ ~ Items[{Slot: 3b}].Lore[0] set from storage uhc cfg.esoteric.inactive
-execute if score dn_speed uhc.esoteric matches 0 run data modify block ~ ~ ~ Items[{Slot: 5b}].Lore[0] set from storage uhc cfg.esoteric.inactive
-execute if score covert_teams uhc.esoteric matches 0 run data modify block ~ ~ ~ Items[{Slot: 6b}].Lore[0] set from storage uhc cfg.esoteric.inactive
-execute if score wither_bonus uhc.esoteric matches 0 run data modify block ~ ~ ~ Items[{Slot: 7b}].Lore[0] set from storage uhc cfg.esoteric.inactive
-execute if score nether_spawn uhc.esoteric matches 0 run data modify block ~ ~ ~ Items[{Slot: 8b}].Lore[0] set from storage uhc cfg.esoteric.inactive
-execute if score always_day uhc.esoteric matches 0 run data modify block ~ ~ ~ Items[{Slot: 9b}].Lore[0] set from storage uhc cfg.esoteric.inactive
-execute if score always_night uhc.esoteric matches 0 run data modify block ~ ~ ~ Items[{Slot: 10b}].Lore[0] set from storage uhc cfg.esoteric.inactive
-execute if score combat_type uhc.esoteric matches 0 run data modify block ~ ~ ~ Items[{Slot: 12b}].Lore[0] set from storage uhc cfg.esoteric.inactive
+execute if score gone_fishing uhc.esoteric matches 0 run data modify block ~ ~ ~ Items[{Slot: 0b}].display.Lore[0] set from storage uhc cfg.esoteric.inactive
+execute if score boss uhc.esoteric matches 0 run data modify block ~ ~ ~ Items[{Slot: 1b}].display.Lore[0] set from storage uhc cfg.esoteric.inactive
+execute if score always_elytra uhc.esoteric matches 0 run data modify block ~ ~ ~ Items[{Slot: 2b}].display.Lore[0] set from storage uhc cfg.esoteric.inactive
+execute if score sardines uhc.esoteric matches 0 run data modify block ~ ~ ~ Items[{Slot: 3b}].display.Lore[0] set from storage uhc cfg.esoteric.inactive
+execute if score dn_speed uhc.esoteric matches 0 run data modify block ~ ~ ~ Items[{Slot: 5b}].display.Lore[0] set from storage uhc cfg.esoteric.inactive
+execute if score covert_teams uhc.esoteric matches 0 run data modify block ~ ~ ~ Items[{Slot: 6b}].display.Lore[0] set from storage uhc cfg.esoteric.inactive
+execute if score wither_bonus uhc.esoteric matches 0 run data modify block ~ ~ ~ Items[{Slot: 7b}].display.Lore[0] set from storage uhc cfg.esoteric.inactive
+execute if score nether_spawn uhc.esoteric matches 0 run data modify block ~ ~ ~ Items[{Slot: 8b}].display.Lore[0] set from storage uhc cfg.esoteric.inactive
+execute if score always_day uhc.esoteric matches 0 run data modify block ~ ~ ~ Items[{Slot: 9b}].display.Lore[0] set from storage uhc cfg.esoteric.inactive
+execute if score always_night uhc.esoteric matches 0 run data modify block ~ ~ ~ Items[{Slot: 10b}].display.Lore[0] set from storage uhc cfg.esoteric.inactive
+execute if score combat_type uhc.esoteric matches 0 run data modify block ~ ~ ~ Items[{Slot: 12b}].display.Lore[0] set from storage uhc cfg.esoteric.inactive
 
 execute if score gone_fishing uhc.esoteric matches 0 run data modify block ~ ~ ~ Items[{Slot: 0b}].Enchantments set value []
 execute if score boss uhc.esoteric matches 0 run data modify block ~ ~ ~ Items[{Slot: 1b}].Enchantments set value []
@@ -122,17 +122,17 @@ execute if score always_day uhc.esoteric matches 0 run data modify block ~ ~ ~ I
 execute if score always_night uhc.esoteric matches 0 run data modify block ~ ~ ~ Items[{Slot: 10b}].Enchantments set value []
 execute if score combat_type uhc.esoteric matches 0 run data modify block ~ ~ ~ Items[{Slot: 12b}].Enchantments set value []
 
-execute if score gone_fishing uhc.esoteric matches 1 run data modify block ~ ~ ~ Items[{Slot: 0b}].Lore[0] set from storage uhc cfg.esoteric.active
-execute if score boss uhc.esoteric matches 1 run data modify block ~ ~ ~ Items[{Slot: 1b}].Lore[0] set from storage uhc cfg.esoteric.active
-execute if score always_elytra uhc.esoteric matches 1 run data modify block ~ ~ ~ Items[{Slot: 2b}].Lore[0] set from storage uhc cfg.esoteric.active
-execute if score sardines uhc.esoteric matches 1 run data modify block ~ ~ ~ Items[{Slot: 3b}].Lore[0] set from storage uhc cfg.esoteric.active
-execute if score dn_speed uhc.esoteric matches 1 run data modify block ~ ~ ~ Items[{Slot: 5b}].Lore[0] set from storage uhc cfg.esoteric.active
-execute if score covert_teams uhc.esoteric matches 1 run data modify block ~ ~ ~ Items[{Slot: 6b}].Lore[0] set from storage uhc cfg.esoteric.active
-execute if score wither_bonus uhc.esoteric matches 1 run data modify block ~ ~ ~ Items[{Slot: 7b}].Lore[0] set from storage uhc cfg.esoteric.active
-execute if score nether_spawn uhc.esoteric matches 1 run data modify block ~ ~ ~ Items[{Slot: 8b}].Lore[0] set from storage uhc cfg.esoteric.active
-execute if score always_day uhc.esoteric matches 1 run data modify block ~ ~ ~ Items[{Slot: 9b}].Lore[0] set from storage uhc cfg.esoteric.active
-execute if score always_night uhc.esoteric matches 1 run data modify block ~ ~ ~ Items[{Slot: 10b}].Lore[0] set from storage uhc cfg.esoteric.active
-execute if score combat_type uhc.esoteric matches 1 run data modify block ~ ~ ~ Items[{Slot: 12b}].Lore[0] set from storage uhc cfg.esoteric.active
+execute if score gone_fishing uhc.esoteric matches 1 run data modify block ~ ~ ~ Items[{Slot: 0b}].display.Lore[0] set from storage uhc cfg.esoteric.active
+execute if score boss uhc.esoteric matches 1 run data modify block ~ ~ ~ Items[{Slot: 1b}].display.Lore[0] set from storage uhc cfg.esoteric.active
+execute if score always_elytra uhc.esoteric matches 1 run data modify block ~ ~ ~ Items[{Slot: 2b}].display.Lore[0] set from storage uhc cfg.esoteric.active
+execute if score sardines uhc.esoteric matches 1 run data modify block ~ ~ ~ Items[{Slot: 3b}].display.Lore[0] set from storage uhc cfg.esoteric.active
+execute if score dn_speed uhc.esoteric matches 1 run data modify block ~ ~ ~ Items[{Slot: 5b}].display.Lore[0] set from storage uhc cfg.esoteric.active
+execute if score covert_teams uhc.esoteric matches 1 run data modify block ~ ~ ~ Items[{Slot: 6b}].display.Lore[0] set from storage uhc cfg.esoteric.active
+execute if score wither_bonus uhc.esoteric matches 1 run data modify block ~ ~ ~ Items[{Slot: 7b}].display.Lore[0] set from storage uhc cfg.esoteric.active
+execute if score nether_spawn uhc.esoteric matches 1 run data modify block ~ ~ ~ Items[{Slot: 8b}].display.Lore[0] set from storage uhc cfg.esoteric.active
+execute if score always_day uhc.esoteric matches 1 run data modify block ~ ~ ~ Items[{Slot: 9b}].display.Lore[0] set from storage uhc cfg.esoteric.active
+execute if score always_night uhc.esoteric matches 1 run data modify block ~ ~ ~ Items[{Slot: 10b}].display.Lore[0] set from storage uhc cfg.esoteric.active
+execute if score combat_type uhc.esoteric matches 1 run data modify block ~ ~ ~ Items[{Slot: 12b}].display.Lore[0] set from storage uhc cfg.esoteric.active
 
 execute if score gone_fishing uhc.esoteric matches 1 run data modify block ~ ~ ~ Items[{Slot: 0b}].Enchantments set value [{}]
 execute if score boss uhc.esoteric matches 1 run data modify block ~ ~ ~ Items[{Slot: 1b}].Enchantments set value [{}]
