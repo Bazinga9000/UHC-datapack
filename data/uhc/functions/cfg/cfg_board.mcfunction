@@ -1,3 +1,5 @@
+#> Public display of configurations
+
 # # of Teams
 data merge block -11 12 2 {Text3:'{"color":"#401010","score":{"name":"num_teams","objective":"uhc.cfg"}}'}
 # # of Pls, Sps
