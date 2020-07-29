@@ -1,35 +1,33 @@
-data modify storage uhc cfg.esoteric.Items set from block ~ ~ ~ Items
-
 #> check if item was removed
 #idk what the options are
 #gone fishing
-execute unless data storage minecraft:uhc cfg.esoteric.Items[{Slot: 0b, tag: {config: 1b}}] run scoreboard players set esoteric uhc.cfg.opt 1
+execute unless data block ~ ~ ~ Items[{Slot: 0b, tag: {config: 1b}}] run scoreboard players set esoteric uhc.cfg.opt 1
 #boss uhc
-execute unless data storage minecraft:uhc cfg.esoteric.Items[{Slot: 1b, tag: {config: 1b}}] run scoreboard players set esoteric uhc.cfg.opt 2
+execute unless data block ~ ~ ~ Items[{Slot: 1b, tag: {config: 1b}}] run scoreboard players set esoteric uhc.cfg.opt 2
 #always elytra
-execute unless data storage minecraft:uhc cfg.esoteric.Items[{Slot: 2b, tag: {config: 1b}}] run scoreboard players set esoteric uhc.cfg.opt 3
+execute unless data block ~ ~ ~ Items[{Slot: 2b, tag: {config: 1b}}] run scoreboard players set esoteric uhc.cfg.opt 3
 #sardines
-execute unless data storage minecraft:uhc cfg.esoteric.Items[{Slot: 3b, tag: {config: 1b}}] run scoreboard players set esoteric uhc.cfg.opt 4
+execute unless data block ~ ~ ~ Items[{Slot: 3b, tag: {config: 1b}}] run scoreboard players set esoteric uhc.cfg.opt 4
 #health bonus
-execute unless data storage minecraft:uhc cfg.esoteric.Items[{Slot: 4b, tag: {config: 1b}}] run scoreboard players set esoteric uhc.cfg.opt 5
+execute unless data block ~ ~ ~ Items[{Slot: 4b, tag: {config: 1b}}] run scoreboard players set esoteric uhc.cfg.opt 5
 #2x d/n
-execute unless data storage minecraft:uhc cfg.esoteric.Items[{Slot: 5b, tag: {config: 1b}}] run scoreboard players set esoteric uhc.cfg.opt 6
+execute unless data block ~ ~ ~ Items[{Slot: 5b, tag: {config: 1b}}] run scoreboard players set esoteric uhc.cfg.opt 6
 #covert teams
-execute unless data storage minecraft:uhc cfg.esoteric.Items[{Slot: 6b, tag: {config: 1b}}] run scoreboard players set esoteric uhc.cfg.opt 7
+execute unless data block ~ ~ ~ Items[{Slot: 6b, tag: {config: 1b}}] run scoreboard players set esoteric uhc.cfg.opt 7
 #wither
-execute unless data storage minecraft:uhc cfg.esoteric.Items[{Slot: 7b, tag: {config: 1b}}] run scoreboard players set esoteric uhc.cfg.opt 8
+execute unless data block ~ ~ ~ Items[{Slot: 7b, tag: {config: 1b}}] run scoreboard players set esoteric uhc.cfg.opt 8
 #spawn in nether
-execute unless data storage minecraft:uhc cfg.esoteric.Items[{Slot: 8b, tag: {config: 1b}}] run scoreboard players set esoteric uhc.cfg.opt 9
+execute unless data block ~ ~ ~ Items[{Slot: 8b, tag: {config: 1b}}] run scoreboard players set esoteric uhc.cfg.opt 9
 #always day
-execute unless data storage minecraft:uhc cfg.esoteric.Items[{Slot: 9b, tag: {config: 1b}}] run scoreboard players set esoteric uhc.cfg.opt 10
+execute unless data block ~ ~ ~ Items[{Slot: 9b, tag: {config: 1b}}] run scoreboard players set esoteric uhc.cfg.opt 10
 #always night
-execute unless data storage minecraft:uhc cfg.esoteric.Items[{Slot: 10b, tag: {config: 1b}}] run scoreboard players set esoteric uhc.cfg.opt 11
+execute unless data block ~ ~ ~ Items[{Slot: 10b, tag: {config: 1b}}] run scoreboard players set esoteric uhc.cfg.opt 11
 #speed bonus
-execute unless data storage minecraft:uhc cfg.esoteric.Items[{Slot: 11b, tag: {config: 1b}}] run scoreboard players set esoteric uhc.cfg.opt 12
+execute unless data block ~ ~ ~ Items[{Slot: 11b, tag: {config: 1b}}] run scoreboard players set esoteric uhc.cfg.opt 12
 #1.8 combat
-execute unless data storage minecraft:uhc cfg.esoteric.Items[{Slot: 12b, tag: {config: 1b}}] run scoreboard players set esoteric uhc.cfg.opt 13
+execute unless data block ~ ~ ~ Items[{Slot: 12b, tag: {config: 1b}}] run scoreboard players set esoteric uhc.cfg.opt 13
 # reset to defaults
-execute unless data storage minecraft:uhc cfg.esoteric.Items[{Slot: 26b, tag: {config: 1b}}] run scoreboard players set esoteric uhc.cfg.opt 27
+execute unless data block ~ ~ ~ Items[{Slot: 26b, tag: {config: 1b}}] run scoreboard players set esoteric uhc.cfg.opt 27
 
 #> clear item
 #idk what the items are
