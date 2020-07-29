@@ -48,6 +48,7 @@ clear @a[distance=..7, tag=!debugger] iron_sword{config: 1b}
 clear @a[distance=..7, tag=!debugger] soul_sand{config: 1b}
 clear @a[distance=..7, tag=!debugger] ice{config: 1b}
 clear @a[distance=..7, tag=!debugger] packed_ice{config: 1b}
+clear @a[distance=..7, tag=!debugger] blue_ice{config: 1b}
 clear @a[distance=..7, tag=!debugger] fermented_spider_eye{config: 1b}
 clear @a[distance=..7, tag=!debugger] golden_apple{config: 1b}
 clear @a[distance=..7, tag=!debugger] enchanted_golden_apple{config: 1b}
