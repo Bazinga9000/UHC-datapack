@@ -93,8 +93,12 @@ scoreboard players operation mv_speed uhc.esoteric %= 5 constants
 execute if score esoteric uhc.cfg.opt matches 27 run function uhc:cfg/default/esoteric
 
 #> deal with incompatibilities
+execute if score esoteric uhc.cfg.opt matches 6 run scoreboard players set always_day uhc.esoteric 0
+execute if score esoteric uhc.cfg.opt matches 6 run scoreboard players set always_night uhc.esoteric 0
 execute if score esoteric uhc.cfg.opt matches 10 run scoreboard players set always_night uhc.esoteric 0
+execute if score esoteric uhc.cfg.opt matches 10 run scoreboard players set dn_speed uhc.esoteric 0
 execute if score esoteric uhc.cfg.opt matches 11 run scoreboard players set always_day uhc.esoteric 0
+execute if score esoteric uhc.cfg.opt matches 11 run scoreboard players set dn_speed uhc.esoteric 0
 
 #> update gui
 # fix coords here
