@@ -151,15 +151,15 @@ execute if score always_night uhc.esoteric matches 1 run data modify block ~ ~ ~
 execute if score combat_type uhc.esoteric matches 1 run data modify block ~ ~ ~ Items[{Slot: 12b}].tag.Enchantments set value [{}]
 
 # enum 
-execute if score max_health uhc.esoteric matches 0 data modify block ~ ~ ~ Items[{Slot:4b}] set from block 45 8 9 Items[{Slot:0b}]
-execute if score max_health uhc.esoteric matches 1 data modify block ~ ~ ~ Items[{Slot:4b}] set from block 45 8 9 Items[{Slot:1b}]
-execute if score max_health uhc.esoteric matches 2 data modify block ~ ~ ~ Items[{Slot:4b}] set from block 45 8 9 Items[{Slot:2b}]
-execute if score max_health uhc.esoteric matches 3 data modify block ~ ~ ~ Items[{Slot:4b}] set from block 45 8 9 Items[{Slot:3b}]
+execute if score max_health uhc.esoteric matches 0 run data modify block ~ ~ ~ Items[{Slot:4b}] set from block 45 8 9 Items[{Slot:0b}]
+execute if score max_health uhc.esoteric matches 1 run data modify block ~ ~ ~ Items[{Slot:4b}] set from block 45 8 9 Items[{Slot:1b}]
+execute if score max_health uhc.esoteric matches 2 run data modify block ~ ~ ~ Items[{Slot:4b}] set from block 45 8 9 Items[{Slot:2b}]
+execute if score max_health uhc.esoteric matches 3 run data modify block ~ ~ ~ Items[{Slot:4b}] set from block 45 8 9 Items[{Slot:3b}]
 
-execute if score mv_speed uhc.esoteric matches 0 data modify block ~ ~ ~ Items[{Slot:11b}] set from block 45 8 9 Items[{Slot:9b}]
-execute if score mv_speed uhc.esoteric matches 1 data modify block ~ ~ ~ Items[{Slot:11b}] set from block 45 8 9 Items[{Slot:10b}]
-execute if score mv_speed uhc.esoteric matches 2 data modify block ~ ~ ~ Items[{Slot:11b}] set from block 45 8 9 Items[{Slot:11b}]
-execute if score mv_speed uhc.esoteric matches 3 data modify block ~ ~ ~ Items[{Slot:11b}] set from block 45 8 9 Items[{Slot:12b}]
-execute if score mv_speed uhc.esoteric matches 4 data modify block ~ ~ ~ Items[{Slot:11b}] set from block 45 8 9 Items[{Slot:13b}]
+execute if score mv_speed uhc.esoteric matches 0 run data modify block ~ ~ ~ Items[{Slot:11b}] set from block 45 8 9 Items[{Slot:9b}]
+execute if score mv_speed uhc.esoteric matches 1 run data modify block ~ ~ ~ Items[{Slot:11b}] set from block 45 8 9 Items[{Slot:10b}]
+execute if score mv_speed uhc.esoteric matches 2 run data modify block ~ ~ ~ Items[{Slot:11b}] set from block 45 8 9 Items[{Slot:11b}]
+execute if score mv_speed uhc.esoteric matches 3 run data modify block ~ ~ ~ Items[{Slot:11b}] set from block 45 8 9 Items[{Slot:12b}]
+execute if score mv_speed uhc.esoteric matches 4 run data modify block ~ ~ ~ Items[{Slot:11b}] set from block 45 8 9 Items[{Slot:13b}]
 #
 scoreboard players set esoteric uhc.cfg.opt 0
