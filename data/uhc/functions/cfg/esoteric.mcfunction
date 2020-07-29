@@ -86,7 +86,7 @@ scoreboard players operation combat_type uhc.esoteric %= 2 constants
 
 # enums
 scoreboard players operation max_health uhc.esoteric %= 4 constants
-scoreboard players operation mv_speed uhc.esoteric %= 4 constants
+scoreboard players operation mv_speed uhc.esoteric %= 5 constants
 
 # reset to default
 execute if score esoteric uhc.cfg.opt matches 27 run function uhc:cfg/default/esoteric
