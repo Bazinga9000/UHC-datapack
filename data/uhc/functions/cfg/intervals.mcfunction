@@ -47,11 +47,7 @@ execute if score interval uhc.cfg.opt matches 12 run scoreboard players remove t
 # execute if score interval uhc.cfg.opt matches 6 run scoreboard players set border2 uhc.cfg 
 # execute if score interval uhc.cfg.opt matches 6 run scoreboard players set tilldm uhc.cfg 
 execute if score interval uhc.cfg.opt matches 6 run tellraw @a[distance=..7, tag=!debugger] "Speedy preset not configured."
-execute if score interval uhc.cfg.opt matches 7 run scoreboard players set stillborder uhc.cfg 60
-execute if score interval uhc.cfg.opt matches 7 run scoreboard players set border1 uhc.cfg 15
-execute if score interval uhc.cfg.opt matches 7 run scoreboard players set borderstop uhc.cfg 5
-execute if score interval uhc.cfg.opt matches 7 run scoreboard players set border2 uhc.cfg 10
-execute if score interval uhc.cfg.opt matches 7 run scoreboard players set tilldm uhc.cfg 5
+execute if score interval uhc.cfg.opt matches 7 run function uhc:cfg/default/intervals
 
 # clamp
 scoreboard players operation stillborder uhc.cfg > 0 constants

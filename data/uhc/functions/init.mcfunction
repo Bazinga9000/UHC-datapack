@@ -14,6 +14,8 @@ scoreboard objectives add uhc.cfg dummy
 scoreboard objectives add uhc.cfg.opt dummy
 # used for internal vars that don't fit other scoreboards
 scoreboard objectives add uhc.internal dummy
+# used for storing esoteric settings cause there's a stupid heck ton amount of them
+scoreboard objectives add uhc.esoteric dummy
 # records users' saturations in the lobby to force their saturation to 5
 scoreboard objectives add uhc.saturation dummy
 # records amount of alive players in a team, to figure out if all players are dead
@@ -28,16 +30,10 @@ scoreboard players set game_started uhc.internal 0
 # deprecated scoreboards
 # cfg, spawned, worldborder, bossbar, saturation, health, deaths, timer, settings
 #> constants init
-scoreboard players set warn1 uhc.internal 36000
-scoreboard players set warn2 uhc.internal 54000
-scoreboard players set warn3 uhc.internal 66000
-scoreboard players set border1 uhc.internal 72000
-scoreboard players set borderstop uhc.internal 90000
-scoreboard players set border2 uhc.internal 96000
-scoreboard players set dmwarn uhc.internal 108000
-scoreboard players set deathmatch uhc.internal 114000
 function uhc:init_constants
-function uhc:teams/create 
+function uhc:teams/create
+function uhc:cfg/default/esoteric
+function uhc:cfg/default/intervals
 
 execute in minecraft:lobby run setworldspawn 0 10 0
 execute as @a in minecraft:lobby run spawnpoint @s 0 10 0
