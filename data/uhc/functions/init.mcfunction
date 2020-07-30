@@ -35,7 +35,6 @@ function uhc:teams/create
 function uhc:cfg/default/esoteric
 function uhc:cfg/default/intervals
 function uhc:init/storage
-function uhc:hi
 
 #> gamerule inits
 execute in minecraft:lobby run function uhc:gamerules/lobby
