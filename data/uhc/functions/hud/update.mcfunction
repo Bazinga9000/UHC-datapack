@@ -4,16 +4,16 @@
 #> get wb radius + number of digits of wb radius
 execute in minecraft:game store result score wb uhc.hud run worldborder get
 scoreboard players operation wb uhc.hud /= 2 constants
-execute store wblen uhc.hud run runfn uhc:num_len with log uhc.internal as wb uhc.hud
+execute store result score wblen uhc.hud run runfn uhc:num_len with log uhc.internal as wb uhc.hud
 
 #> get xyz coords + the total length their digits and signs take up (xyzlen)
 execute store result score x uhc.hud run data get entity @s Pos[0]
 execute store result score y uhc.hud run data get entity @s Pos[1]
 execute store result score z uhc.hud run data get entity @s Pos[2]
 
-execute store xlen run runfn uhc:num_len with log uhc.internal as x uhc.hud
-execute store ylen run runfn uhc:num_len with log uhc.internal as y uhc.hud
-execute store zlen run runfn uhc:num_len with log uhc.internal as z uhc.hud
+execute store result score xlen uhc.hud run runfn uhc:num_len with log uhc.internal as x uhc.hud
+execute store result score ylen uhc.hud run runfn uhc:num_len with log uhc.internal as y uhc.hud
+execute store result score zlen uhc.hud run runfn uhc:num_len with log uhc.internal as z uhc.hud
 
 scoreboard players set xyzlen uhc.hud 0
 scoreboard players operation xyzlen uhc.hud += xlen uhc.hud
