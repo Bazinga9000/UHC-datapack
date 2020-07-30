@@ -5,6 +5,7 @@ execute as @a[nbt={Dimension: "minecraft:game"}, tag=!debugger] in minecraft:lob
 execute as @a[nbt={Dimension: "minecraft:game_nether"}, tag=!debugger] in minecraft:lobby run tp @s 0 10 0
 
 function uhc:parkour/tick
+clear @a tnt
 
 #> config room
 execute positioned 48 18 -3 run function uhc:cfg/tcount
