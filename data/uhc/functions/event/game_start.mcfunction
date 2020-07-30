@@ -3,6 +3,7 @@ execute in minecraft:game run function uhc:gamerules/game
 execute in minecraft:game_nether run function uhc:gamerules/game
 
 #> scoreboard init
+scoreboard objectives setdisplay sidebar
 scoreboard players set @a uhc.deaths 0
 scoreboard players set game_started uhc.internal 1
 scoreboard players set time uhc.bossbar 0
