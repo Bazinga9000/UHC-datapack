@@ -4,6 +4,7 @@ execute store success score dim_gamen_exist uhc.internal in game_nether run help
 execute if score game_started uhc.internal matches 0 if score dim_game_exist uhc.internal matches 1 if score dim_gamen_exist uhc.internal matches 1 if entity @a[team=team1] run function uhc:event/game_start
 
 #> Error notification
+gamemode creative
 execute unless entity @a[team=team1] run tellraw @a[gamemode=creative] {"text":"Teams have not been assigned.","color":"red"}
 execute unless entity @a[team=team1] run tellraw @a[gamemode=creative] [{"text":"Press ","color":"red"},{"text":"[here] ","color":"blue","clickEvent":{"action":"run_command","value":"/function uhc:teams/assign"}},{"text":"to assign teams."}]
 execute unless score dim_game_exist uhc.internal matches 1 run tellraw @a[gamemode=creative] {"text": "Dimension game has not been created.", "color":"red"}
