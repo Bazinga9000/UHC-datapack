@@ -53,7 +53,7 @@ clear @a[distance=..7, tag=!debugger] green_concrete{config: 1b}
 
 #> do stuff
 # do something based off slot
-execute unless score wbsize uhc.cfg.opt matches 0 run playsound minecraft:block.note_block.harp master @a ~ ~ ~ 1 2
+execute unless score wbsize uhc.cfg.opt matches 0 unless score wbsize uhc.cfg.opt matches 25 run playsound minecraft:block.note_block.harp master @a ~ ~ ~ 1 2
 
 execute if score wbsize uhc.cfg.opt matches 1 run scoreboard players remove size_init_bor uhc.cfg 100
 execute if score wbsize uhc.cfg.opt matches 2 run scoreboard players remove size_init_bor uhc.cfg 10
@@ -96,3 +96,4 @@ scoreboard players operation size_bor_2 uhc.cfg > 1 constants
 #> fix gui
 # screw consistency (only run when something changes to reduce console spam)
 execute unless score wbsize uhc.cfg.opt matches 0 run function uhc:cfg/update_gui/wbsize
+scoreboard players set wbsize uhc.cfg.opt 0
