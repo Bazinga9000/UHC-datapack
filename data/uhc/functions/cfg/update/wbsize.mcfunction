@@ -41,10 +41,10 @@ scoreboard players operation size_bor_2 uhc.cfg < size_bor_1 uhc.cfg
 scoreboard players operation size_bor_2 uhc.cfg > 1 constants
 
 #> fix gui
-data modify block ~ ~ ~ Items set from block 45 7 7 Items
-let v = size_init_bor uhc.cfg run data modify block ~ ~ ~ Items[{Slot:4b}].tag.display.Lore[0] set value '[{"text":"Diameter: ","color":"white","italic":false},{"text":"$v","color":"aqua"}]'
-let v = size_bor_1 uhc.cfg run data modify block ~ ~ ~ Items[{Slot:13b}].tag.display.Lore[0] set value '[{"text":"Diameter: ","color":"white","italic":false},{"text":"$v","color":"aqua"}]'
-let v = size_bor_2 uhc.cfg run data modify block ~ ~ ~ Items[{Slot:22b}].tag.display.Lore[0] set value '[{"text":"Diameter: ","color":"white","italic":false},{"text":"$v","color":"aqua"}]'
+data modify storage uhc.cfg wbsize set from block 45 7 7 Items
+let v = size_init_bor uhc.cfg run data modify storage uhc.cfg wbsize Items[{Slot:4b}].tag.display.Lore[0] set value '[{"text":"Diameter: ","color":"white","italic":false},{"text":"$v","color":"aqua"}]'
+let v = size_bor_1 uhc.cfg run data modify storage uhc.cfg wbsize Items[{Slot:13b}].tag.display.Lore[0] set value '[{"text":"Diameter: ","color":"white","italic":false},{"text":"$v","color":"aqua"}]'
+let v = size_bor_2 uhc.cfg run data modify storage uhc.cfg wbsize Items[{Slot:22b}].tag.display.Lore[0] set value '[{"text":"Diameter: ","color":"white","italic":false},{"text":"$v","color":"aqua"}]'
 
 scoreboard players operation sizer_init_bor uhc.internal = size_init_bor uhc.cfg
 scoreboard players operation sizer_bor_1 uhc.internal = size_bor_1 uhc.cfg
@@ -52,8 +52,9 @@ scoreboard players operation sizer_bor_2 uhc.internal = size_bor_2 uhc.cfg
 scoreboard players operation sizer_init_bor uhc.internal /= 2 constants
 scoreboard players operation sizer_bor_1 uhc.internal /= 2 constants
 scoreboard players operation sizer_bor_2 uhc.internal /= 2 constants
-let v = sizer_init_bor uhc.internal run data modify block ~ ~ ~ Items[{Slot:4b}].tag.display.Lore[0] set value '[{"text":"Starts at: ","color":"white","italic":false},{"text":"±$v","color":"aqua"}]'
-let v = sizer_bor_1 uhc.internal run data modify block ~ ~ ~ Items[{Slot:13b}].tag.display.Lore[0] set value '[{"text":"Stops at: ","color":"white","italic":false},{"text":"±$v","color":"aqua"}]'
-let v = sizer_bor_2 uhc.internal run data modify block ~ ~ ~ Items[{Slot:22b}].tag.display.Lore[0] set value '[{"text":"Stops at: ","color":"white","italic":false},{"text":"±$v","color":"aqua"}]'
+let v = sizer_init_bor uhc.internal run data modify storage uhc.cfg wbsize Items[{Slot:4b}].tag.display.Lore[0] set value '[{"text":"Starts at: ","color":"white","italic":false},{"text":"±$v","color":"aqua"}]'
+let v = sizer_bor_1 uhc.internal run data modify storage uhc.cfg wbsize Items[{Slot:13b}].tag.display.Lore[0] set value '[{"text":"Stops at: ","color":"white","italic":false},{"text":"±$v","color":"aqua"}]'
+let v = sizer_bor_2 uhc.internal run data modify storage uhc.cfg wbsize Items[{Slot:22b}].tag.display.Lore[0] set value '[{"text":"Stops at: ","color":"white","italic":false},{"text":"±$v","color":"aqua"}]'
+data modify block ~ ~ ~ Items set from storage uhc.cfg wbsize
 
 scoreboard players set wbsize uhc.cfg.opt 0
