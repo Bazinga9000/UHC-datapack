@@ -30,8 +30,8 @@ tellraw @a [{"nbt":"box_name","storage":"uhc","interpret":true},{"text":"Let the
 
 #> world stuff
 worldborder warning distance 25
-let v = size_init_bor uhc.cfg execute in minecraft:game run worldborder set $v
-let v = size_init_bor uhc.cfg execute in minecraft:game_nether run worldborder set $v
+let v = size_init_bor uhc.cfg run execute in minecraft:game run worldborder set $v
+let v = size_init_bor uhc.cfg run execute in minecraft:game_nether run worldborder set $v
 time set day
 weather clear 9999
 # purge aggro mobs
