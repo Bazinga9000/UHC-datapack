@@ -35,6 +35,11 @@ execute unless data block ~ ~ ~ Items[{Slot: 24b, tag: {config: 1b}}] run scoreb
 execute unless data block ~ ~ ~ Items[{Slot: 25b, tag: {config: 1b}}] run scoreboard players set wbsize uhc.cfg.opt 23
 execute unless data block ~ ~ ~ Items[{Slot: 26b, tag: {config: 1b}}] run scoreboard players set wbsize uhc.cfg.opt 24
 
+#screw consistency (add white concrete as an option so that game actually bothers to update)
+execute unless data block ~ ~ ~ Items[{Slot: 4b, tag: {config: 1b}}] run scoreboard players set wbsize uhc.cfg.opt 25
+execute unless data block ~ ~ ~ Items[{Slot: 13b, tag: {config: 1b}}] run scoreboard players set wbsize uhc.cfg.opt 25
+execute unless data block ~ ~ ~ Items[{Slot: 22b, tag: {config: 1b}}] run scoreboard players set wbsize uhc.cfg.opt 25
+
 #> clear item
 clear @a[distance=..7, tag=!debugger] red_terracotta{config: 1b}
 clear @a[distance=..7, tag=!debugger] red_concrete{config: 1b}
@@ -89,18 +94,5 @@ scoreboard players operation size_bor_2 uhc.cfg < size_bor_1 uhc.cfg
 scoreboard players operation size_bor_2 uhc.cfg > 1 constants
 
 #> fix gui
-data modify storage uhc.cfg wbsize set from block 45 7 7 Items
-let v = size_init_bor uhc.cfg run data modify storage uhc.cfg wbsize[{Slot:4b}].tag.display.Lore[0] set value '[{"text":"Diameter: ","color":"white","italic":false},{"text":"$v","color":"aqua"}]'
-let v = size_bor_1 uhc.cfg run data modify storage uhc.cfg wbsize[{Slot:13b}].tag.display.Lore[0] set value '[{"text":"Diameter: ","color":"white","italic":false},{"text":"$v","color":"aqua"}]'
-let v = size_bor_2 uhc.cfg run data modify storage uhc.cfg wbsize[{Slot:22b}].tag.display.Lore[0] set value '[{"text":"Diameter: ","color":"white","italic":false},{"text":"$v","color":"aqua"}]'
-
-scoreboard players operation sizer_init_bor uhc.internal = size_init_bor uhc.cfg
-scoreboard players operation sizer_bor_1 uhc.internal = size_bor_1 uhc.cfg
-scoreboard players operation sizer_bor_2 uhc.internal = size_bor_2 uhc.cfg
-scoreboard players operation sizer_init_bor uhc.internal /= 2 constants
-scoreboard players operation sizer_bor_1 uhc.internal /= 2 constants
-scoreboard players operation sizer_bor_2 uhc.internal /= 2 constants
-let v = sizer_init_bor uhc.internal run data modify storage uhc.cfg wbsize[{Slot:4b}].tag.display.Lore[1] set value '[{"text":"Starts at: ","color":"white","italic":false},{"text":"±$v","color":"aqua"}]'
-let v = sizer_bor_1 uhc.internal run data modify storage uhc.cfg wbsize[{Slot:13b}].tag.display.Lore[1] set value '[{"text":"Stops at: ","color":"white","italic":false},{"text":"±$v","color":"aqua"}]'
-let v = sizer_bor_2 uhc.internal run data modify storage uhc.cfg wbsize[{Slot:22b}].tag.display.Lore[1] set value '[{"text":"Stops at: ","color":"white","italic":false},{"text":"±$v","color":"aqua"}]'
-data modify block ~ ~ ~ Items set from storage uhc.cfg wbsize
+# screw consistency (only run when something changes to reduce console spam)
+execute unless score wbsize uhc.cfg.opt matches 0 run function uhc:cfg/update_gui/wbsize
