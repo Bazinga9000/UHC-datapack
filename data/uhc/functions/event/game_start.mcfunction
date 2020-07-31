@@ -10,8 +10,10 @@ scoreboard players set time uhc.bossbar 0
 scoreboard players set wbclr uhc.hud 0
 
 #> player stuff
-execute unless score nether_spawn uhc.uhc.esoteric matches 1 in game run function uhc:spread_players
-execute if score nether_spawn uhc.uhc.esoteric matches 1 in game_nether run function uhc:spread_players
+execute unless score nether_spawn uhc.esoteric matches 1 in game run tp @a 0 255 0
+execute unless score nether_spawn uhc.esoteric matches 1 run let x = spread_range uhc.internal run let y = spread_max run execute in game run spreadplayers 0 0 $x $y true @a
+execute if score nether_spawn uhc.esoteric matches 1 in game_nether run tp @a 0 255 0
+execute if score nether_spawn uhc.esoteric matches 1 run let x = spread_range uhc.internal run let y = spread_max run execute in game_nether run spreadplayers 0 0 $x $y true @a
 cmd mvunload lobby
 
 # clear all
