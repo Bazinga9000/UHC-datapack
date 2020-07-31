@@ -20,16 +20,16 @@ scoreboard players operation xyzlen uhc.hud += xlen uhc.hud
 scoreboard players operation xyzlen uhc.hud += ylen uhc.hud
 scoreboard players operation xyzlen uhc.hud += zlen uhc.hud
 
-# check how many bars are on the left
-# in surv/adv: there are the hearts which the hud should be placed above (uhc:hud0)
-# if they're wearing armor, the hearts should be placed one row higher (uhc:hud1)
-# if they have absorp, then the hud should also be placed one row higher (uhc:hud2)
-# in creative, it doesn't matter because none of that shows (uhc:hud-1)
+## check how many bars are on the left
+# place above first heart bar
 scoreboard players set leftlen uhc.hud 0
+# add one bar if there is absorption
 execute store result score tmp uhc.hud run data get entity @s AbsorptionAmount
 execute unless score tmp uhc.hud matches 0 run scoreboard players add leftlen uhc.hud 1
+# add one bar if there's armor
 execute store result score tmp uhc.hud run attribute @s minecraft:generic.armor get
 execute unless score tmp uhc.hud matches 0 run scoreboard players add leftlen uhc.hud 1
+# no bars in creative
 execute if entity @s[gamemode=creative] run scoreboard players set leftlen uhc.hud -1
 
 #> get ry scaled to 0-7
@@ -46,12 +46,15 @@ scoreboard players remove ry uhc.hud 225
 scoreboard players operation ry uhc.hud %= 3600 constants
 scoreboard players operation ry uhc.hud /= 450 constants
 
-# check how many bars are on the right
-# in surv/adv: there is the hunger bar which the hud should be placed above (uhc:hud0)
-# if they're on a horse, then the hunger bar is gone, but you now need to check if the horse's health is 1 or 2 rows (uhc:hud1, uhc:hud2)
-# in creative, the hunger bar is always gone (uhc:hud-1), but a horse's health is not gone.
+## check how many bars are on the right
+# place above hunger bar
 scoreboard players set rightlen uhc.hud 0
+# check if in water ( breaks with water breathing :( )
+execute store result score tmp uhc.hud run data get entity @s Air
+execute if score tmp uhc.hud matches ..299 run scoreboard players add rightlen uhc.hud 1
+# creative mode = hunger and water are gone
 execute if entity @s[gamemode=creative] run scoreboard players set rightlen uhc.hud -1
+# check vehicle max health
 scoreboard players set tmp uhc.hud -1
 execute if data entity @s RootVehicle at @s positioned ~ ~-.5 ~ store result score tmp uhc.hud run attribute @e[limit=1,sort=nearest,type=!player] minecraft:generic.max_health get
 execute if score tmp uhc.hud matches 0..20 run scoreboard players set rightlen uhc.hud 0
