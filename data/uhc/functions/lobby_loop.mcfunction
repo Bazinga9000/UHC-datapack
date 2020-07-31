@@ -1,5 +1,6 @@
 execute store result score num_players uhc.internal if entity @a[tag=!spectator]
 execute store result score num_spectators uhc.internal if entity @a[tag=spectator]
+spawnpoint @a 0 10 0
 # force non-debuggers out of lobby
 execute as @a[nbt=!{Dimension: "minecraft:lobby"}, tag=!debugger] in minecraft:lobby run tp @s 0 10 0
 
