@@ -37,6 +37,11 @@ weather clear 9999
 # purge aggro mobs
 difficulty peaceful
 difficulty hard
+# make beacon
+execute in minecraft:game run fill -1 0 -1 1 0 1 netherite_block
+execute in minecraft:game run setblock 0 1 0 beacon
+execute in minecraft:game run setblock 0 2 0 bedrock
+execute in minecraft:game run fill 0 3 0 0 255 0 barrier
 
 #> bossbar stuff
 # allow everyone to see bossbar

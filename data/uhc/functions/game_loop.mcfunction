@@ -6,6 +6,7 @@ tag @a remove give_spec
 gamemode spectator @a[scores={uhc.deaths=1..}, gamemode=!spectator, gamemode=!creative, tag=!debugger]
 gamemode spectator @a[team=spectator, gamemode=!spectator, gamemode=!creative, tag=!debugger]
 
+# at death, respawn at place of death
 execute as @a[scores={uhc.deaths=0}] at @s run spawnpoint
 execute as @a[gamemode=spectator] run effect give @s night_vision 15 0 true
 execute as @a run function uhc:hud/update
