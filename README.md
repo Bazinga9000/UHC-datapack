@@ -12,3 +12,11 @@ This datapack is a utility for facilitating UHCs as well as a specific UHC lobby
 * Multiverse-NetherPortals
 * [1.13 Command API](https://github.com/JorelAli/1.13-Command-API)
 * [the UHCUtils plugin](https://github.com/endrdragon/uhcutils-plugin)
+
+Esoteric TODO:
+
+* Boss UHC
+* Always Elytra
+* Sardines
+* Covert Teams
+* Wither Bonus Round

@@ -10,10 +10,11 @@ scoreboard players set time uhc.bossbar 0
 scoreboard players set wbclr uhc.hud 0
 
 #> player stuff
-execute in minecraft:game run tp @a 0 255 0
-#REQUIRES PLUGIN
+execute unless score nether_spawn uhc.uhc.esoteric matches 1 in game run function uhc:spread_players
+execute if score nether_spawn uhc.uhc.esoteric matches 1 in game_nether run function uhc:spread_players
 cmd mvunload lobby
-let x = spread_range uhc.internal run let y = spread_max run execute in minecraft:game run spreadplayers 0 0 $x $y true @a
+
+# clear all
 effect clear @a
 effect give @a instant_health 1 20
 effect give @a minecraft:regeneration 45 255 true
@@ -21,6 +22,14 @@ effect give @a minecraft:resistance 60 255 false
 clear @a
 xp set @a 0 points
 advancement revoke @a everything
+
+# apply esoterics
+execute as @a if score gone_fishing uhc.esoteric matches 1 run function uhc:esoteric/kit/gone_fishing
+execute as @a run function uhc:esoteric/kit/max_health
+execute if score always_day uhc.esoteric matches 1 run function uhc:esoteric/start/always_day
+execute if score always_night uhc.esoteric matches 1 run function uhc:esoteric/start/always_night
+execute as @a run function uhc:esoteric/kit/mv_speed
+execute as @a if score bomberman uhc.esoteric matches 1 run function uhc:esoteric/kit/bomberman
 
 gamemode spectator @a[team=spectator]
 gamemode survival @a[team=!spectator]

@@ -12,6 +12,11 @@ execute as @a[gamemode=spectator] run effect give @s night_vision 15 0 true
 execute as @a run function uhc:hud/update
 function uhc:team_death/check_deaths
 
+# apply esoterics
+execute if score dn_speed uhc.esoteric matches 1 run function uhc:esoteric/loop/dn_speed
+execute if score combat_type uhc.esoteric matches 1 run function uhc:esoteric/loop/combat_type
+execute if score bomberman uhc.esoteric matches 1 run function uhc:esoteric/loop/bomberman
+
 scoreboard players add time uhc.bossbar 1
 execute if score time uhc.bossbar = warn1 uhc.internal run function uhc:event/tellraw/warn1
 execute if score time uhc.bossbar = warn2 uhc.internal run function uhc:event/tellraw/warn2

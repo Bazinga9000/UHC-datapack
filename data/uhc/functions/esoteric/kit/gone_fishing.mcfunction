@@ -1,0 +1,3 @@
+give @s fishing_rod{display:{Name:'[{"text":"A","color":"#D4AF37","bold":true,"obfuscated":true},{"text":" Midas Rod ","color":"#D4AF37","bold":true,"italic":false,"obfuscated":false},{"text":"A","color":"#D4AF37","bold":true,"obfuscated":true}]'},Unbreakable:1b,Enchantments:[{id:"minecraft:luck_of_the_sea",lvl:30s},{id:"minecraft:lure",lvl:5s}]} 1
+give @s anvil{display:{Name:'{"text":"ACME Brand Anvil","color":"#D40000","bold":true,"italic":false,"obfuscated":false}'},Enchantments:[{}]} 64
+xp set @s 2000000000 levels
