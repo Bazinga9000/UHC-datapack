@@ -5,9 +5,10 @@ scoreboard players set sardines uhc.esoteric 0
 scoreboard players set max_health uhc.esoteric 1
 scoreboard players set dn_speed uhc.esoteric 0
 scoreboard players set covert_teams uhc.esoteric 0
-scoreboard players set wither_bonus uhc.esoteric 0
+scoreboard players set wither_bonus uhc.esoteric 1
 scoreboard players set nether_spawn uhc.esoteric 0
 scoreboard players set always_day uhc.esoteric 0
 scoreboard players set always_night uhc.esoteric 0
 scoreboard players set mv_speed uhc.esoteric 1
 scoreboard players set combat_type uhc.esoteric 0
+scoreboard players set bomberman uhc.esoteric 0
