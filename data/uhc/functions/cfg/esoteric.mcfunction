@@ -26,6 +26,8 @@ execute unless data block ~ ~ ~ Items[{Slot: 10b, tag: {config: 1b}}] run scoreb
 execute unless data block ~ ~ ~ Items[{Slot: 11b, tag: {config: 1b}}] run scoreboard players set esoteric uhc.cfg.opt 12
 #1.8 combat
 execute unless data block ~ ~ ~ Items[{Slot: 12b, tag: {config: 1b}}] run scoreboard players set esoteric uhc.cfg.opt 13
+# bomberman
+execute unless data block ~ ~ ~ Items[{Slot: 13b, tag: {config: 1b}}] run scoreboard players set esoteric uhc.cfg.opt 14
 # reset to defaults
 execute unless data block ~ ~ ~ Items[{Slot: 26b, tag: {config: 1b}}] run scoreboard players set esoteric uhc.cfg.opt 27
 
@@ -52,6 +54,7 @@ clear @a[distance=..7, tag=!debugger] blue_ice{config: 1b}
 clear @a[distance=..7, tag=!debugger] fermented_spider_eye{config: 1b}
 clear @a[distance=..7, tag=!debugger] golden_apple{config: 1b}
 clear @a[distance=..7, tag=!debugger] enchanted_golden_apple{config: 1b}
+clear @a[distance=..7, tag=!debugger] gunpowder{config: 1b}
 clear @a[distance=..7, tag=!debugger] creeper_head{config: 1b}
 #clear @a[distance=..7, tag=!debugger] item{config: 1b}
 
@@ -72,6 +75,7 @@ execute if score esoteric uhc.cfg.opt matches 10 run scoreboard players add alwa
 execute if score esoteric uhc.cfg.opt matches 11 run scoreboard players add always_night uhc.esoteric 1
 execute if score esoteric uhc.cfg.opt matches 12 run scoreboard players add mv_speed uhc.esoteric 1
 execute if score esoteric uhc.cfg.opt matches 13 run scoreboard players add combat_type uhc.esoteric 1
+execute if score esoteric uhc.cfg.opt matches 14 run scoreboard players add bomberman uhc.esoteric 1
 # bit flippers
 scoreboard players operation gone_fishing uhc.esoteric %= 2 constants
 scoreboard players operation boss uhc.esoteric %= 2 constants
@@ -84,6 +88,7 @@ scoreboard players operation nether_spawn uhc.esoteric %= 2 constants
 scoreboard players operation always_day uhc.esoteric %= 2 constants
 scoreboard players operation always_night uhc.esoteric %= 2 constants
 scoreboard players operation combat_type uhc.esoteric %= 2 constants
+scoreboard players operation bomberman uhc.esoteric %= 2 constants
 
 # enums
 scoreboard players operation max_health uhc.esoteric %= 4 constants
@@ -99,6 +104,9 @@ execute if score esoteric uhc.cfg.opt matches 10 run scoreboard players set alwa
 execute if score esoteric uhc.cfg.opt matches 10 run scoreboard players set dn_speed uhc.esoteric 0
 execute if score esoteric uhc.cfg.opt matches 11 run scoreboard players set always_day uhc.esoteric 0
 execute if score esoteric uhc.cfg.opt matches 11 run scoreboard players set dn_speed uhc.esoteric 0
+
+execute if score esoteric uhc.cfg.opt matches 13 run scoreboard players set bomberman uhc.esoteric 0
+execute if score esoteric uhc.cfg.opt matches 14 run scoreboard players set combat_type uhc.esoteric 0
 
 #> update gui
 # fix coords here
@@ -118,6 +126,7 @@ execute if score nether_spawn uhc.esoteric matches 0 run data modify block ~ ~ ~
 execute if score always_day uhc.esoteric matches 0 run data modify block ~ ~ ~ Items[{Slot: 9b}].tag.display.Lore[0] set from storage uhc cfg.esoteric.inactive
 execute if score always_night uhc.esoteric matches 0 run data modify block ~ ~ ~ Items[{Slot: 10b}].tag.display.Lore[0] set from storage uhc cfg.esoteric.inactive
 execute if score combat_type uhc.esoteric matches 0 run data modify block ~ ~ ~ Items[{Slot: 12b}].tag.display.Lore[0] set from storage uhc cfg.esoteric.inactive
+execute if score bomberman uhc.esoteric matches 0 run data modify block ~ ~ ~ Items[{Slot: 12b}].tag.display.Lore[0] set from storage uhc cfg.esoteric.inactive
 
 execute if score gone_fishing uhc.esoteric matches 0 run data modify block ~ ~ ~ Items[{Slot: 0b}].tag.Enchantments set value []
 execute if score boss uhc.esoteric matches 0 run data modify block ~ ~ ~ Items[{Slot: 1b}].tag.Enchantments set value []
@@ -130,6 +139,7 @@ execute if score nether_spawn uhc.esoteric matches 0 run data modify block ~ ~ ~
 execute if score always_day uhc.esoteric matches 0 run data modify block ~ ~ ~ Items[{Slot: 9b}].tag.Enchantments set value []
 execute if score always_night uhc.esoteric matches 0 run data modify block ~ ~ ~ Items[{Slot: 10b}].tag.Enchantments set value []
 execute if score combat_type uhc.esoteric matches 0 run data modify block ~ ~ ~ Items[{Slot: 12b}].tag.Enchantments set value []
+execute if score bomberman uhc.esoteric matches 0 run data modify block ~ ~ ~ Items[{Slot: 12b}].tag.Enchantments set value []
 
 execute if score gone_fishing uhc.esoteric matches 1 run data modify block ~ ~ ~ Items[{Slot: 0b}].tag.display.Lore[0] set from storage uhc cfg.esoteric.active
 execute if score boss uhc.esoteric matches 1 run data modify block ~ ~ ~ Items[{Slot: 1b}].tag.display.Lore[0] set from storage uhc cfg.esoteric.active
@@ -142,6 +152,7 @@ execute if score nether_spawn uhc.esoteric matches 1 run data modify block ~ ~ ~
 execute if score always_day uhc.esoteric matches 1 run data modify block ~ ~ ~ Items[{Slot: 9b}].tag.display.Lore[0] set from storage uhc cfg.esoteric.active
 execute if score always_night uhc.esoteric matches 1 run data modify block ~ ~ ~ Items[{Slot: 10b}].tag.display.Lore[0] set from storage uhc cfg.esoteric.active
 execute if score combat_type uhc.esoteric matches 1 run data modify block ~ ~ ~ Items[{Slot: 12b}].tag.display.Lore[0] set from storage uhc cfg.esoteric.active
+execute if score bomberman uhc.esoteric matches 1 run data modify block ~ ~ ~ Items[{Slot: 12b}].tag.display.Lore[0] set from storage uhc cfg.esoteric.active
 
 execute if score gone_fishing uhc.esoteric matches 1 run data modify block ~ ~ ~ Items[{Slot: 0b}].tag.Enchantments set value [{}]
 execute if score boss uhc.esoteric matches 1 run data modify block ~ ~ ~ Items[{Slot: 1b}].tag.Enchantments set value [{}]
@@ -154,6 +165,7 @@ execute if score nether_spawn uhc.esoteric matches 1 run data modify block ~ ~ ~
 execute if score always_day uhc.esoteric matches 1 run data modify block ~ ~ ~ Items[{Slot: 9b}].tag.Enchantments set value [{}]
 execute if score always_night uhc.esoteric matches 1 run data modify block ~ ~ ~ Items[{Slot: 10b}].tag.Enchantments set value [{}]
 execute if score combat_type uhc.esoteric matches 1 run data modify block ~ ~ ~ Items[{Slot: 12b}].tag.Enchantments set value [{}]
+execute if score bomberman uhc.esoteric matches 1 run data modify block ~ ~ ~ Items[{Slot: 12b}].tag.Enchantments set value [{}]
 
 # enum 
 execute if score max_health uhc.esoteric matches 0 run data modify block ~ ~ ~ Items[{Slot:4b}].id set from block 45 8 9 Items[{Slot:0b}].id
