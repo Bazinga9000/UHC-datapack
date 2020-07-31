@@ -16,3 +16,31 @@ data merge block -11 11 1 {Text4:'[{"score":{"name":"border1","objective":"uhc.c
 data merge block -11 11 0 {Text2:'[{"score":{"name":"borderstop","objective":"uhc.cfg"},"color":"#401010"},{"text":" min.","color":"black"}]'}
 data merge block -11 11 0 {Text4:'[{"score":{"name":"border2","objective":"uhc.cfg"},"color":"#401010"},{"text":" min.","color":"black"}]'}
 data merge block -11 11 -1 {Text3:'[{"score":{"name":"tilldm","objective":"uhc.cfg"},"color":"#401010"},{"text":" min.","color":"black"}]'}
+
+## esoteric cfg
+#bit flippers
+execute if score gone_fishing uhc.esoteric matches 0 run setblock -12 12 8 red_concrete
+execute if score boss uhc.esoteric matches 0 run setblock -12 12 7 red_concrete
+execute if score always_elytra uhc.esoteric matches 0 run setblock -12 12 6 red_concrete
+execute if score sardines uhc.esoteric matches 0 run setblock -12 12 5 red_concrete
+execute if score dn_speed uhc.esoteric matches 0 run setblock -12 11 8 red_concrete
+execute if score covert_teams uhc.esoteric matches 0 run setblock -12 11 7 red_concrete
+execute if score wither_bonus uhc.esoteric matches 0 run setblock -12 11 6 red_concrete
+execute if score nether_spawn uhc.esoteric matches 0 run setblock -12 11 5 red_concrete
+execute if score always_day uhc.esoteric matches 0 run setblock -12 11 4 red_concrete
+execute if score always_night uhc.esoteric matches 0 run setblock -12 10 8 red_concrete
+execute if score combat_type uhc.esoteric matches 0 run setblock -12 10 6 red_concrete
+execute if score bomberman uhc.esoteric matches 0 run setblock -12 10 5 red_concrete
+
+execute if score gone_fishing uhc.esoteric matches 1 run setblock -12 12 8 lime_concrete
+execute if score boss uhc.esoteric matches 1 run setblock -12 12 7 lime_concrete
+execute if score always_elytra uhc.esoteric matches 1 run setblock -12 12 6 lime_concrete
+execute if score sardines uhc.esoteric matches 1 run setblock -12 12 5 lime_concrete
+execute if score dn_speed uhc.esoteric matches 1 run setblock -12 11 8 lime_concrete
+execute if score covert_teams uhc.esoteric matches 1 run setblock -12 11 7 lime_concrete
+execute if score wither_bonus uhc.esoteric matches 1 run setblock -12 11 6 lime_concrete
+execute if score nether_spawn uhc.esoteric matches 1 run setblock -12 11 5 lime_concrete
+execute if score always_day uhc.esoteric matches 1 run setblock -12 11 4 lime_concrete
+execute if score always_night uhc.esoteric matches 1 run setblock -12 10 8 lime_concrete
+execute if score combat_type uhc.esoteric matches 1 run setblock -12 10 6 lime_concrete
+execute if score bomberman uhc.esoteric matches 1 run setblock -12 10 5 lime_concrete
