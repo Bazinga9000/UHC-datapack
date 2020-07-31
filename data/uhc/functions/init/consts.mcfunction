@@ -6,3 +6,4 @@ scoreboard players set 3600 constants 3600
 scoreboard players set 6000 constants 6000
 scoreboard players set 18000 constants 18000
 scoreboard players set 36000 constants 36000
+scoreboard players set 60000000 constants 60000000

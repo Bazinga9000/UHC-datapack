@@ -21,7 +21,6 @@ scoreboard objectives add uhc.saturation dummy
 # records amount of alive players in a team, to figure out if all players are dead
 scoreboard objectives add uhc.team_alive dummy
 
-
 scoreboard players set num_teams uhc.cfg 4
 scoreboard players set min_teams uhc.cfg 2
 scoreboard players set max_teams uhc.cfg 64
@@ -30,10 +29,11 @@ scoreboard players set game_started uhc.internal 0
 # deprecated scoreboards
 # cfg, spawned, worldborder, bossbar, saturation, health, deaths, timer, settings
 #> fn inits
-function uhc:init/constants
+function uhc:init/consts
 function uhc:teams/create
 function uhc:cfg/default/esoteric
 function uhc:cfg/default/intervals
+function uhc:cfg/default/wbsize
 function uhc:init/storage
 
 #> gamerule inits
@@ -41,6 +41,7 @@ execute in minecraft:lobby run function uhc:gamerules/lobby
 execute in minecraft:game run function uhc:gamerules/game
 execute in minecraft:game_nether run function uhc:gamerules/game
 
+#> misc setup
 execute in minecraft:lobby run setworldspawn 0 10 0
 execute as @a in minecraft:lobby run spawnpoint @s 0 10 0
 execute in minecraft:game run worldborder center 0.5 0.5
