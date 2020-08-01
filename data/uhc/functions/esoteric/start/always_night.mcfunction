@@ -1,2 +1,2 @@
-execute in game run gamerule doDaylightCycle false
+gamerule doDaylightCycle false
 time set midnight
