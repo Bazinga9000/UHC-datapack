@@ -46,7 +46,7 @@ let v = size_init_bor uhc.cfg run execute in minecraft:game_nether run worldbord
 execute if score always_day uhc.esoteric matches 1 in game run gamerule doDaylightCycle false
 execute if score always_night uhc.esoteric matches 1 in game run gamerule doDaylightCycle false
 execute in game run time set day
-execute if score always_night uhc.esoteric matches 1 in game run time set night
+execute if score always_night uhc.esoteric matches 1 in game run time set midnight
 weather clear 9999
 # purge aggro mobs
 difficulty peaceful
