@@ -100,7 +100,7 @@ scoreboard players operation spread_range uhc.internal = size_init_bor uhc.cfg
 scoreboard players operation spread_range uhc.internal /= 8 constants
 scoreboard players operation spread_max uhc.internal = size_init_bor uhc.cfg
 scoreboard players operation spread_max uhc.internal *= 11 constants
-scoreboard players operation spread_max uhc.internal /= 12 constants
+scoreboard players operation spread_max uhc.internal /= 24 constants
 scoreboard players operation spread_max uhc.internal > 1 constants
 
 scoreboard players set wbsize uhc.cfg.opt 0
