@@ -1,2 +1,0 @@
-execute if score combat_type uhc.esoteric matches 0 run attribute @s generic.attack_speed base set 4
-execute if score combat_type uhc.esoteric matches 1 run attribute @s generic.attack_speed base set 1024

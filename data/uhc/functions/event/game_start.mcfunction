@@ -29,7 +29,6 @@ advancement revoke @a everything
 execute as @a if score gone_fishing uhc.esoteric matches 1 run function uhc:esoteric/kit/gone_fishing
 execute as @a run function uhc:esoteric/kit/max_health
 execute as @a run function uhc:esoteric/kit/mv_speed
-execute as @a run function uhc:esoteric/kit/combat_type
 execute as @a if score bomberman uhc.esoteric matches 1 run function uhc:esoteric/kit/bomberman
 
 gamemode spectator @a[team=spectator]

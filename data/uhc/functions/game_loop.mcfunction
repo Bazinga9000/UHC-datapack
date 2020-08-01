@@ -14,7 +14,6 @@ function uhc:team_death/check_deaths
 
 # apply esoterics
 execute if score dn_speed uhc.esoteric matches 1 run function uhc:esoteric/loop/dn_speed
-execute if score combat_type uhc.esoteric matches 1 run function uhc:esoteric/loop/combat_type
 execute if score bomberman uhc.esoteric matches 1 run function uhc:esoteric/loop/bomberman
 
 scoreboard players add time uhc.bossbar 1

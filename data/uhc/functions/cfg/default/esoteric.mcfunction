@@ -10,5 +10,4 @@ scoreboard players set nether_spawn uhc.esoteric 0
 scoreboard players set always_day uhc.esoteric 0
 scoreboard players set always_night uhc.esoteric 0
 scoreboard players set mv_speed uhc.esoteric 1
-scoreboard players set combat_type uhc.esoteric 0
 scoreboard players set bomberman uhc.esoteric 0

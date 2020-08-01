@@ -29,8 +29,7 @@ execute if score wither_bonus uhc.esoteric matches 0 run setblock -12 11 6 red_c
 execute if score nether_spawn uhc.esoteric matches 0 run setblock -12 11 5 red_concrete
 execute if score always_day uhc.esoteric matches 0 run setblock -12 11 4 red_concrete
 execute if score always_night uhc.esoteric matches 0 run setblock -12 10 8 red_concrete
-execute if score combat_type uhc.esoteric matches 0 run setblock -12 10 6 red_concrete
-execute if score bomberman uhc.esoteric matches 0 run setblock -12 10 5 red_concrete
+execute if score bomberman uhc.esoteric matches 0 run setblock -12 10 6 red_concrete
 
 execute if score gone_fishing uhc.esoteric matches 1 run setblock -12 12 8 lime_concrete
 execute if score boss uhc.esoteric matches 1 run setblock -12 12 7 lime_concrete
@@ -42,5 +41,4 @@ execute if score wither_bonus uhc.esoteric matches 1 run setblock -12 11 6 lime_
 execute if score nether_spawn uhc.esoteric matches 1 run setblock -12 11 5 lime_concrete
 execute if score always_day uhc.esoteric matches 1 run setblock -12 11 4 lime_concrete
 execute if score always_night uhc.esoteric matches 1 run setblock -12 10 8 lime_concrete
-execute if score combat_type uhc.esoteric matches 1 run setblock -12 10 6 lime_concrete
-execute if score bomberman uhc.esoteric matches 1 run setblock -12 10 5 lime_concrete
+execute if score bomberman uhc.esoteric matches 1 run setblock -12 10 6 lime_concrete
