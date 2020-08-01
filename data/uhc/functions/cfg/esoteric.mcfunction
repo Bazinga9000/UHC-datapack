@@ -101,6 +101,13 @@ execute if score esoteric uhc.cfg.opt matches 10 run scoreboard players set dn_s
 execute if score esoteric uhc.cfg.opt matches 11 run scoreboard players set always_day uhc.esoteric 0
 execute if score esoteric uhc.cfg.opt matches 11 run scoreboard players set dn_speed uhc.esoteric 0
 
+execute if score esoteric uhc.cfg.opt matches 2 run scoreboard players set sardines uhc.esoteric 0
+execute if score esoteric uhc.cfg.opt matches 2 run scoreboard players set covert_teams uhc.esoteric 0
+execute if score esoteric uhc.cfg.opt matches 4 run scoreboard players set covert_teams uhc.esoteric 0
+execute if score esoteric uhc.cfg.opt matches 4 run scoreboard players set boss uhc.esoteric 0
+execute if score esoteric uhc.cfg.opt matches 7 run scoreboard players set sardines uhc.esoteric 0
+execute if score esoteric uhc.cfg.opt matches 7 run scoreboard players set boss uhc.esoteric 0
+
 
 #> update gui
 # fix coords here
