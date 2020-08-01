@@ -31,6 +31,7 @@ execute as @a run function uhc:esoteric/kit/max_health
 execute if score always_day uhc.esoteric matches 1 run function uhc:esoteric/start/always_day
 execute if score always_night uhc.esoteric matches 1 run function uhc:esoteric/start/always_night
 execute as @a run function uhc:esoteric/kit/mv_speed
+execute as @a if score combat_type uhc.esoteric matches 1 run function uhc:esoteric/kit/combat_type
 execute as @a if score bomberman uhc.esoteric matches 1 run function uhc:esoteric/kit/bomberman
 
 gamemode spectator @a[team=spectator]
