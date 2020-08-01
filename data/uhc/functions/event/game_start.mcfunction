@@ -28,8 +28,6 @@ advancement revoke @a everything
 # apply esoterics
 execute as @a if score gone_fishing uhc.esoteric matches 1 run function uhc:esoteric/kit/gone_fishing
 execute as @a run function uhc:esoteric/kit/max_health
-execute if score always_day uhc.esoteric matches 1 in minecraft:game run function uhc:esoteric/start/always_day
-execute if score always_night uhc.esoteric matches 1 in minecraft:game run function uhc:esoteric/start/always_night
 execute as @a run function uhc:esoteric/kit/mv_speed
 execute as @a run function uhc:esoteric/kit/combat_type
 execute as @a if score bomberman uhc.esoteric matches 1 run function uhc:esoteric/kit/bomberman
@@ -44,7 +42,11 @@ tellraw @a [{"nbt":"box_name","storage":"uhc","interpret":true},{"text":"Let the
 worldborder warning distance 25
 let v = size_init_bor uhc.cfg run execute in minecraft:game run worldborder set $v
 let v = size_init_bor uhc.cfg run execute in minecraft:game_nether run worldborder set $v
-time set day
+
+execute if score always_day uhc.esoteric matches 1 in game run gamerule doDaylightCycle false
+execute if score always_night uhc.esoteric matches 1 in game run gamerule doDaylightCycle false
+execute in game run time set day
+execute if score always_night uhc.esoteric matches 1 in game run time set night
 weather clear 9999
 # purge aggro mobs
 difficulty peaceful
