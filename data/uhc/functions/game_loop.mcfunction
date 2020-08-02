@@ -11,6 +11,7 @@ execute as @a run function uhc:hud/update
 function uhc:team_death/check_deaths
 
 # apply esoterics
+execute if score sardines uhc.esoteric matches 1 run function uhc:esoteric/loop/sardines
 execute if score dn_speed uhc.esoteric matches 1 run function uhc:esoteric/loop/dn_speed
 execute if score bomberman uhc.esoteric matches 1 run function uhc:esoteric/loop/bomberman
 

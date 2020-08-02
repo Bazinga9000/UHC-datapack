@@ -1,0 +1,1 @@
+scoreboard players set sardines_num_teams uhc.internal 0
