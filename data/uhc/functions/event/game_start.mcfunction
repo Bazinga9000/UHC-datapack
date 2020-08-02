@@ -7,6 +7,8 @@ scoreboard objectives setdisplay sidebar
 scoreboard players set @a uhc.deaths 0
 scoreboard players set game_started uhc.internal 1
 scoreboard players set time uhc.bossbar 0
+scoreboard players set wintime uhc.internal 0
+scoreboard players set is_win uhc.internal 0
 scoreboard players set wbclr uhc.hud 0
 
 #> player stuff

@@ -16,7 +16,7 @@ execute if score dn_speed uhc.esoteric matches 1 run function uhc:esoteric/loop/
 execute if score bomberman uhc.esoteric matches 1 run function uhc:esoteric/loop/bomberman
 
 # check for events, then run bossbar
-scoreboard players add time uhc.bossbar 1
+execute unless score stage uhc.bossbar matches 6 run scoreboard players add time uhc.bossbar 1
 execute if score time uhc.bossbar = warn1 uhc.internal run function uhc:event/warning/warn1
 execute if score time uhc.bossbar = warn2 uhc.internal run function uhc:event/warning/warn2
 execute if score time uhc.bossbar = warn3 uhc.internal run function uhc:event/warning/warn3
@@ -26,3 +26,9 @@ execute if score stage uhc.bossbar matches ..2 if score time uhc.bossbar >= bord
 execute if score stage uhc.bossbar matches ..3 if score time uhc.bossbar >= dmwarn uhc.internal run function uhc:event/dmwarn
 execute if score stage uhc.bossbar matches ..4 if score time uhc.bossbar >= deathmatch uhc.internal run function uhc:event/deathmatch
 function uhc:bossbar
+
+execute if score stage uhc.bossbar matches 6 run scoreboard players add wintime uhc.internal 1
+execute if score stage uhc.bossbar matches 6 if score wintime uhc.bossbar matches 3000 run tellraw @a {"text":"But wait,"}
+execute if score stage uhc.bossbar matches 6 if score wintime uhc.bossbar matches 4000 run tellraw @a {"text":"you forgot about..."}
+execute if score stage uhc.bossbar matches 6 if score wintime uhc.bossbar matches 5000 run tellraw @a {"text":"the WITHER BONUS ROUND!!!"}
+execute if score stage uhc.bossbar matches 6 if score wintime uhc.bossbar matches 5000 run execute at @r[gamemode=!creative,gamemode=!spectator] run summon wither ~ ~5 ~
