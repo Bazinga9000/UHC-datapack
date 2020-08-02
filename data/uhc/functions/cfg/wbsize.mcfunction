@@ -95,6 +95,13 @@ scoreboard players operation size_bor_2 uhc.cfg > 1 constants
 
 #> fix gui
 # screw consistency (only run when something changes to reduce console spam)
+scoreboard players operation sizer_init_bor uhc.internal = size_init_bor uhc.cfg
+scoreboard players operation sizer_bor_1 uhc.internal = size_bor_1 uhc.cfg
+scoreboard players operation sizer_bor_2 uhc.internal = size_bor_2 uhc.cfg
+scoreboard players operation sizer_init_bor uhc.internal /= 2 constants
+scoreboard players operation sizer_bor_1 uhc.internal /= 2 constants
+scoreboard players operation sizer_bor_2 uhc.internal /= 2 constants
+
 execute unless score wbsize uhc.cfg.opt matches 0 run function uhc:cfg/update_gui/wbsize
 scoreboard players operation spread_range uhc.internal = size_init_bor uhc.cfg
 scoreboard players operation spread_range uhc.internal /= 8 constants
