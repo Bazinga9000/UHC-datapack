@@ -1,4 +1,4 @@
-function uhc:event/tellraw/border1
+function uhc:event/warning/border1
 let t = border1s uhc.internal run let v = size_bor_1 uhc.cfg run execute in minecraft:game run worldborder set $v $t
 let t = border1s uhc.internal run let v = size_bor_1 uhc.cfg run execute in minecraft:game_nether run worldborder set $v $t
 scoreboard players set wbclr uhc.hud 1

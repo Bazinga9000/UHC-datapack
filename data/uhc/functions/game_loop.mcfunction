@@ -17,9 +17,9 @@ execute if score dn_speed uhc.esoteric matches 1 run function uhc:esoteric/loop/
 execute if score bomberman uhc.esoteric matches 1 run function uhc:esoteric/loop/bomberman
 
 scoreboard players add time uhc.bossbar 1
-execute if score time uhc.bossbar = warn1 uhc.internal run function uhc:event/tellraw/warn1
-execute if score time uhc.bossbar = warn2 uhc.internal run function uhc:event/tellraw/warn2
-execute if score time uhc.bossbar = warn3 uhc.internal run function uhc:event/tellraw/warn3
+execute if score time uhc.bossbar = warn1 uhc.internal run function uhc:event/warning/warn1
+execute if score time uhc.bossbar = warn2 uhc.internal run function uhc:event/warning/warn2
+execute if score time uhc.bossbar = warn3 uhc.internal run function uhc:event/warning/warn3
 execute if score stage uhc.bossbar matches ..0 if score time uhc.bossbar >= border1 uhc.internal run function uhc:event/border1
 execute if score stage uhc.bossbar matches ..1 if score time uhc.bossbar >= borderstop uhc.internal run function uhc:event/borderstop
 execute if score stage uhc.bossbar matches ..2 if score time uhc.bossbar >= border2 uhc.internal run function uhc:event/border2
