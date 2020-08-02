@@ -16,14 +16,10 @@ execute if score nether_spawn uhc.esoteric matches 1 in game_nether run tp @a 0 
 execute if score nether_spawn uhc.esoteric matches 1 run let x = spread_range uhc.internal run let y = spread_max uhc.internal run execute in game_nether run spreadplayers 0 0 $x $y under 125 true @a
 cmd mvunload lobby
 
-# clear all
-effect clear @a
+execute as @a run function uhc:reset_statuses
 effect give @a instant_health 1 20
 effect give @a minecraft:regeneration 45 255 true
 effect give @a minecraft:resistance 60 255 false
-clear @a
-xp set @a 0 points
-advancement revoke @a everything
 
 # apply esoterics
 execute as @a if score gone_fishing uhc.esoteric matches 1 run function uhc:esoteric/kit/gone_fishing
@@ -34,7 +30,6 @@ execute as @a if score bomberman uhc.esoteric matches 1 run function uhc:esoteri
 gamemode spectator @a[team=spectator]
 gamemode survival @a[team=!spectator]
 
-data modify storage uhc box_name set value '[{"text":"<"},{"text":"|||||","bold":true,"italic":true,"obfuscated":true,"color":"gold"},{"text":"The Box","bold":true,"italic":true,"color":"gold"},{"text":"|||||","bold":true,"italic":true,"obfuscated":true,"color":"gold"},{"text":"> "}]'
 tellraw @a [{"nbt":"box_name","storage":"uhc","interpret":true},{"text":"Let the games begin! Our players have been shuffled across the world!","bold":true,"italic":true,"underlined":true,"color":"green"}]
 
 #> world stuff

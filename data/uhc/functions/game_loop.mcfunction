@@ -8,6 +8,7 @@ gamemode spectator @a[team=spectator, gamemode=!spectator, gamemode=!creative, t
 
 # at death, respawn at place of death
 execute as @a[scores={uhc.deaths=0}] at @s run spawnpoint
+
 execute as @a[gamemode=spectator] run effect give @s night_vision 15 0 true
 execute as @a run function uhc:hud/update
 function uhc:team_death/check_deaths
@@ -16,6 +17,7 @@ function uhc:team_death/check_deaths
 execute if score dn_speed uhc.esoteric matches 1 run function uhc:esoteric/loop/dn_speed
 execute if score bomberman uhc.esoteric matches 1 run function uhc:esoteric/loop/bomberman
 
+# check for events, then run bossbar
 scoreboard players add time uhc.bossbar 1
 execute if score time uhc.bossbar = warn1 uhc.internal run function uhc:event/warning/warn1
 execute if score time uhc.bossbar = warn2 uhc.internal run function uhc:event/warning/warn2
