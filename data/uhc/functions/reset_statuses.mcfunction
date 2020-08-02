@@ -8,3 +8,6 @@ advancement revoke @s everything
 attribute @s generic.max_health base set 20
 attribute @s generic.attack_speed base set 4
 attribute @s generic.movement_speed modifier remove 74141e10-119e-4dc2-8dbf-1cb3ec7ba672
+
+tag @a remove gamer
+function uhc:parkour/exit

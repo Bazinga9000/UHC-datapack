@@ -1,10 +1,5 @@
 # dead users or users joining midgame should be put in spectator (if not debugger)
-tag @a[team=, tag=!debugger] add nongamer
-gamemode spectator @a[tag=nongamer]
-execute as @a[tag=nongamer] run tp @s @r[gamemode=survival]
-team join spectator @a[tag=nongamer]
-tag @a remove nongamer
-
+execute as @a[tag=!gamer, tag=!debugger] run function uhc:eliminate_nongamer
 gamemode spectator @a[scores={uhc.deaths=1..}, gamemode=!spectator, gamemode=!creative, tag=!debugger]
 gamemode spectator @a[team=spectator, gamemode=!spectator, gamemode=!creative, tag=!debugger]
 
