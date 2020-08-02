@@ -25,6 +25,7 @@ execute if score sardines uhc.esoteric matches 1 run function uhc:esoteric/init/
 execute as @a run function uhc:esoteric/kit/max_health
 execute as @a run function uhc:esoteric/kit/mv_speed
 execute as @a if score bomberman uhc.esoteric matches 1 run function uhc:esoteric/kit/bomberman
+execute if score boss uhc.esoteric matches 1 run function uhc:esoteric/init/boss
 
 gamemode spectator @a[team=spectator]
 gamemode survival @a[team=!spectator]

@@ -1,11 +1,4 @@
-# check if teams should be scrambled together
-scoreboard players set respect_teams uhc.internal 1
-execute if score sardines uhc.esoteric matches 1 run scoreboard players set respect_teams uhc.internal 0
-# check if teams should be created
-scoreboard players set make_teams uhc.internal 1
-execute if score sardines uhc.esoteric matches 1 run scoreboard players set make_teams uhc.internal 0
-
-
+function uhc:esoteric/start_settings
 scoreboard players set start_ok uhc.internal 1
 
 # if teams are supposed to have been created, and they aren't, halt
