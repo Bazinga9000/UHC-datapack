@@ -1,12 +1,14 @@
-# dead users or users spawning in lobby should be put in spectator (if not debugger)
-tag @a[nbt={Dimension: "minecraft:lobby"}, tag=!debugger] add give_spec
-gamemode spectator @a[tag=give_spec]
-execute as @a[tag=give_spec] run tp @s @r[gamemode=survival]
-tag @a remove give_spec
+# dead users or users joining midgame should be put in spectator (if not debugger)
+tag @a[team=, tag=!debugger] add nongamer
+gamemode spectator @a[tag=nongamer]
+execute as @a[tag=nongamer] run tp @s @r[gamemode=survival]
+team join spectator @a[tag=nongamer]
+tag @a remove nongamer
+
 gamemode spectator @a[scores={uhc.deaths=1..}, gamemode=!spectator, gamemode=!creative, tag=!debugger]
 gamemode spectator @a[team=spectator, gamemode=!spectator, gamemode=!creative, tag=!debugger]
 
-# at death, respawn at place of death
+# at death, respawn at killed pos
 execute as @a[scores={uhc.deaths=0}] at @s run spawnpoint
 
 execute as @a[gamemode=spectator] run effect give @s night_vision 15 0 true
