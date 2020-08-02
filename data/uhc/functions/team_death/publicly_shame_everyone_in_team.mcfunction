@@ -3,11 +3,11 @@ data modify storage uhc deathmsg set value ['{"text":" has been completely elimi
 execute store result score current_dt uhc.internal run data get storage uhc dead_teams[0]
 data remove storage uhc dead_teams[0]
 
-for i in 1..64 run execute if score current_dt uhc.internal matches $i run data modify storage uhc deathmsg prepend from storage uhc team_names[$i]
+let i = current_dt uhc.internal run data modify storage uhc deathmsg prepend from storage uhc team_names[$i]
 
 tellraw @a [{"nbt":"deathmsg[0]","storage":"uhc","interpret":true},{"nbt":"deathmsg[1]","storage":"uhc","interpret":true}]
 
-for i in 1..64 run execute if score current_dt uhc.internal matches $i run scoreboard players set $i uhc.team_alive -1
+let i = current_dt uhc.internal run scoreboard players set $i uhc.team_alive -1
 
 # check if list is empty
 data modify storage uhc empty_check set value []
