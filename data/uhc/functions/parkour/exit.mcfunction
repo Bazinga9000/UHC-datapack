@@ -1,4 +1,4 @@
-team leave @s
+team leave @s[team=nocollision]
 effect clear @s minecraft:resistance
 tag @s remove in_parkour
 

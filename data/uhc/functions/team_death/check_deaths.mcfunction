@@ -2,7 +2,7 @@
 for i in 1..64 run execute unless score $i uhc.team_alive matches -1 store result score $i uhc.team_alive if entity @a[team=team$i,gamemode=survival]
 
 # consider a team alive if someone reconnects to a dead team
-for i in 1..64 run execute if score $i uhc.team_alive matches -1 if entity @a[team=team$i,gamemode=survival] scoreboard players set $i uhc.team_alive 1
+for i in 1..64 run execute if score $i uhc.team_alive matches -1 if entity @a[team=team$i,gamemode=survival] run scoreboard players set $i uhc.team_alive 1
 
 # get list of dead teams
 data modify storage uhc dead_teams set value []
