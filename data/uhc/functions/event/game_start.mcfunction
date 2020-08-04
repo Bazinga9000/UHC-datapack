@@ -34,6 +34,9 @@ gamemode survival @a[team=!spectator]
 
 tellraw @a [{"nbt":"box_name","storage":"uhc","interpret":true},{"text":"Let the games begin! Our players have been shuffled across the world!","bold":true,"italic":true,"underlined":true,"color":"green"}]
 
+# mark unused teams
+for i in 1..64 run execute unless entity @a[team=team$i] run scoreboard players set $i uhc.team_alive -1
+
 #> world stuff
 worldborder warning distance 25
 let v = size_init_bor uhc.cfg run execute in minecraft:game run worldborder set $v

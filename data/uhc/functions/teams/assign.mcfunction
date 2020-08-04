@@ -9,6 +9,3 @@ scoreboard players set rand_min uhc.internal 1
 execute if score boss uhc.esoteric matches 1 run scoreboard players set rand_min uhc.internal 2
 function uhc:teams/randomize
 function uhc:teams/announce
-
-# mark unused teams
-for i in 1..64 run execute unless entity @a[team=team$i] run scoreboard players set $i uhc.team_alive -1
