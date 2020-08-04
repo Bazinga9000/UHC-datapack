@@ -17,5 +17,5 @@ execute unless score dim_gamen_exist uhc.internal matches 1 run scoreboard playe
 execute unless score game_started uhc.internal matches 0 run tellraw @s {"text": "Game has already started!", "color":"red"}
 execute unless score game_started uhc.internal matches 0 run scoreboard players set start_ok uhc.internal 0
 
-execute if score start_ok uhc.internal matches 0 run tellraw @s [{"text":"After all errors have been resolved, press ","color":"red"},{"text":"[here] ","color":"blue","clickEvent":{"action":"run_command","value":"/function uhc:start_game"}},{"text":"to start game."}]
+execute if score start_ok uhc.internal matches 0 run tellraw @s [{"text":"After all errors have been resolved, press ","color":"red"},{"text":"[here] ","color":"yellow","clickEvent":{"action":"run_command","value":"/function uhc:start_game"}},{"text":"to start game."}]
 execute if score start_ok uhc.internal matches 1 run function uhc:event/game_start

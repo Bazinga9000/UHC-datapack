@@ -28,7 +28,7 @@ execute if score stage uhc.bossbar matches ..4 if score time uhc.bossbar >= deat
 function uhc:bossbar
 
 execute if score stage uhc.bossbar matches 6 run scoreboard players add wintime uhc.internal 1
-execute if score stage uhc.bossbar matches 6 if score wintime uhc.bossbar matches 3000 run tellraw @a {"text":"But wait,"}
-execute if score stage uhc.bossbar matches 6 if score wintime uhc.bossbar matches 4000 run tellraw @a {"text":"you forgot about..."}
-execute if score stage uhc.bossbar matches 6 if score wintime uhc.bossbar matches 5000 run tellraw @a {"text":"the WITHER BONUS ROUND!!!"}
-execute if score stage uhc.bossbar matches 6 if score wintime uhc.bossbar matches 5000 run execute at @r[gamemode=!creative,gamemode=!spectator] run summon wither ~ ~5 ~
+execute if score stage uhc.internal matches 6 if score wintime uhc.bossbar matches 60 run tellraw @a {"text":"But wait,"}
+execute if score stage uhc.internal matches 6 if score wintime uhc.bossbar matches 80 run tellraw @a {"text":"you forgot about..."}
+execute if score stage uhc.internal matches 6 if score wintime uhc.bossbar matches 100 run tellraw @a {"text":"the WITHER BONUS ROUND!!!"}
+execute if score stage uhc.internal matches 6 if score wintime uhc.bossbar matches 100 run execute at @r[gamemode=!creative,gamemode=!spectator] run summon wither ~ ~5 ~
