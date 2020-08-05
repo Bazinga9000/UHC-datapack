@@ -8,7 +8,7 @@ execute as @a[scores={uhc.deaths=0}] at @s run spawnpoint
 
 execute as @a[gamemode=spectator] run effect give @s night_vision 15 0 true
 execute as @a run function uhc:hud/update
-function uhc:team_death/check_deaths
+function uhc:teams/check_deaths
 
 # apply esoterics
 execute if score sardines uhc.esoteric matches 1 run function uhc:esoteric/loop/sardines
