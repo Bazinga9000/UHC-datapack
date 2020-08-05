@@ -18,7 +18,7 @@ cmd mvunload lobby
 execute as @a run function uhc:reset_statuses
 effect give @a instant_health 1 20
 effect give @a minecraft:regeneration 45 255 true
-effect give @a minecraft:resistance 60 255 false
+effect give @a minecraft:resistance 60 255 true
 scoreboard players reset * uhc.gamers
 scoreboard players set @a uhc.gamers 1
 
@@ -55,7 +55,7 @@ difficulty hard
 execute in minecraft:game run fill -1 0 -1 1 0 1 netherite_block
 execute in minecraft:game run setblock 0 1 0 beacon
 execute in minecraft:game run setblock 0 2 0 bedrock
-execute in minecraft:game run fill 0 3 0 0 255 0 barrier
+execute in minecraft:game run fill 0 3 0 0 254 0 barrier
 
 #> bossbar stuff
 # allow everyone to see bossbar
