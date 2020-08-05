@@ -19,7 +19,8 @@ execute as @a run function uhc:reset_statuses
 effect give @a instant_health 1 20
 effect give @a minecraft:regeneration 45 255 true
 effect give @a minecraft:resistance 60 255 false
-tag @a add gamer
+scoreboard players reset * uhc.gamers
+scoreboard players set @a uhc.gamers 1
 
 # apply esoterics
 execute as @a if score gone_fishing uhc.esoteric matches 1 run function uhc:esoteric/kit/gone_fishing
