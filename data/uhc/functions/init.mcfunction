@@ -22,7 +22,14 @@ scoreboard objectives add uhc.saturation dummy
 scoreboard objectives add uhc.team_alive dummy
 # lobby teleport system
 scoreboard objectives add uhc.guide trigger
-
+# used to detect users joining midgame ( thanks minecraft and its inability to remove tags from offline users :) )
+scoreboard objectives add uhc.gamers dummy
+# parkour scoreboards
+scoreboard objectives add pcheckpoint dummy
+scoreboard objectives add acheckpoint dummy
+scoreboard objectives add level trigger
+scoreboard objectives add last trigger
+scoreboard objectives add reset trigger
 
 scoreboard players set num_teams uhc.cfg 4
 scoreboard players set min_teams uhc.cfg 2
