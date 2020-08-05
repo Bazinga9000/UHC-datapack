@@ -18,7 +18,7 @@ execute unless score game_started uhc.internal matches 0 run tellraw @s {"text":
 execute unless score game_started uhc.internal matches 0 run scoreboard players set start_ok uhc.internal 0
 
 execute unless score game_started uhc.internal matches 0 run tellraw @s {"text": "ERR: Game has already started!", "color":"red"}
-execute in minecraft:game unless block 0 1 0 beacon run tellraw @s {"text": "WARN: Worlds have not been regenerated!", "color":"yellow"}
+execute in minecraft:game if block 0 1 0 beacon run tellraw @s {"text": "WARN: Worlds have not been regenerated!", "color":"yellow"}
 
 execute if score start_ok uhc.internal matches 0 run tellraw @s [{"text":"After all errors have been resolved, press ","color":"white"},{"text":"[here] ","color":"yellow","clickEvent":{"action":"run_command","value":"/function uhc:start_game"}},{"text":"to start game."}]
 execute if score start_ok uhc.internal matches 1 run function uhc:event/game_start
