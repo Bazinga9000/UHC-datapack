@@ -21,7 +21,7 @@ scoreboard objectives add uhc.saturation dummy
 # records amount of alive players in a team, to figure out if all players are dead
 scoreboard objectives add uhc.team_alive dummy
 # lobby teleport system
-scoreboard objectives add uhc.tp trigger
+scoreboard objectives add uhc.guide trigger
 
 
 scoreboard players set num_teams uhc.cfg 4
