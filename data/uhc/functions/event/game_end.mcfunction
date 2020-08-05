@@ -1,4 +1,4 @@
-function uhc:teams/clear
+team leave *
 scoreboard objectives setdisplay sidebar pcheckpoint
 scoreboard players set game_started uhc.internal 0
 cmd mvload lobby
