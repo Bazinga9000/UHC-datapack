@@ -30,6 +30,7 @@ scoreboard objectives add acheckpoint dummy
 scoreboard objectives add level trigger
 scoreboard objectives add last trigger
 scoreboard objectives add reset trigger
+scoreboard objectives add cstick minecraft.used:minecraft.carrot_on_a_stick
 
 scoreboard players set num_teams uhc.cfg 4
 scoreboard players set min_teams uhc.cfg 2
