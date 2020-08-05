@@ -5,6 +5,7 @@ spawnpoint @a 0 10 0
 execute as @a[nbt=!{Dimension: "minecraft:lobby"}, tag=!debugger] in minecraft:lobby run tp @s 0 10 0
 
 function uhc:parkour/tick
+function uhc:guide/tick
 
 #> config room
 #execute positioned [position of cfg] run function uhc:cfg/[cfg]

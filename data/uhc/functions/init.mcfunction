@@ -20,6 +20,8 @@ scoreboard objectives add uhc.esoteric dummy
 scoreboard objectives add uhc.saturation dummy
 # records amount of alive players in a team, to figure out if all players are dead
 scoreboard objectives add uhc.team_alive dummy
+# lobby teleport system
+scoreboard objectives add uhc.guide trigger
 # used to detect users joining midgame ( thanks minecraft and its inability to remove tags from offline users :) )
 scoreboard objectives add uhc.gamers dummy
 # parkour scoreboards
