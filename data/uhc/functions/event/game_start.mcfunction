@@ -6,6 +6,7 @@ execute if score always_day uhc.esoteric matches 1 in game run gamerule doDaylig
 execute if score always_night uhc.esoteric matches 1 in game run gamerule doDaylightCycle false
 
 #> scoreboard init
+execute as @a run trigger uhc.tp set 0
 scoreboard objectives setdisplay sidebar
 scoreboard players reset * uhc.deaths
 scoreboard players set game_started uhc.internal 1
