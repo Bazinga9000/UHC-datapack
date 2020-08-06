@@ -23,6 +23,9 @@ scoreboard players operation xyzlen uhc.hud += zlen uhc.hud
 ## check how many bars are on the left
 # place above first heart bar
 scoreboard players set leftlen uhc.hud 0
+execute store result score tmp uhc.hud run attribute @s minecraft:generic.max_health get
+execute if score tmp uhc.hud matches 21.. run scoreboard players add leftlen uhc.hud 1
+execute if score tmp uhc.hud matches 41.. run scoreboard players add leftlen uhc.hud 1
 # add one bar if there is absorption
 execute store result score tmp uhc.hud run data get entity @s AbsorptionAmount
 execute unless score tmp uhc.hud matches 0 run scoreboard players add leftlen uhc.hud 1
@@ -62,5 +65,6 @@ execute if score tmp uhc.hud matches 21.. run scoreboard players set rightlen uh
 
 #> store text
 data modify storage uhc.hud displist set value []
-execute unless entity @s[gamemode=spectator] run function uhc:hud/disp_hud
+execute unless entity @s[gamemode=spectator] if score leftlen uhc.hud matches ..3 run function uhc:hud/disp_hud
+execute unless entity @s[gamemode=spectator] unless score leftlen uhc.hud matches ..3 run function uhc:hud/disp_hud_spec
 execute if entity @s[gamemode=spectator] run function uhc:hud/disp_hud_spec
