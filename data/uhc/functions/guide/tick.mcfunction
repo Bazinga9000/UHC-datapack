@@ -1,13 +1,9 @@
 #> location teleports
-# floor 0
+# floor 0-4
 execute as @a[scores={uhc.guide=1}] run tp @s 0 6 0
-# floor 1
 execute as @a[scores={uhc.guide=2}] run tp @s 0 10 0
-# floor 2
 execute as @a[scores={uhc.guide=3}] run tp @s 0 19 0
-# floor 3
 execute as @a[scores={uhc.guide=4}] run tp @s 0 24 0
-# floor 4
 execute as @a[scores={uhc.guide=5}] run tp @s 1 32 0
 # hall of victors
 execute as @a[scores={uhc.guide=6}] run tp @s 0 10 67 0 0 

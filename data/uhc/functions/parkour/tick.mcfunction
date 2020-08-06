@@ -2,9 +2,9 @@ execute positioned 0 5 -48 as @a[distance=..3, tag=!in_parkour] run function uhc
 execute positioned 0 24 -14 as @a[distance=..3, tag=in_parkour] run function uhc:parkour/exit
 execute as @a[tag=in_parkour, scores={cstick=1..}] run function uhc:parkour/cstick
 
-execute if entity @a[tag=in_parkour,scores={level=1..}] as @r[tag=in_parkour,scores={level=1..}] run function uhc:parkour/trigger_level
-execute as @a[tag=in_parkour,scores={reset=1..}] if entity @s run function uhc:parkour/trigger_reset
-execute if entity @a[tag=in_parkour,scores={last=1..}] as @r[tag=in_parkour,scores={last=1..}] run function uhc:parkour/trigger_last
+execute as @r[tag=in_parkour,scores={level=1..}] run function uhc:parkour/trigger_level
+execute as @a[tag=in_parkour,scores={reset=1..}] run function uhc:parkour/trigger_reset
+execute as @r[tag=in_parkour,scores={last=1..}] run function uhc:parkour/trigger_last
 scoreboard players enable @a[tag=in_parkour] level
 scoreboard players enable @a[tag=in_parkour] reset
 scoreboard players enable @a[tag=in_parkour] last
