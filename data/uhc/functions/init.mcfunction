@@ -12,10 +12,12 @@ scoreboard objectives add uhc.bossbar dummy
 scoreboard objectives add uhc.cfg dummy
 # used for marking the option a configurator picks in the cfg box
 scoreboard objectives add uhc.cfg.opt dummy
-# used for internal vars that don't fit other scoreboards
+# used for internal vars that don't fit other objectives
 scoreboard objectives add uhc.internal dummy
 # used for storing esoteric settings cause there's a stupid heck ton amount of them
 scoreboard objectives add uhc.esoteric dummy
+# used for distinguishing uhc:start_settings vars with uhc.internal vars
+scoreboard objectives add uhc.stsetting dummy
 # records users' saturations in the lobby to force their saturation to 5
 scoreboard objectives add uhc.saturation dummy
 # records amount of alive players in a team, to figure out if all players are dead
@@ -24,7 +26,7 @@ scoreboard objectives add uhc.team_alive dummy
 scoreboard objectives add uhc.guide trigger
 # used to detect users joining midgame ( thanks minecraft and its inability to remove tags from offline users :) )
 scoreboard objectives add uhc.gamers dummy
-# parkour scoreboards
+# parkour objectives
 scoreboard objectives add pcheckpoint dummy
 scoreboard objectives add acheckpoint dummy
 scoreboard objectives add level trigger

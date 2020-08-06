@@ -26,6 +26,9 @@ for i in 1..64 run execute unless entity @a[team=team$i] run scoreboard players 
 function uhc:handle_spreadplayers
 cmd mvunload lobby
 
+execute unless score friendly_fire uhc.stsetting matches 1 run for i in 1..64 run team modify team$i friendlyFire false
+execute if score friendly_fire uhc.stsetting matches 1 run for i in 1..64 run team modify team$i friendlyFire true
+
 execute as @a run function uhc:reset_statuses
 effect give @a instant_health 1 20
 effect give @a minecraft:regeneration 45 255 true

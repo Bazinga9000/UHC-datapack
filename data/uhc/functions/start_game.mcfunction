@@ -2,8 +2,8 @@ function uhc:start_settings
 scoreboard players set start_ok uhc.internal 1
 
 # if teams are supposed to have been created, and they aren't, halt
-execute if score make_teams uhc.internal matches 1 if entity @a[team=] run tellraw @s [{"text":"ERR: Teams have not been assigned. Press ","color":"red"},{"text":"[here] ","color":"blue","clickEvent":{"action":"run_command","value":"/function uhc:teams/assign"}},{"text":"to assign teams."}]
-execute if score make_teams uhc.internal matches 1 if entity @a[team=] run scoreboard players set start_ok uhc.internal 0
+execute if score make_teams uhc.stsetting matches 1 if entity @a[team=] run tellraw @s [{"text":"ERR: Teams have not been assigned. Press ","color":"red"},{"text":"[here] ","color":"blue","clickEvent":{"action":"run_command","value":"/function uhc:teams/assign"}},{"text":"to assign teams."}]
+execute if score make_teams uhc.stsetting matches 1 if entity @a[team=] run scoreboard players set start_ok uhc.internal 0
 
 # if a necessary dimension doesn't exist, halt
 execute store success score dim_game_exist uhc.internal in game run help me
