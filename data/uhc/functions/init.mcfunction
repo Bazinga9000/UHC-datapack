@@ -41,11 +41,11 @@ scoreboard players set game_started uhc.internal 0
 # cfg, spawned, worldborder, bossbar, saturation, health, deaths, timer, settings
 #> fn inits
 function uhc:init/consts
-function uhc:teams/create
+function uhc:init/storage
+function uhc:init/teams
 function uhc:cfg/default/esoteric
 function uhc:cfg/default/intervals
 function uhc:cfg/default/wbsize
-function uhc:init/storage
 
 #> gamerule inits
 execute in minecraft:lobby run function uhc:gamerules/lobby
