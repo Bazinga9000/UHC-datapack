@@ -1,4 +1,4 @@
-function uhc:esoteric/start_settings
+function uhc:start_settings
 scoreboard players set start_ok uhc.internal 1
 
 # if teams are supposed to have been created, and they aren't, halt
