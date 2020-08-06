@@ -25,7 +25,7 @@ gamerule naturalRegeneration false
 #gamerule randomTickSpeed 3
 #gamerule reducedDebugInfo false
 #gamerule sendCommandFeedback true
-#gamerule showDeathMessages true
+gamerule showDeathMessages true
 #gamerule spawnRadius 0
 #gamerule spectatorsGenerateChunks true
 #gamerule universalAnger false
