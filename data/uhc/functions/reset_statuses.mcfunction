@@ -1,3 +1,4 @@
+
 #> resets inv, effects, and such before being moved to another world
 # would mv-inventories do this better? no idea
 effect clear @s

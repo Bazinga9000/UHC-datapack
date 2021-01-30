@@ -1,4 +1,0 @@
-execute if score max_health uhc.esoteric matches 0 run attribute @s generic.movement_speed modifier add 74141e10-119e-4dc2-8dbf-1cb3ec7ba672 eso_mv_boost -0.5 multiply
-execute if score max_health uhc.esoteric matches 2 run attribute @s generic.movement_speed modifier add 74141e10-119e-4dc2-8dbf-1cb3ec7ba672 eso_mv_boost 1 multiply
-execute if score max_health uhc.esoteric matches 3 run attribute @s generic.movement_speed modifier add 74141e10-119e-4dc2-8dbf-1cb3ec7ba672 eso_mv_boost 2 multiply
-execute if score max_health uhc.esoteric matches 4 run attribute @s generic.movement_speed modifier add 74141e10-119e-4dc2-8dbf-1cb3ec7ba672 eso_mv_boost 3 multiply

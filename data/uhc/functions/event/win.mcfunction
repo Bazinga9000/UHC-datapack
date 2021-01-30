@@ -1,2 +1,0 @@
-let i = pot_win_team uhc.internal run tellraw @a [{"nbt":"team_names[$i]","storage":"uhc","interpret":true},{"text":" has won! Congratulations!", "color":"white"}]
-scoreboard players set stage uhc.bossbar 6

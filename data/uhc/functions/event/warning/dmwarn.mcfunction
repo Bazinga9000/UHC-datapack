@@ -1,1 +1,0 @@
-tellraw @a [{"nbt":"box_name","storage":"uhc","interpret":true},{"text":"The World Border has stopped! If the game does not end within ","color":"dark_aqua","italic":true},{"score":{"name":"tilldm","objective":"uhc.cfg"},"color":"dark_aqua","italic":true},{"text":" minutes, then I shall end it myself.","color":"dark_aqua","italic":true}]

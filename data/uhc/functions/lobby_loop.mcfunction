@@ -7,14 +7,6 @@ execute as @a[nbt=!{Dimension: "minecraft:lobby"}, tag=!debugger] in minecraft:l
 function uhc:parkour/tick
 function uhc:guide/tick
 
-#> config room
-#execute positioned [position of cfg] run function uhc:cfg/[cfg]
-execute positioned 48 18 -1 run function uhc:cfg/wbsize
-execute positioned 48 18 -3 run function uhc:cfg/tcount
-execute positioned 48 18 -5 run function uhc:cfg/esoteric
-execute positioned 48 18 -7 run function uhc:cfg/intervals
-function uhc:cfg/cfg_board
-
 #>  The "Make InfiniCake Useless"ifier
 execute as @a store result score @s uhc.saturation run data get entity @s foodSaturationLevel
 execute as @a[scores={uhc.saturation=6..}, gamemode=!creative, gamemode=!spectator] run effect give @s hunger 1 255 true

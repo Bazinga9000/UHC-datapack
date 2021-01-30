@@ -1,3 +1,4 @@
+
 #> location teleports
 # floor 0-4
 execute as @a[scores={uhc.guide=1}] run tp @s 0 6 0
