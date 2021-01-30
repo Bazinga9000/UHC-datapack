@@ -13,6 +13,7 @@ execute as @a[scores={uhc.guide=6}] run tp @s 0 10 67 0 0
 execute as @a[scores={uhc.guide=1..},tag=in_parkour] run function uhc:parkour/exit
 
 #> set spectator/player
+# TODO, link to UHC plugin
 tellraw @a[scores={uhc.guide=-1},tag=spectator,gamemode=!spectator] {"text":"You have become a player!","color":"yellow"}
 tellraw @a[scores={uhc.guide=-2},tag=!spectator,gamemode=!spectator] {"text":"You have become a spectator!","color":"aqua"}
 tag @a[scores={uhc.guide=-1},tag=spectator,gamemode=!spectator] remove spectator 

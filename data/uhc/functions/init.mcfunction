@@ -15,10 +15,10 @@ scoreboard objectives add reset trigger
 scoreboard objectives add cstick minecraft.used:minecraft.carrot_on_a_stick
 
 #> fn inits
-function uhc:init/consts
+function uhc:init_consts
 
 #> gamerule inits
-execute in minecraft:lobby run function uhc:gamerules/lobby
+execute in minecraft:lobby run function uhc:gamerules
 
 #> misc setup
 execute in minecraft:lobby run setworldspawn 0 10 0
