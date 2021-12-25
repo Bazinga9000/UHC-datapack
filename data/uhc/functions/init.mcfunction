@@ -14,6 +14,9 @@ scoreboard objectives add last trigger
 scoreboard objectives add reset trigger
 scoreboard objectives add cstick minecraft.used:minecraft.carrot_on_a_stick
 
+team add nocollision
+team modify nocollision collisionRule never
+
 #> fn inits
 function uhc:init_consts
 
