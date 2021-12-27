@@ -1,4 +1,4 @@
-spawnpoint @a 0 10 0
+spawnpoint @a[team=!] 0 10 0
 # force non-debuggers out of lobby
 execute as @a[nbt=!{Dimension: "minecraft:lobby"}, tag=!debugger] in minecraft:lobby run tp @s 0 10 0
 
