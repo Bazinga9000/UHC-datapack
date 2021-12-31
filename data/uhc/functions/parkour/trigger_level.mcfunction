@@ -6,5 +6,8 @@ tag @s add level
 execute as @e[type=armor_stand,scores={acheckpoint=1..}] if score @s acheckpoint = @a[limit=1,tag=level] level run tp @a[limit=1,tag=level] @s
 tag @s remove level
 scoreboard players reset @s level
+effect clear @s minecraft:jump_boost
+effect clear @s minecraft:speed
+effect clear @s minecraft:levitation
 
 execute as @r[tag=in_parkour,scores={level=1..}] run function uhc:parkour/trigger_level
